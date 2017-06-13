@@ -1,0 +1,12 @@
+.disguises_to_be_used .grp-readonly {
+    display: none;
+}
+
+.pseudonym_needs_by_region .region {
+    font-weight: bold;
+}
+
+#id_group_creation_matrix {
+    height: 450px;
+    width: 150px;
+}

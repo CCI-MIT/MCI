@@ -1,0 +1,3353 @@
+[
+    {
+        "fields": {
+            "key": "CONFIRM_REGISTRATION",
+            "text": "Thanks for completing the initial test."
+        },
+        "model": "mci.text",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "key": "ERROR_COMPLETE_PREREQS",
+            "text": "You need to complete consent form and individual tests"
+        },
+        "model": "mci.text",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "key": "ERROR_TOO_LATE",
+            "text": "You are too late to participate in the experiment"
+        },
+        "model": "mci.text",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "key": "ERROR_TOO_EARLY",
+            "text": "The waiting room is not open yet. The experiment starts at {0} GMT"
+        },
+        "model": "mci.text",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "key": "ERROR_NOT_RECOGNIZED",
+            "text": "This id was not recognized. For further help, go to http://www.mit.edu"
+        },
+        "model": "mci.text",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "key": "ERROR_CANNOT_FORM_GROUP",
+            "text": "You cannot participate due to group size issues"
+        },
+        "model": "mci.text",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "key": "ERROR_EXPERIMENT_ALREADY_STARTED",
+            "text": "You cannot participate because the experiment has already started"
+        },
+        "model": "mci.text",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "key": "EXPERIMENT_INTRODUCTION",
+            "text": "This is the introduction to the experiment"
+        },
+        "model": "mci.text",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "key": "EXPERIMENT_DONE",
+            "text": "You're done!"
+        },
+        "model": "mci.text",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "key": "CONSENT_FORM_MESSAGE",
+            "text": "Enter the user ID you were given "
+        },
+        "model": "mci.text",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "key": "START_FORM_MESSAGE",
+            "text": "Please enter your user id"
+        },
+        "model": "mci.text",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "done_redirect_url": "http://www.google.com",
+            "done_text": "Done text",
+            "initial_task_group": 1,
+            "introduction_text": "Intro text",
+            "max_group_size": 4,
+            "min_group_size": 3,
+            "name": "Green Experiment",
+            "start_datetime": "2011-04-16 18:00:00",
+            "status": "P",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                1,
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 2,
+            "name": "Purple Experiment",
+            "start_datetime": "2011-04-17 21:24:45",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                1,
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 2,
+            "name": "Red Experiment",
+            "start_datetime": "2011-04-18 04:47:00",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                1,
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 2,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 1,
+            "name": "Weekend Experiment",
+            "start_datetime": "2011-04-24 03:27:30",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                1,
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 3,
+            "introduction_text": "",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "Testing Prep 1",
+            "start_datetime": "2011-04-25 01:26:10",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        "model": "mci.session",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 3,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 2,
+            "name": "Testing Demo",
+            "start_datetime": "2011-04-29 16:06:22",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        "model": "mci.session",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "Timing test",
+            "start_datetime": "2011-04-29 20:15:45",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 4,
+            "introduction_text": "",
+            "max_group_size": 2,
+            "min_group_size": 2,
+            "name": "2011-05-04-1",
+            "start_datetime": "2011-05-04 16:25:16",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 4,
+            "introduction_text": "",
+            "max_group_size": 2,
+            "min_group_size": 2,
+            "name": "2011-05-04-2",
+            "start_datetime": "2011-05-05 00:43:30",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 2,
+            "min_group_size": 2,
+            "name": "2011-05-05-1",
+            "start_datetime": "2011-05-05 16:00:00",
+            "status": "P",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 4,
+            "introduction_text": "",
+            "max_group_size": 2,
+            "min_group_size": 2,
+            "name": "2011-05-05-2",
+            "start_datetime": "2011-05-05 15:17:23",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "Detection",
+            "start_datetime": "2011-05-17 20:42:26",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 1,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 3,
+            "name": "Sunday",
+            "start_datetime": "2011-05-16 01:33:54",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                1,
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "Tuesday",
+            "start_datetime": "2011-05-17 20:35:44",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                2
+            ]
+        },
+        "model": "mci.session",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "done_redirect_url": "http://www.google.com",
+            "done_text": "This is the final text <a href=\"http://www.google.com\">Google</a>",
+            "initial_task_group": 6,
+            "introduction_text": "This is the intro text",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "June",
+            "start_datetime": "2011-06-20 02:00:00",
+            "status": "P",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                3,
+                4,
+                5
+            ]
+        },
+        "model": "mci.session",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "done_redirect_url": "http://www.google.com",
+            "done_text": "This is the final text <a href=\"http://www.google.com\">Google</a>",
+            "initial_task_group": 6,
+            "introduction_text": "This is the intro text",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "August",
+            "start_datetime": "2011-08-03 18:38:18",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                3,
+                4,
+                5
+            ]
+        },
+        "model": "mci.session",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": 3,
+            "introduction_text": "",
+            "max_group_size": 3,
+            "min_group_size": 2,
+            "name": "Testing Demo copy",
+            "start_datetime": "2011-04-29 16:06:22",
+            "status": "P",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        "model": "mci.session",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "done_redirect_url": "http://www.google.com",
+            "done_text": "You're all done!",
+            "initial_task_group": 4,
+            "introduction_text": "Welcome to the sessin",
+            "max_group_size": 1,
+            "min_group_size": 1,
+            "name": "Grid Testing",
+            "start_datetime": "2011-08-05 01:51:53",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                4
+            ]
+        },
+        "model": "mci.session",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "done_redirect_url": "http://www.google.com",
+            "done_text": "You're all done!",
+            "initial_task_group": 7,
+            "introduction_text": "Welcome to the session",
+            "max_group_size": 3,
+            "min_group_size": 3,
+            "name": "August 23",
+            "start_datetime": "2011-08-23 19:58:52",
+            "status": "S",
+            "opentok_session_id": "fake_token",
+            "task_groups": [
+                7
+            ]
+        },
+        "model": "mci.session",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "name": "Counting"
+        },
+        "model": "mci.taskgroup",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "Memorizing"
+        },
+        "model": "mci.taskgroup",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "Orientation Tasks"
+        },
+        "model": "mci.taskgroup",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "Brainstorm"
+        },
+        "model": "mci.taskgroup",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "Memory"
+        },
+        "model": "mci.taskgroup",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "Detection"
+        },
+        "model": "mci.taskgroup",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "Grids"
+        },
+        "model": "mci.taskgroup",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "etherpad_template": "counting1",
+            "grid_header_instructions": "",
+            "instructions": "<p>Type the numbers from 100 to 1 backwards, by sixes</p>",
+            "instructions_time": 15,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>1-100 backwards, by sixes</p>",
+            "interaction_time": 20,
+            "name": "Counting Task Alpha",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 1,
+            "task_order": 1,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "etherpad_template": "ballet",
+            "grid_header_instructions": "<p>This is where you're going to enter your <strong>instructions</strong>.</p>\r\n<p>Yay</p>",
+            "instructions": "<p>This is some task related to counting. Type the number from 1-100 as fast as you can</p>",
+            "instructions_time": 15,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>Do you remember the instructions? That was a trick question!</p>",
+            "interaction_time": 15,
+            "name": "Counting Task Bet",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 1,
+            "task_order": 2,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "etherpad_template": "memorization1",
+            "grid_header_instructions": null,
+            "instructions": "<p>You must memorize this information<img src=\"/media/uploads/2.jpg\" alt=\"\" width=\"658\" height=\"434\" /></p>",
+            "instructions_time": 45,
+            "instructions_width": 300,
+            "interaction_instructions": "<p>Type what you saw</p>",
+            "interaction_time": 45,
+            "name": "Memorization Task #1",
+            "primer": "<p>This is the information to memorize</p>",
+            "primer_time": 45,
+            "task_group": 2,
+            "task_order": 1,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "etherpad_template": "memorization2",
+            "grid_header_instructions": null,
+            "instructions": "<p>Here is some more information to memorize</p>\r\n<p>Are you ready? Memorize this buster!</p>\r\n<p><img src=\"/media/uploads/icon-facebook-blue.jpg\" alt=\"\" width=\"16\" height=\"16\" /></p>",
+            "instructions_time": 45,
+            "instructions_width": 500,
+            "interaction_instructions": "<p>Type what you saw earlier</p>",
+            "interaction_time": 45,
+            "name": "Memorization Task #2",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 2,
+            "task_order": 2,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "etherpad_template": "8H4nbWt303",
+            "grid_header_instructions": null,
+            "instructions": "<p>Welcome to our experiment. You will be working together to solve problems and complete tasks.</p>\r\n<p>Your first task is to <strong>orient</strong> yourself with the interaction window. You  will be taken to the next page when the timer at the top right of the  page reaches zero. At that page, enter your name about the \"Chat\"  window, and type your name in the \"Answer\" section of he large text  area. Also send a message to other people participating in the  experiment</p>",
+            "instructions_time": 60,
+            "instructions_width": 350,
+            "interaction_instructions": "<p>Identify yourself by entering a name above the chat window, and send a chat message.  Type your name in the main text area</p>",
+            "interaction_time": 120,
+            "name": "Welcome task",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 3,
+            "task_order": 1,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "etherpad_template": "task7",
+            "grid_header_instructions": "<p>Enter you brainstormed animals below</p>",
+            "instructions": "<p>As a group, write down the name of an animal for each letter of the alphabet. Write one word per line.</p>",
+            "instructions_time": 10,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>As a group, write down the name of an animal for each letter of the alphabet. Write one word per line.</p>",
+            "interaction_time": 60,
+            "name": "Brainstorm Verbal - Animal for each letter",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 4,
+            "task_order": 1,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "etherpad_template": "task6",
+            "grid_header_instructions": "None",
+            "instructions": "<p>As a group, write down as many words as possible beginning with the letter \"s\". Write one word per line. Points will be subtracted for repeating words. You will get 2 points for unusual words and 1 point for common words.</p>",
+            "instructions_time": 10,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>As a group, write down as many words as possible beginning with the letter \"s\". Write one word per line. Points will be subtracted for repeating words. You will get 2 points for unusual words and 1 point for common words</p>",
+            "interaction_time": 10,
+            "name": "Brainstorm Verbal - Words beginning with the letter S",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 4,
+            "task_order": 2,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "etherpad_template": "task8",
+            "grid_header_instructions": "None",
+            "instructions": "<p>As a group, come up with as many uses as possible for a brick. Write one possible use per line. Points will be subtracted for repeating uses. You will get 2 points for unusual uses and 1 point for common uses.</p>",
+            "instructions_time": 10,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>As a group, come up with as many uses as possible for a brick. Write one possible use per line. Points will be subtracted for repeating uses. You will get 2 points for unusual uses and 1 point for common uses.</p>",
+            "interaction_time": 10,
+            "name": "Brainstorm Object - Brick",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 4,
+            "task_order": 3,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "etherpad_template": "task9",
+            "grid_header_instructions": "None",
+            "instructions": "<p>As a group, unscramble as many of the following words as possible. Write the unscrambled word in the answer space next to the correct number. Longer words will receive more points than shorter words.</p>",
+            "instructions_time": 10,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>As a group, unscramble as many of the following words as possible. Write the unscrambled word in the answer space next to the correct number. Longer words will receive more points than shorter words.</p>\r\n<ol>\r\n<li>rpepa </li>\r\n<li>labce </li>\r\n<li>mkeso</li>\r\n<li>eyljl </li>\r\n<li>utbotn</li>\r\n<li>leywol </li>\r\n<li>ipecln </li>\r\n<li>weridn </li>\r\n<li>etlret </li>\r\n<li>reculyt </li>\r\n<li>arfehtr </li>\r\n<li>eviepwr </li>\r\n<li>lepsile </li>\r\n<li>wtiknel </li>\r\n<li>ycaivtit </li>\r\n<li>oemhatln</li>\r\n<li>silgxaae </li>\r\n<li>adlrirao </li>\r\n<li>mgacinet</li>\r\n<li>gnatoslci </li>\r\n<li>aigdryrnl </li>\r\n<li>dsedusepne </li>\r\n<li>wlreignst </li>\r\n<li>bdviilvsie </li>\r\n</ol>",
+            "interaction_time": 10,
+            "name": "Choose Verbal - Unscramble",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 4,
+            "task_order": 4,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "etherpad_template": "task10",
+            "grid_header_instructions": null,
+            "instructions": "<p>You will have 2 minutes to memorize as much about the picture that I have handed out as  possible. Since this task tests your memory, you may not take notes about the picture.</p>",
+            "instructions_time": 30,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>Using the knowledge you have gained from viewing Picture 1 in your teams, answer the following questions. Please write answers next to the approprate number.. You will have 3 minutes to complete this task.</p>\r\n<ol>\r\n<li>What color is the flag in the picture?</li>\r\n<li>Is a person playing a violin in the picture?</li>\r\n<li>How many tables are being used to eat on in the picture?</li>\r\n</ol>\r\n<p>For future memory tasks, you may use the chat to discuss strategies with your teammates in order to remember as much as possible.</p>",
+            "interaction_time": 180,
+            "name": "Memory Introduction",
+            "primer": "<p><img src=\"/media/uploads/16340_319959200087_844615087_9852187_4273152_n1.jpg\" alt=\"\" width=\"604\" height=\"403\" /></p>",
+            "primer_time": 120,
+            "task_group": 5,
+            "task_order": 1,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "etherpad_template": "detection",
+            "grid_header_instructions": null,
+            "instructions": "<p>This is the big image test</p>",
+            "instructions_time": 5,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>Here you go</p>\r\n<p><img src=\"/media/uploads/ravens_01_crop.jpg\" alt=\"\" width=\"2026\" height=\"2397\" /></p>",
+            "interaction_time": 15,
+            "name": "Big Image test",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 6,
+            "task_order": 1,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "etherpad_template": "task11",
+            "grid_header_instructions": null,
+            "instructions": "<p>You will have one minute to answer the question on the next page</p>",
+            "instructions_time": 15,
+            "instructions_width": 0,
+            "interaction_instructions": "<p>Count the number of times a rectangle appears exactly 3 spaces in any one direction from a heart</p>\r\n<p><img src=\"/media/uploads/detection.jpg\" alt=\"\" width=\"285\" height=\"602\" /></p>",
+            "interaction_time": 60,
+            "name": "Detection Samples - I",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 6,
+            "task_order": 2,
+            "task_type": "T"
+        },
+        "model": "mci.task",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "etherpad_template": "",
+            "grid_header_instructions": "<p>This is the grid test that we are trying to work with</p>",
+            "instructions": "<p>hum hum</p>",
+            "instructions_time": 15,
+            "instructions_width": 200,
+            "interaction_instructions": "<p>ha ha ha</p>",
+            "interaction_time": 120,
+            "name": "Grid Task",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 7,
+            "task_order": 1,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "etherpad_template": "detectiongrid",
+            "grid_header_instructions": "<p><span class=\"Apple-style-span\" style=\"color: #000000; font-family: Arial,Verdana,sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;\">Find the most common word in the grid below</span></p>",
+            "instructions": "<p><span class=\"Apple-style-span\" style=\"color: #000000; font-family: Arial,Verdana,sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;\">Find the most common word in the grid that will be displayed<br /></span></p>",
+            "instructions_time": 10,
+            "instructions_width": 30,
+            "interaction_instructions": "<p><span class=\"Apple-style-span\" style=\"color: #000000; font-family: Arial,Verdana,sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: #ffffff;\">Find the most common word in the grid<br /></span></p>",
+            "interaction_time": 30,
+            "name": "Detection Grid",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 7,
+            "task_order": 1,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "etherpad_template": "sufoko",
+            "grid_header_instructions": "<p>Work as a team to solve the Sudoku puzzle. Exactly one of each of the numbers 1 through 9 appear in each row and each column of the puzzle. In other words, each row has all of the numbers 1 through 9 and each column has the numbers 1 through 9. Using this knowledge, fill in the blanks in the chart with the appropriate numbers.</p>",
+            "instructions": "<p>Sudoko puzzle</p>",
+            "instructions_time": 10,
+            "instructions_width": 300,
+            "interaction_instructions": "<p>Work as a team to solve the Sudoku puzzle. Exactly one of each of the numbers 1 through 9 appear in each row and each column of the puzzle. In other words, each row has all of the numbers 1 through 9 and each column has the numbers 1 through 9. Using this knowledge, fill in the blanks in the chart with the appropriate numbers.</p>",
+            "interaction_time": 180,
+            "name": "Sudoko",
+            "primer": "",
+            "primer_time": 0,
+            "task_group": 7,
+            "task_order": 3,
+            "task_type": "G"
+        },
+        "model": "mci.task",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 20,
+            "image_label": "",
+            "readonly": true,
+            "row": 1,
+            "task": 3,
+            "text_label": "yes"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "yes",
+            "field_width": 5,
+            "image_label": "",
+            "readonly": false,
+            "row": 4,
+            "task": 3,
+            "text_label": "no"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 3,
+            "text_label": "My second column, first row"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 3,
+            "text_label": "second row, first col"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 3,
+            "text_label": "Some readonly text"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 3,
+            "text_label": "Outlier"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 7,
+            "text_label": "A"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 7,
+            "text_label": "B"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 3,
+            "task": 7,
+            "text_label": "C"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 4,
+            "task": 7,
+            "text_label": "D"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 7,
+            "text_label": "E"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 6,
+            "task": 7,
+            "text_label": "F"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 7,
+            "task": 7,
+            "text_label": "G"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 8,
+            "task": 7,
+            "text_label": "H"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 9,
+            "task": 7,
+            "text_label": "I"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 10,
+            "task": 7,
+            "text_label": "J"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 11,
+            "task": 7,
+            "text_label": "K"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 12,
+            "task": 7,
+            "text_label": "L"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 13,
+            "task": 7,
+            "text_label": "M"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "tasks/logo_mvision.png",
+            "readonly": false,
+            "row": 1,
+            "task": 13,
+            "text_label": "First item"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 13,
+            "text_label": "Second item"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": false,
+            "row": 3,
+            "task": 13,
+            "text_label": "Third item"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "bed",
+            "field_width": 5,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 14,
+            "text_label": "Answer"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 10,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 14,
+            "text_label": "bed"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 10,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 14,
+            "text_label": "radio"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 10,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 14,
+            "text_label": "vehicle"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 10,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 14,
+            "text_label": "mastermind"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 14,
+            "text_label": "diner"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 14,
+            "text_label": "shirt"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 14,
+            "text_label": "loner"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 14,
+            "text_label": "comma"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 14,
+            "text_label": "radio"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 14,
+            "text_label": "vehicle"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 14,
+            "text_label": "bed"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 14,
+            "text_label": "quilt"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 14,
+            "text_label": "mastermind"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 14,
+            "text_label": "wheel"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 14,
+            "text_label": "bed"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 14,
+            "text_label": "shirt"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 1,
+            "task": 15,
+            "text_label": "2"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 1,
+            "task": 15,
+            "text_label": "1"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": null,
+            "image_label": "",
+            "readonly": true,
+            "row": 1,
+            "task": 15,
+            "text_label": "2"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 1,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "6",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 2,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 2,
+            "task": 15,
+            "text_label": "5"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 3,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 15,
+            "text_label": "6"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 3,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 3,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 15,
+            "text_label": "3"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 3,
+            "task": 15,
+            "text_label": "4"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 15,
+            "text_label": "3"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 15,
+            "text_label": "2"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 4,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 4,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 4,
+            "task": 15,
+            "text_label": "1"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 4,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 5,
+            "task": 15,
+            "text_label": "6"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 5,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "column": 1,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 6,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "column": 2,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 6,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "column": 3,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": false,
+            "row": 6,
+            "task": 15,
+            "text_label": ""
+        },
+        "model": "mci.taskgriditem",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "column": 4,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 6,
+            "task": 15,
+            "text_label": "5"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "column": 5,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 6,
+            "task": 15,
+            "text_label": "6"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "column": 6,
+            "correct_answer": "",
+            "field_width": 1,
+            "image_label": "",
+            "readonly": true,
+            "row": 6,
+            "task": 15,
+            "text_label": "1"
+        },
+        "model": "mci.taskgriditem",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "rabbit",
+            "in_waiting_room": false,
+            "session": 1,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "donkey",
+            "in_waiting_room": false,
+            "session": 1,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "fish",
+            "in_waiting_room": false,
+            "session": 1,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "bird",
+            "in_waiting_room": false,
+            "session": 1,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "hamster",
+            "in_waiting_room": false,
+            "session": 1,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "nina",
+            "in_waiting_room": true,
+            "session": 2,
+            "session_group": 2
+        },
+        "model": "mci.subject",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "pinta",
+            "in_waiting_room": true,
+            "session": 2,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "santa",
+            "in_waiting_room": true,
+            "session": 2,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "maria",
+            "in_waiting_room": true,
+            "session": 2,
+            "session_group": 2
+        },
+        "model": "mci.subject",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "odin",
+            "in_waiting_room": true,
+            "session": 3,
+            "session_group": 2
+        },
+        "model": "mci.subject",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "thor",
+            "in_waiting_room": true,
+            "session": 3,
+            "session_group": 2
+        },
+        "model": "mci.subject",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "freya",
+            "in_waiting_room": true,
+            "session": 3,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "loki",
+            "in_waiting_room": true,
+            "session": 3,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "luke",
+            "in_waiting_room": true,
+            "session": 4,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "darth",
+            "in_waiting_room": false,
+            "session": 4,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "han",
+            "in_waiting_room": false,
+            "session": 4,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "jeff",
+            "in_waiting_room": true,
+            "session": 5,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "jeff2",
+            "in_waiting_room": true,
+            "session": 6,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "anita",
+            "in_waiting_room": true,
+            "session": 6,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "ishani",
+            "in_waiting_room": true,
+            "session": 6,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "jeff4",
+            "in_waiting_room": true,
+            "session": 7,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-04-1a",
+            "in_waiting_room": true,
+            "session": 8,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-04-1b",
+            "in_waiting_room": true,
+            "session": 8,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-04-2a",
+            "in_waiting_room": true,
+            "session": 9,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-04-2b",
+            "in_waiting_room": true,
+            "session": 9,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-05-1e",
+            "in_waiting_room": true,
+            "session": 10,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-05-1f",
+            "in_waiting_room": true,
+            "session": 10,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-05-2C",
+            "in_waiting_room": true,
+            "session": 11,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "2011-05-05-2D",
+            "in_waiting_room": true,
+            "session": 11,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "detection1",
+            "in_waiting_room": true,
+            "session": 12,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "sun1",
+            "in_waiting_room": true,
+            "session": 13,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "sun2",
+            "in_waiting_room": true,
+            "session": 13,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "sun3",
+            "in_waiting_room": true,
+            "session": 13,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "tue1",
+            "in_waiting_room": true,
+            "session": 14,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "june1",
+            "in_waiting_room": false,
+            "session": 16,
+            "session_group": null
+        },
+        "model": "mci.subject",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "aug1",
+            "in_waiting_room": true,
+            "session": 24,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "g1",
+            "in_waiting_room": true,
+            "session": 26,
+            "session_group": 2
+        },
+        "model": "mci.subject",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "g2",
+            "in_waiting_room": true,
+            "session": 26,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "aug23a",
+            "in_waiting_room": true,
+            "session": 27,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "aug23b",
+            "in_waiting_room": true,
+            "session": 27,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "external_id": "aug23c",
+            "in_waiting_room": true,
+            "session": 27,
+            "session_group": 1
+        },
+        "model": "mci.subject",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-08-23 20:05:12",
+            "expected_start_time": "2011-08-23 20:02:02",
+            "session": 27,
+            "session_group": 1,
+            "start_time": "2011-08-23 20:04:58",
+            "task": 15,
+            "etherpad_workspace_url": ""
+        },
+        "model": "mci.completedtask",
+        "pk": 456
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-08-23 20:02:02",
+            "expected_start_time": "2011-08-23 20:01:22",
+            "session": 27,
+            "session_group": 1,
+            "start_time": "2011-08-23 20:04:57",
+            "task": 14,
+            "etherpad_workspace_url": ""
+        },
+        "model": "mci.completedtask",
+        "pk": 455
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-08-23 20:01:22",
+            "expected_start_time": "2011-08-23 19:59:07",
+            "session": 27,
+            "session_group": 1,
+            "start_time": "2011-08-23 19:59:07",
+            "task": 13,
+            "etherpad_workspace_url": ""
+        },
+        "model": "mci.completedtask",
+        "pk": 454
+    },
+    {
+        "fields": {
+            "completed_task_order": 7,
+            "expected_finish_time": "2011-08-03 18:50:43",
+            "expected_start_time": "2011-08-03 18:50:23",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:50:22",
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/zr8yeLt4qM"
+        },
+        "model": "mci.completedtask",
+        "pk": 418
+    },
+    {
+        "fields": {
+            "completed_task_order": 6,
+            "expected_finish_time": "2011-08-03 18:50:23",
+            "expected_start_time": "2011-08-03 18:50:03",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:50:02",
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/kOoUlf7viM"
+        },
+        "model": "mci.completedtask",
+        "pk": 417
+    },
+    {
+        "fields": {
+            "completed_task_order": 5,
+            "expected_finish_time": "2011-08-03 18:50:03",
+            "expected_start_time": "2011-08-03 18:49:43",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:49:42",
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/voe57xFG93"
+        },
+        "model": "mci.completedtask",
+        "pk": 416
+    },
+    {
+        "fields": {
+            "completed_task_order": 4,
+            "expected_finish_time": "2011-08-03 18:49:43",
+            "expected_start_time": "2011-08-03 18:49:23",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:49:22",
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/tR7LQwYiz6"
+        },
+        "model": "mci.completedtask",
+        "pk": 415
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-08-03 18:49:23",
+            "expected_start_time": "2011-08-03 18:43:53",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:43:53",
+            "task": 10,
+            "etherpad_workspace_url": "http://localhost:9000/v0FWO2oQRQ"
+        },
+        "model": "mci.completedtask",
+        "pk": 414
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-08-03 18:43:53",
+            "expected_start_time": "2011-08-03 18:40:53",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:40:52",
+            "task": 5,
+            "etherpad_workspace_url": "http://localhost:9000/jBUamkyW8B"
+        },
+        "model": "mci.completedtask",
+        "pk": 413
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-08-03 18:40:53",
+            "expected_start_time": "2011-08-03 18:39:38",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:39:37",
+            "task": 11,
+            "etherpad_workspace_url": "http://localhost:9000/nKFMegGCsU"
+        },
+        "model": "mci.completedtask",
+        "pk": 412
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-08-03 18:39:38",
+            "expected_start_time": "2011-08-03 18:39:18",
+            "session": 24,
+            "session_group": 1,
+            "start_time": "2011-08-03 18:39:17",
+            "task": 12,
+            "etherpad_workspace_url": "http://localhost:9000/ELdHqK1swu"
+        },
+        "model": "mci.completedtask",
+        "pk": 411
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-05-17 20:47:11",
+            "expected_start_time": "2011-05-17 20:45:41",
+            "session": 12,
+            "session_group": 1,
+            "start_time": "2011-05-17 20:46:01",
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/ZZ9VRgHPYc"
+        },
+        "model": "mci.completedtask",
+        "pk": 400
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-05-17 20:45:41",
+            "expected_start_time": "2011-05-17 20:43:26",
+            "session": 12,
+            "session_group": 1,
+            "start_time": "2011-05-17 20:44:00",
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/K3JsXn7sGI"
+        },
+        "model": "mci.completedtask",
+        "pk": 399
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-05-17 20:38:59",
+            "expected_start_time": "2011-05-17 20:36:44",
+            "session": 14,
+            "session_group": 1,
+            "start_time": "2011-05-17 20:36:44",
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/nJSwfaePQr"
+        },
+        "model": "mci.completedtask",
+        "pk": 397
+    },
+    {
+        "fields": {
+            "completed_task_order": 5,
+            "expected_finish_time": "2011-05-16 01:36:39",
+            "expected_start_time": "2011-05-16 01:36:19",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:36:18",
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/cNKnt2pfNI"
+        },
+        "model": "mci.completedtask",
+        "pk": 380
+    },
+    {
+        "fields": {
+            "completed_task_order": 4,
+            "expected_finish_time": "2011-05-16 01:36:19",
+            "expected_start_time": "2011-05-16 01:35:59",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:35:58",
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/JYZIVmcVqx"
+        },
+        "model": "mci.completedtask",
+        "pk": 379
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-05-16 01:35:59",
+            "expected_start_time": "2011-05-16 01:35:39",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:35:42",
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/Dv5hROjehm"
+        },
+        "model": "mci.completedtask",
+        "pk": 378
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-05-16 01:35:39",
+            "expected_start_time": "2011-05-16 01:35:19",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:35:19",
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/psLT4bYD8s"
+        },
+        "model": "mci.completedtask",
+        "pk": 377
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-05-16 01:35:19",
+            "expected_start_time": "2011-05-16 01:34:49",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:34:53",
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/stCiBOFvj0"
+        },
+        "model": "mci.completedtask",
+        "pk": 376
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-05-16 01:34:49",
+            "expected_start_time": "2011-05-16 01:34:14",
+            "session": 13,
+            "session_group": 1,
+            "start_time": "2011-05-16 01:34:23",
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/rTegV2PkpS"
+        },
+        "model": "mci.completedtask",
+        "pk": 375
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-05-05 15:19:03",
+            "expected_start_time": "2011-05-05 15:18:43",
+            "session": 11,
+            "session_group": 1,
+            "start_time": "2011-05-05 15:18:42",
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/nwKvFYav6D"
+        },
+        "model": "mci.completedtask",
+        "pk": 260
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-05-05 15:18:43",
+            "expected_start_time": "2011-05-05 15:18:23",
+            "session": 11,
+            "session_group": 1,
+            "start_time": "2011-05-05 15:18:23",
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/zzqVX2ocyT"
+        },
+        "model": "mci.completedtask",
+        "pk": 259
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-05-05 15:18:23",
+            "expected_start_time": "2011-05-05 15:18:03",
+            "session": 11,
+            "session_group": 1,
+            "start_time": "2011-05-05 15:18:02",
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/SLDLY8h161"
+        },
+        "model": "mci.completedtask",
+        "pk": 258
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-05-05 15:18:03",
+            "expected_start_time": "2011-05-05 15:17:43",
+            "session": 11,
+            "session_group": 1,
+            "start_time": "2011-05-05 15:17:42",
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/ARaPD5VGBh"
+        },
+        "model": "mci.completedtask",
+        "pk": 257
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-05-05 00:45:10",
+            "expected_start_time": "2011-05-05 00:44:50",
+            "session": 9,
+            "session_group": 1,
+            "start_time": "2011-05-05 00:44:49",
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/Aq6CGuti7P"
+        },
+        "model": "mci.completedtask",
+        "pk": 244
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-05-05 00:44:50",
+            "expected_start_time": "2011-05-05 00:44:30",
+            "session": 9,
+            "session_group": 1,
+            "start_time": "2011-05-05 00:44:29",
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/blI24lDH30"
+        },
+        "model": "mci.completedtask",
+        "pk": 243
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-05-05 00:44:30",
+            "expected_start_time": "2011-05-05 00:44:10",
+            "session": 9,
+            "session_group": 1,
+            "start_time": "2011-05-05 00:44:10",
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/xbfhihCC7K"
+        },
+        "model": "mci.completedtask",
+        "pk": 242
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-05-05 00:44:10",
+            "expected_start_time": "2011-05-05 00:43:50",
+            "session": 9,
+            "session_group": 1,
+            "start_time": "2011-05-05 00:43:49",
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/DhYBA3dCbP"
+        },
+        "model": "mci.completedtask",
+        "pk": 241
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-04-29 20:17:15",
+            "expected_start_time": "2011-04-29 20:16:55",
+            "session": 7,
+            "session_group": 1,
+            "start_time": "2011-04-29 20:16:57",
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/Iy4JWQrbbx"
+        },
+        "model": "mci.completedtask",
+        "pk": 232
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-04-29 20:16:55",
+            "expected_start_time": "2011-04-29 20:16:35",
+            "session": 7,
+            "session_group": 1,
+            "start_time": "2011-04-29 20:16:34",
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/vkZdS3faWb"
+        },
+        "model": "mci.completedtask",
+        "pk": 231
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-04-29 20:16:35",
+            "expected_start_time": "2011-04-29 20:16:15",
+            "session": 7,
+            "session_group": 1,
+            "start_time": "2011-04-29 20:16:14",
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/Sri25Tbl52"
+        },
+        "model": "mci.completedtask",
+        "pk": 230
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-04-29 20:16:15",
+            "expected_start_time": "2011-04-29 20:15:55",
+            "session": 7,
+            "session_group": 1,
+            "start_time": "2011-04-29 20:15:54",
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/RCtqBluKmH"
+        },
+        "model": "mci.completedtask",
+        "pk": 229
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-04-29 16:15:02",
+            "expected_start_time": "2011-04-29 16:09:32",
+            "session": 6,
+            "session_group": 1,
+            "start_time": "2011-04-29 16:09:50",
+            "task": 10,
+            "etherpad_workspace_url": "http://localhost:9000/0v9Zncebjc"
+        },
+        "model": "mci.completedtask",
+        "pk": 187
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-04-29 16:09:32",
+            "expected_start_time": "2011-04-29 16:06:32",
+            "session": 6,
+            "session_group": 1,
+            "start_time": "2011-04-29 16:07:30",
+            "task": 5,
+            "etherpad_workspace_url": "http://localhost:9000/DhFT7nj3o7"
+        },
+        "model": "mci.completedtask",
+        "pk": 186
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 1,
+            "start_time": "2011-04-18 16:25:07",
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/baVxF0u7t6"
+        },
+        "model": "mci.completedtask",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 1,
+            "start_time": "2011-04-18 04:51:32",
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/oPte9WClmX"
+        },
+        "model": "mci.completedtask",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 1,
+            "start_time": "2011-04-18 04:48:00",
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/0XbI3P7uhg"
+        },
+        "model": "mci.completedtask",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 1,
+            "start_time": "2011-04-18 04:47:19",
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/NiALpU47rU"
+        },
+        "model": "mci.completedtask",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-08-05 01:53:48",
+            "expected_start_time": "2011-08-05 01:53:28",
+            "session": 26,
+            "session_group": 2,
+            "start_time": null,
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/iQgW4V1WgZ"
+        },
+        "model": "mci.completedtask",
+        "pk": 449
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 2,
+            "start_time": null,
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/LwAAjCYREE"
+        },
+        "model": "mci.completedtask",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 1,
+            "start_time": null,
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/YVzuZDuRQp"
+        },
+        "model": "mci.completedtask",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 1,
+            "start_time": null,
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/chuXdpykyI"
+        },
+        "model": "mci.completedtask",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-08-05 01:53:08",
+            "expected_start_time": "2011-08-05 01:51:58",
+            "session": 26,
+            "session_group": 2,
+            "start_time": null,
+            "task": 7,
+            "etherpad_workspace_url": ""
+        },
+        "model": "mci.completedtask",
+        "pk": 447
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": "2011-08-05 01:53:08",
+            "expected_start_time": "2011-08-05 01:51:58",
+            "session": 26,
+            "session_group": 1,
+            "start_time": null,
+            "task": 7,
+            "etherpad_workspace_url": ""
+        },
+        "model": "mci.completedtask",
+        "pk": 443
+    },
+    {
+        "fields": {
+            "completed_task_order": 6,
+            "expected_finish_time": "2011-04-29 16:26:17",
+            "expected_start_time": "2011-04-29 16:25:02",
+            "session": 6,
+            "session_group": 1,
+            "start_time": null,
+            "task": 11,
+            "etherpad_workspace_url": "http://localhost:9000/HiHXzL8qQk"
+        },
+        "model": "mci.completedtask",
+        "pk": 192
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-08-05 01:53:48",
+            "expected_start_time": "2011-08-05 01:53:28",
+            "session": 26,
+            "session_group": 1,
+            "start_time": null,
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/VIKvu97t1r"
+        },
+        "model": "mci.completedtask",
+        "pk": 445
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-08-05 01:54:08",
+            "expected_start_time": "2011-08-05 01:53:48",
+            "session": 26,
+            "session_group": 1,
+            "start_time": null,
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/bZQFJ4n6FV"
+        },
+        "model": "mci.completedtask",
+        "pk": 446
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-08-05 01:53:28",
+            "expected_start_time": "2011-08-05 01:53:08",
+            "session": 26,
+            "session_group": 2,
+            "start_time": null,
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/3mLXh4CSfe"
+        },
+        "model": "mci.completedtask",
+        "pk": 448
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-08-05 01:53:28",
+            "expected_start_time": "2011-08-05 01:53:08",
+            "session": 26,
+            "session_group": 1,
+            "start_time": null,
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/LKyDtI5j49"
+        },
+        "model": "mci.completedtask",
+        "pk": 444
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 1,
+            "start_time": null,
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/ZLgVKuTDvy"
+        },
+        "model": "mci.completedtask",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 1,
+            "start_time": null,
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/yjEbxo6Hi0"
+        },
+        "model": "mci.completedtask",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-08-05 01:54:08",
+            "expected_start_time": "2011-08-05 01:53:48",
+            "session": 26,
+            "session_group": 2,
+            "start_time": null,
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/XHg9mMWQiE"
+        },
+        "model": "mci.completedtask",
+        "pk": 450
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 2,
+            "start_time": null,
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/TTXdK1PtHJ"
+        },
+        "model": "mci.completedtask",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 2,
+            "start_time": null,
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/xNNpiMzttU"
+        },
+        "model": "mci.completedtask",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": "2011-04-29 16:20:02",
+            "expected_start_time": "2011-04-29 16:17:32",
+            "session": 6,
+            "session_group": 1,
+            "start_time": null,
+            "task": 7,
+            "etherpad_workspace_url": "http://localhost:9000/TrH8tmwoRr"
+        },
+        "model": "mci.completedtask",
+        "pk": 189
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": "2011-05-17 20:40:29",
+            "expected_start_time": "2011-05-17 20:38:59",
+            "session": 14,
+            "session_group": 1,
+            "start_time": null,
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/xryPY1Gunf"
+        },
+        "model": "mci.completedtask",
+        "pk": 398
+    },
+    {
+        "fields": {
+            "completed_task_order": 4,
+            "expected_finish_time": "2011-04-29 16:22:32",
+            "expected_start_time": "2011-04-29 16:20:02",
+            "session": 6,
+            "session_group": 1,
+            "start_time": null,
+            "task": 8,
+            "etherpad_workspace_url": "http://localhost:9000/VS6yNnSsrP"
+        },
+        "model": "mci.completedtask",
+        "pk": 190
+    },
+    {
+        "fields": {
+            "completed_task_order": 5,
+            "expected_finish_time": "2011-04-29 16:25:02",
+            "expected_start_time": "2011-04-29 16:22:32",
+            "session": 6,
+            "session_group": 1,
+            "start_time": null,
+            "task": 9,
+            "etherpad_workspace_url": "http://localhost:9000/qm4NuuRtSM"
+        },
+        "model": "mci.completedtask",
+        "pk": 191
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 2,
+            "start_time": null,
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/xiHZhapBWy"
+        },
+        "model": "mci.completedtask",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 2,
+            "start_time": null,
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/NoBTADVoYe"
+        },
+        "model": "mci.completedtask",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 2,
+            "start_time": null,
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/mFEENCiU1k"
+        },
+        "model": "mci.completedtask",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 3,
+            "session_group": 2,
+            "start_time": null,
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/KuhjnQhFr9"
+        },
+        "model": "mci.completedtask",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "completed_task_order": 0,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 4,
+            "session_group": 1,
+            "start_time": null,
+            "task": 4,
+            "etherpad_workspace_url": "http://localhost:9000/WRN5ewNqha"
+        },
+        "model": "mci.completedtask",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "completed_task_order": 1,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 4,
+            "session_group": 1,
+            "start_time": null,
+            "task": 3,
+            "etherpad_workspace_url": "http://localhost:9000/yW2vQmnKfn"
+        },
+        "model": "mci.completedtask",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 4,
+            "session_group": 1,
+            "start_time": null,
+            "task": 1,
+            "etherpad_workspace_url": "http://localhost:9000/S3MNIAXW2t"
+        },
+        "model": "mci.completedtask",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 4,
+            "session_group": 1,
+            "start_time": null,
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/gITgHabqru"
+        },
+        "model": "mci.completedtask",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "completed_task_order": 3,
+            "expected_finish_time": null,
+            "expected_start_time": null,
+            "session": 2,
+            "session_group": 2,
+            "start_time": null,
+            "task": 2,
+            "etherpad_workspace_url": "http://localhost:9000/VnSl6kpMTM"
+        },
+        "model": "mci.completedtask",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "completed_task_order": 2,
+            "expected_finish_time": "2011-04-29 16:17:32",
+            "expected_start_time": "2011-04-29 16:15:02",
+            "session": 6,
+            "session_group": 1,
+            "start_time": null,
+            "task": 6,
+            "etherpad_workspace_url": "http://localhost:9000/r29pD8MO8l"
+        },
+        "model": "mci.completedtask",
+        "pk": 188
+    },
+    {
+        "fields": {
+            "answer": "dfadfasdasdf",
+            "completed_task": 241,
+            "task_grid_item": 2
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "answer": "sdf",
+            "completed_task": 241,
+            "task_grid_item": 3
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "answer": "noe",
+            "completed_task": 241,
+            "task_grid_item": 4
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "answer": "6",
+            "completed_task": 456,
+            "task_grid_item": 49
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "answer": "5",
+            "completed_task": 456,
+            "task_grid_item": 48
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "answer": "2",
+            "completed_task": 456,
+            "task_grid_item": 44
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "answer": "3",
+            "completed_task": 456,
+            "task_grid_item": 45
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "answer": "1",
+            "completed_task": 456,
+            "task_grid_item": 43
+        },
+        "model": "mci.completedtaskgriditem",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "done_redirect_url": "",
+            "done_text": "",
+            "initial_task_group": null,
+            "introduction_text": "",
+            "name": "Purple Experiment",
+            "task_groups": [
+                1,
+                2
+            ]
+        },
+        "model": "mci.sessiontemplate",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "waiting_room_opens": "2011-04-16 18:00:00",
+            "waiting_room_closes": "2011-04-16 18:00:00",
+            "subjects_per_session": 4,
+            "name": "Test SB"
+        },
+        "model": "mci.sessionbuilder",
+        "pk": 1
+    } 
+]

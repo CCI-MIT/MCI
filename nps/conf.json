@@ -1,0 +1,12 @@
+{ "prod": { "djangoport" : 80
+          , "loglevel"   : "info"
+          }
+, "test": { "djangoport" : 80
+          , "loglevel"   : "debug"
+          }
+, "dev":  { "djangoport" : 8000
+          , "loglevel"   : "debug"
+          }
+, "matchDistance"   : 20
+, "overlapDistance" : 60
+}

@@ -1,0 +1,681 @@
+/* ========== Reset =================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* ========== General Layout Styles =================*/
+
+body
+{
+    background: #F4F4F1 url(/static/img/logo.jpg) 20px 20px no-repeat;
+}
+
+#container
+{
+    padding-top: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/**
+ *  Timer
+ */
+
+#timer .minutes-value .zero
+{
+    color: rgb(176,177,178);
+}
+
+
+/**
+ *  Header Timer
+ */
+
+#header #timer
+{
+    float: right;
+    height: 40px;
+}
+
+#header #timer .minutes-value,
+#header #timer .minutes-label
+{
+    float: left;
+    border: 2px solid white;
+    padding: 3px;
+    font: 14px verdana, sans-serif;
+}
+
+#header #timer .minutes-value
+{
+    border-right:none;
+    font-weight:bold;
+    color: rgb(163,48,51);
+}
+
+#header #timer .minutes-label
+{
+    color: rgb(114,114,113);
+}
+
+
+
+/**
+ *  Main
+ */
+
+#main
+{
+    margin-top: 35px;
+    padding: 5px;
+    clear: left;
+    background-color: white;
+    -moz-box-shadow: 1px 1px 4px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 4px 2px #ccc;
+    box-shadow: 1px 1px 4px 2px #ccc;
+}
+
+#errors
+{
+    border: 2px solid #ccc;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+    width: 710px;
+    position: relative;
+    background-color: rgb(255,204,204);
+    color: rgb(163,48,51);
+    font: bold 14px verdana, sans-serif;
+}
+
+#content
+{
+    border: 2px solid #ccc;
+    min-height: 600px;
+    color: rgb(114,114,113);
+    font: 14px verdana, sans-serif;
+}
+
+#footer
+{
+    padding: 10px 0 5px 40px;
+    color: rgb(176,177,178);
+    font: 12px verdana,sans-serif
+}
+
+.centered-content
+{
+    margin: 150px auto 200px auto;
+    width: 700px;
+    height: 100%;
+}
+
+#top-spacer
+{
+    width: 100%;
+    height: 31px;
+}
+
+.centered-content.conc
+{
+    margin: 24px 0 0 0;
+    clear: none;
+    height: auto;
+    width: auto;
+}
+
+p
+{
+    margin: 10px 0;
+}
+
+input
+{
+    padding: 2px;
+    color: rgb(114,114,113);
+}
+
+input.text
+{
+    width: 100px;
+}
+
+ol,ul
+{
+    padding-left: 35px;
+}
+
+/* ========== roster-avatars =================*/
+
+#roster-avatars
+{
+    clear: left;
+    margin-top: 25px;
+}
+
+#roster-avatars .avatar 
+{
+    clear: left;
+    height: 40px;
+}
+
+#roster-avatars .avatar .flag
+{
+    float: left;
+    width: 32px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+#roster-avatars .avatar .display-name
+{
+    margin-top: 5px;
+}
+
+
+/* ========== avatars =================*/
+
+.avatars
+{
+    clear: left;
+}
+
+.avatars.primer
+{
+    margin: 0 0 0 15px;
+    width: 584px;
+} 
+
+.avatar
+{
+    float: left;
+    width: 130px;
+    height: 113px;
+    margin-right: 97px;
+}
+
+.avatar-rightmost
+{
+    margin-right: 0;
+}
+
+.avatar .video-container
+{
+    float: left;
+    width: 100%;
+    height: 80px; 
+    background-image: url(/static/img/people.jpg);
+}
+
+.avatar .flag
+{
+    float: left;
+    width: 32px;
+    margin-left: 6px;
+}
+
+.avatar .name-and-clicks
+{
+    margin-top: 5px;
+}
+
+.avatar .name-and-clicks,
+.avatar .name,
+.avatar .clicks
+{
+    float: left;
+    width: 86px;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.avatars .avatar > div
+{
+      z-index: 10000;
+
+}
+
+.waiting-room .avatar,
+.waiting-room .avatar .video-container
+{
+    float: none;
+    width: 130px;
+}
+
+.waiting-room .avatar
+{
+    margin: -90px auto 0 auto;
+    padding-bottom: 60px;
+    height: 113px;
+}
+
+.waiting-room .avatar .video-container
+{
+    margin: 20px auto;
+    height: 80px;
+}
+
+.waiting-room .avatar .name
+{
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: center;
+}
+
+
+/* ========== Popups =================*/
+
+body.popup #main,
+body.popup #container,
+body.popup #content
+{
+    width: auto;
+    height: auto;
+    min-width: 0;
+}
+
+
+/* ========== Waiting Room =================*/
+
+.waiting-room
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.waiting-room #countdown
+{
+    display: block;
+    margin-top: 24px;
+    font-size: 36px;
+}
+
+.waiting-room .minutes-value,
+.waiting-room .minutes-label
+{
+    display: inline;
+}
+
+.waiting-room #caveat
+{
+    display: block;
+    margin-top: 24px;
+}
+
+.waiting-room #confirm-button
+{
+    display: none;
+}
+
+
+/* ========== Workspace =================*/
+
+#task-header
+{
+    padding: 5px;
+    border-bottom: 2px solid #ccc;
+    color: rgb(163,48,51);
+    background-color: #F1F1EE;
+}
+
+#task-header .task-group-name
+{
+    font-weight: bold;
+}
+
+#task-header a
+{
+    color: rgb(163,48,51);
+    font-size: 10px;
+    line-height: 18px;
+    margin-left: 20px;
+}
+
+#task-header a.hide
+{
+    display: none;
+}
+
+#task-header .instructions
+{
+    display: none;
+    color: rgb(114,114,113);
+    text-align: left;
+}
+
+#task-header .instructions em
+{
+    font-weight:bold;
+}
+#task-header .scribe-notification
+{
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+
+
+#task-workspace-content
+{
+    height: 570px;
+}
+
+/* Is this used anywhere? */
+#calibration-content
+{
+    clear: none;
+    float: left;
+}
+
+#task-information,
+#message-left-sidebar
+{
+    float: left;
+    /*width: 23%;*/
+    height: 555px;
+    padding: 5px 20px 5px 5px;
+    overflow: scroll;
+}
+
+#message-left-sidebar
+{
+    height: 610px;
+    width: 228px;
+    padding: 10px;
+}
+
+#task-information.concentration *
+{
+    text-align: left;
+}
+
+#task-information a.popup-link
+{
+    width: 100%;
+    height: 25px;
+    display: block;
+    padding-right:45px;
+    margin-right:35px;
+    color: rgb(163,48,51);
+    font-size: 10px;
+    line-height: 25px;
+    float: right;
+    text-align: right;
+    background: white url(/static/img/popup.jpg) right top no-repeat;
+}
+
+#task-information #information-drag
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: transparent url(/static/img/vdraggie.gif) left top no-repeat;
+    width: 35px;
+    height: 1600px;
+    cursor: e-resize;
+}
+
+
+#message-left-sidebar *
+{
+    font-size: 12px;
+}
+
+#message-left-sidebar h4
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#task-information h2,
+#message-left-sidebar h2,
+.message h2
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#task-information h3,
+#message-left-sidebar h3,
+.message h3
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#message-left-sidebar h3,
+#message-left-sidebar h4
+{
+    margin: 15px 0 10px 0;
+}
+
+#task-information strong,
+#message-left-sidebar strong,
+.message strong
+{
+    font-weight: bold;
+}
+
+#task-information em,
+#message-left-sidebar em,
+.message em
+{
+    font-style: italic;
+}
+
+
+#task-workspace-grid,
+#task-workspace-conc
+{
+    float: left;
+}
+
+#task-workspace-grid-results table
+{
+    margin-top:  5px;
+    padding: 0 50px;
+    border: 2px solid #A33033;
+}
+
+#task-workspace-grid table td
+{
+    padding-left: 10px;
+    text-align: center;
+}
+
+#task-workspace-grid table td input.editing
+{
+    border: 2px solid red;
+}
+
+#task-workspace-grid table td input.right
+{
+    background-color: #90ee90;
+}
+
+#task-workspace-grid table td input.wrong
+{
+    background-color: #ffb6c1;
+}
+
+#task-workspace-grid table td input.blank
+{
+    background-color: #fafad2;
+}
+
+iframe
+{
+    height: 100%;
+    float: right;
+}
+
+/* ========== Audit Logs =================*/
+
+/* From Grappelli theme */
+
+table.log tr.alt th, table.log tr.alt td {
+background: #f4f4f4;
+}
+table.log .row1 th, table.log .row1 td {
+background: #f4f4f4;
+}
+table.log .row2 th, table.log .row2 td {
+background: #fff;
+}
+table.log .selected th, table.log .selected td {
+background: #ffd;
+}
+
+/*  Thead ................................................... */
+
+table.log thead th,
+table.log tfoot td {
+color: #aaa;
+border-left: 1px solid #d4d4d4;
+border-bottom: 1px solid #d4d4d4;
+background: #eee;
+background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e0e0e0));
+background: -moz-linear-gradient(top, #eee, #e0e0e0);
+}
+table.log thead th:first-of-type {
+border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px;
+}
+table.log thead th:last-of-type {
+border-top-right-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px;
+}
+table.log thead th.sorted {
+border-bottom: 1px solid #ccc;
+background: #e0e0e0;
+background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#eee));
+background: -moz-linear-gradient(top, #e0e0e0, #eee);
+}
+
+table.log thead th a:link, table.log thead th a:visited {
+color: #59afcc;
+border-top: 1px solid #fff;
+}
+table.log thead th a:hover, table.log thead th a:active,
+table.log thead th.sorted a {
+color: #444;
+}
+table.log thead th.sorted a {
+border-top: 1px solid #ececec;
+}
+
+
+/*  Tbody ................................................... */
+
+table.log tbody th, table.log tbody td {
+border-top: 1px solid #fff;
+border-bottom: 1px solid #e0e0e0;
+}
+
+table.log tfoot td {
+border-bottom: 0;
+border-top: 1px solid #d4d4d4;
+}
+
+table.log thead th:first-child,
+table.log tfoot td:first-child {
+border-left: 0;
+}
+
+fieldset table.log {
+border-right: 1px solid #eee;
+}
+
+table.log tr.row-label td {
+border-bottom: 0;
+color: #666;
+}
+
+/*  Changelist Table
+------------------------------------------------------------------------------------------------------ */
+
+table.log {
+    border: 1px solid #bdbdbd;
+}
+table.log tbody th, table.log tbody td {
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e0e0e0;
+}
+table.log tbody tr:first-child th, table.log tbody tr:first-child td {
+    border-top: 1px solid #fff;
+}
+table.log tbody tr th:first-child, table.log tbody tr td:first-child {
+    border-left: 0;
+}
+
+table.log .changelist-results,
+table.log {
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+table.log thead th:first-of-type,
+table.log thead th:first-of-type a,
+table.log thead *:first-child[style^="display: none"] + *,
+table.log thead *:first-child[style^="display: none"] + * a {
+    border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;
+}
+table.log thead th:last-of-type,
+table.log thead th:last-of-type a {
+    border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;
+}
+table.log tbody tr:last-of-type>*:first-child,
+table.log tbody tr:last-of-type>*:first-child[style^="display: none"] + * {
+    border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
+}
+table.log tbody tr:last-of-type>*:last-child,
+table.log.editable tbody tr:last-of-type td:nth-last-child(-n+2) {
+    border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+}
+
+table.log thead *[style^="display: none"] + *,
+table.log tbody tr *[style^="display: none"] + * {
+    border-left: 0;
+}
+
+
+form.sessionbuilder-more-info 
+{
+    display: none;
+}
+
+.javascript-test-explanation
+{
+    margin-top: 50px;
+}
+
+.display-name-page .current-display-name
+{
+    font-weight: bold;
+}
+
+.display-name-page form
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.display-name-page .warning
+{
+    color: red;
+    margin-top: 10px;
+}

@@ -1,0 +1,201 @@
+    <script src="/static/js/socket.io.js?v={{ version }}" type="text/javascript"> </script>
+    <script src="/static/js/pointer_space.js?v={{ version }}" type="text/javascript"> </script>
+    <script src="/static/js/card-functions.js?v={{ version }}" type="text/javascript"> </script>
+    <script src="/static/js/countdown.js?v={{ version }}"></script>
+    <script src="/static/js/underscore-min.js?v={{ version }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/cards.css?v={{ version }}" />
+    {% if completed_task.task.task_type == 'C' %}
+        <script type="text/javascript" src="/static/js/concentration_board.js?v={{ version }}"> </script>
+        <link rel="stylesheet" type="text/css" href="/static/css/concentration.css?v={{ version }}" />
+    {% elif completed_task.task.task_type == 'I' %}
+        <script type="text/javascript" src="/static/js/tiles_board.js?v={{ version }}"> </script>
+        <script type="text/javascript" src="/static/js/jquery.flip.min.js"> </script>
+        <script type="text/javascript" src="/static/js/jquery.transform2d.js"> </script>
+        <script type="text/javascript" src="/static/js/jquery.centerToParent.js"> </script>
+        <link rel="stylesheet" type="text/css" href="/static/css/tiles.css?v={{ version }}" />
+    {% elif completed_task.task.task_type == 'S' %}
+        <style>
+            #gameboard .board-area-border
+            {
+                background-color: blue;
+                position: absolute;
+            }
+            #gameboard .board-area-border-vertical
+            {
+                width: 3px;
+                height: 296px;
+            }
+            #gameboard .board-area-border-vertical-0
+            {
+                margin-left: {{ completed_task.board_area_width }}px; 
+            }
+            #gameboard .board-area-border-vertical-1
+            {
+                margin-left: {{ completed_task.board_area_width|add:completed_task.board_area_width }}px; 
+            }
+            #gameboard .board-area-border-horizontal
+            {
+                height: 3px;
+                width: 576px; 
+                margin-top: {{ completed_task.board_area_height }}px;
+            }
+            #gameboard .piece
+            {
+                width: {{ squares_set_width }}px;
+                height: {{ squares_set_height }}px;
+            }
+        </style>
+        <!--[if IE]><script src="/static/js/excanvas.js"></script><![endif]-->
+        <script type="text/javascript" src="/static/js/squares_board.js?v={{ version }}"> </script>
+        <link rel="stylesheet" type="text/css" href="/static/css/squares.css?v={{ version }}" />
+    {% endif %}
+    
+    {% if load_test %}
+        <script src="/static/js/load_test.js?v={{ version }}" type="text/javascript"> </script>
+    {% endif %}
+
+    <script type="text/javascript">
+
+        var avatars = {{ avatars_json|safe }};
+    
+        // TODO:  does this stuff need to be in a jQuery call?
+        $(function () {
+            var canvas = $("#gameboard");
+            var socket = io.connect("{{ realtime_game_host }}");
+
+            var DEBUG = true;
+
+            socket.on('disconnect', function() {
+                if (DEBUG) console.log("Disconnected from game server.");
+            });
+        
+            socket.on('score', function (score) {
+                if (DEBUG) console.log("score >> score: " + score);
+                $("#score").text(score);
+            });    
+            
+
+            var tt = "{{ completed_task.task.task_type }}";
+
+            function bpsCallback(threshold, positionCallback, removeCallback) {
+                // This function is defined in pointer_space.js.
+                bind_pointer_space( (tt == 'I' || tt == 'S')
+                                      ? $("#task-workspace-cards")
+                                      : canvas
+                                  , socket
+                                  , "{{ completed_task.id }}"
+                                  , "{{ sid }}"
+                                  , "{{ completed_task.task.task_type }}"
+                                  , threshold
+                                  , positionCallback
+                                  , removeCallback
+                                  );
+            }
+
+            // This function is defined in concentration_board.js or tiles_board.js
+            // or squares_board.js, whichever one got loaded.
+            configureGameBoard(DEBUG
+                              , canvas
+                              , socket
+                              , "{{ completed_task.id }}"
+                              , "{{ sid }}"
+                              , "{{ completed_task.task.task_type }}"
+                              , bpsCallback
+                              ); 
+            // Now that our callback functions are defined, we can emit 'allState'.
+            socket.emit(
+                'allState',
+                { ctid: "{{ completed_task.id }}"
+                , sid: "{{ sid }}"
+                , task_type: "{{ completed_task.task.task_type }}"
+                }
+            );
+
+            {% if load_test %}
+                load_test( canvas
+                         , socket
+                         , "{{ completed_task.id }}"
+                         , "{{ sid }}"
+                         , {{ mousemove_interval }}
+                         , "{{ completed_task.task.task_type }}"
+                         )
+                ;
+            {% endif %}
+        });
+   
+        preplayCountdownFinished = function() {
+            console.log("called preplayCountdownFinished");
+            $("#preplay-timer").remove()
+        }
+    </script>
+
+    <div id="task-workspace-cards">
+
+        <div id="inner-wrapper">
+
+            <div id="workspace-main">    
+                <div id="avatars-top" class="avatars">
+                    {% for a in avatars_list|slice:":3" %}
+                        {% include 'mci/avatar.html' %}
+                    {% endfor %}
+                </div><!-- end #avatars-top -->
+            
+                <div id="gameboard">
+                    {% if completed_task.task.task_type == 'C' or completed_task.task.task_type == 'I' %}
+                        <div id="cards-container"></div>
+                    {% elif completed_task.task.task_type == 'S' %}
+                        <div class="board-area-border board-area-border-horizontal"></div>
+                        <div class="board-area-border board-area-border-vertical board-area-border-vertical-0"></div>
+                        <div class="board-area-border board-area-border-vertical board-area-border-vertical-1"></div>
+                    {% endif %}
+                    <div id="preplay-timer">
+                        <span class="label label-before">Game begins in</span>
+                        {% include 'mci/timer.html' with countdown_elem_id="preplay-countdown" label="" begin_after=0 count_from=preplay_count_from next_url="" timeout_function_name="preplayCountdownFinished" checkin_url=preplay_checkin_url %}
+                        {% if preplay_countdown_sublabel %}
+                            <span class="label label-after">{{ preplay_countdown_sublabel }}</span>
+                        {% endif %}
+                    </div><!-- end #preplay-timer -->
+                </div><!-- end #gameboard -->
+                {% if completed_task.task.task_type == 'S' %}
+                <div id="catch-layer"></div>                
+                {% endif %}
+            
+                <div id="avatars-bottom" class="avatars">
+                    {% for a in avatars_list|slice:"3:" %}
+                        {% include 'mci/avatar.html' %}
+                    {% endfor %}
+                </div><!-- end #avatars-bottom -->
+            </div><!-- end #workspace-main -->
+        
+            <div id="workspace-right-sidebar">
+                <div id="workspace-timer">
+                    <span class="label label-before">Time</span>
+                    {% include 'mci/timer.html' with countdown_elem_id="right-sidebar-countdown" %}
+                </div><!-- end #workspace-timer -->
+
+            {% if completed_task.task.task_type == 'I' %}
+                <div id="submit-button-container">
+                    <div id="submit-button">
+                        <div class='button'>Submit</div>
+                    </div><!-- end #submit-button -->
+                </div><!-- end #submit-button-container -->
+            {% endif %}
+
+                <div id="score-container">
+                    <span class="label label-before">Team Score</span>
+                    <div id="score"></div>
+                    <span class="label label-after">
+                    {% if completed_task.task.task_type == 'C' %}
+                        Sets
+                    {% elif completed_task.task.task_type == 'I' %}
+                        Points
+                    {% endif %}
+                    </span>
+                </div><!-- end #score -->
+            </div><!-- end #workspace-right-sidebar -->
+
+        </div><!-- end #inner-wrapper -->
+
+    </div><!-- end #task-workspace-cards -->
+    

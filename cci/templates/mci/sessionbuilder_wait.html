@@ -1,0 +1,51 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+ 
+    <div class="centered-content waiting-room">
+        <div class="message">
+            Welcome <b>{{ subject_identity.display_name }}</b>.
+            Your session will begin in a moment!
+        </div>
+        <div id="caveat">
+            Waiting for
+            <span id="waiting-for">{{ waiting_for }}</span>
+            more players to join…
+        </div>
+    </div>
+    <script type="text/javascript">
+        function checkStartTime() {
+            $.getJSON(
+                '{% url 'mci.views.sessionbuilder_waiting_room_checkin' sessionbuilder.id subject_identity.id %}',
+                { },
+                function(data) {
+                    console.log(data);
+                    if (data['error']) {
+                        $(".waiting-room .message").text("We encountered an error assigning you to a session.");
+                        $(".waiting-room .message").attr("id", "errors");
+                        $(".waiting-room #caveat").text("");
+                    } else {
+                        if (data['next_url']) {
+                            if (data['goodbye']) {
+                                $('#message').html(data['goodbye']);
+                            }
+                            window.location = data['next_url'];
+                        } else {
+                            if (data['waiting_for']) {
+                                $("#waiting-for").html(data['waiting_for']);
+                            }
+                            setTimeout(checkStartTime, {{ checkin_interval }}000);
+                        }
+                    }
+                }
+            );
+        }
+        checkStartTime();
+    </script>
+
+{% endblock %}

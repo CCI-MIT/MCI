@@ -1,0 +1,110 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="centered-content waiting-room">
+        <div class="message"> </div>
+        <a id="confirm-button" href="#">Confirm</a>
+        <div id="countdown">{{ countdown }}</div>
+        <!-- <div id="caveat">(may start sooner if all participants are present)</div> -->
+    </div>
+
+    <script src="/static/js/countdown.js?v={{ version }}"></script>
+    <script type="text/javascript">
+
+        $("a#confirm-button").click(function () {
+            trackJs && trackJs.track("Clicked confirmation button");
+            $.getJSON('{% url 'mci.views.confirm_participation_confirm' subject_external_id %}');
+            $(".waiting-room .message").text("Thank you. Please wait...");
+            confirmedStatus = currentStatus;
+            clear();
+            return false;
+        })
+
+        function clear() {
+            // clearTimeout(timer);
+            countdown.stop();
+            $("#countdown").html("");
+            $("#caveat").html("");
+            $("a#confirm-button").hide();
+        }
+
+        function timeup() {
+            clear();
+        }
+
+        function error(error_text) {
+            trackJs && trackJs.track("Error in confirmation: " + error_text);
+            clear();
+            $(".waiting-room .message").text(error_text);
+            $(".waiting-room .message").attr("id", "errors");
+        }
+
+        function checkStatus()
+        {
+            var timeStamp = new Date().getTime();
+            $.getJSON(
+                '{% url 'mci.views.confirm_participation_checkin' subject_external_id %}',
+                { },
+                function(data) {
+                    console.log(JSON.stringify(data));
+                    if (data['error'] == true) {
+                        error(data['error_text']);
+                    } else {
+                        if (data['action'] == 'wait') {
+                            $("a#confirm-button").hide();
+                            if (data['status'] == 'U') {
+                                $(".waiting-room .message").text("We've selected a Scribe for the session and are asking that person to confirm. This may take a few minutes. Please stand by. (If they don't confirm, you may be asked to be the Scribe instead.)");
+                            } else {
+                                $(".waiting-room .message").text("We are waiting for the rest of the participants to confirm. This may take a few minutes. Please stand by.");
+                            } 
+                        }
+                        if (data['action'] == 'confirm') {
+                            if ((data['status'] == 'R') && (confirmedStatus != 'R')) {
+                                $(".waiting-room .message").text("You have been chosen as the Scribe for the session. This means only you will record the answers in the workspace. Please click 'Confirm'. If you don't click before the timer runs down, another Subject will be asked instead, and you will not be able to participate in the session");
+                                $("a#confirm-button").show();
+                            }
+                            if ((data['status'] == 'U') && (confirmedStatus != 'U')) {
+                                $(".waiting-room .message").text("The experiment will now begin, please click 'Confirm' to continue.");
+                                $("a#confirm-button").show();
+                            }
+                            if ((currentStatus != data['status']) || (currentAction != data['action'])) {
+                                countdown.init(0, data['time_remaining'], 'countdown', 'minutes');
+                                // timer = setTimeout(timeup, data['time_remaining']);
+                            }
+                        }
+                        if (data['action'] == 'advance') {
+                            if ((currentStatus != data['status']) || (currentAction != data['action'])) {
+                                countdown.init(0, data['time_remaining'], 'countdown', 'minutes');
+                                var startTime = (data['time_remaining'] + 2) * 1000
+                                trackJs && trackJs.track("Set timer to advance to session start in " + startTime + " milliseconds");
+                                setTimeout("window.location = '{{ start_url }}'", startTime);
+                            }
+                            $("a#confirm-button").hide();
+                            $(".waiting-room .message").text("The experiment will begin when the countdown is complete");   
+                        }
+                        currentStatus = data['status'];
+                        currentAction = data['action'];
+                        if (data['action'] != 'advance') {
+                            setTimeout(checkStatus, {{ checkin_interval }}000);                            
+                        }
+                    }
+                }
+            );
+        }
+
+        var countdown = javascript_countdown();
+        var timer;
+        currentStatus = '';
+        currentAction = '';
+        confirmedStatus = '';
+        checkStatus();    
+
+    </script>
+
+{% endblock %}

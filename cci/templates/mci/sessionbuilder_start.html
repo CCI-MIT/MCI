@@ -1,0 +1,60 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block content %}
+    <div class="centered-content sessionbuilder-start">
+        {{ message }}
+        {% if 'email' in form.fields or 'mturk_id' in form.fields %}
+            <form
+                action="{% url 'mci.views.sessionbuilder_register' sbid=sessionbuilder_id %}"
+                method="post"
+                class="sessionbuilder-start"
+            >
+        {% else %}
+            <form
+                action="{% url 'mci.views.sessionbuilder_more_info' sbid=sessionbuilder_id siid=subject_identity_id %}"
+                method="post"
+                class="sessionbuilder-more-info"
+            >
+        {% endif %}
+            {% csrf_token %}
+            {% for field in form %}
+                {% if ask_for_group_id or field.name != "sb_group_id" %}
+                    <div class="fieldWrapper">
+                        {{ field.errors }}
+                        {{ field.label_tag }} {{ field }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <input type="submit" value="Go" class="button"/>
+        </form>
+        {% if 'display_name' in form.fields %}
+            <div class="javascript-test-explanation">
+                {{ javascript_test_explanation }}
+            </div>
+            <script src="/static/js/socket.io.js?v={{ version }}" type="text/javascript"> </script>
+            <script type="text/javascript">
+                $(function() {
+                    var socketioCompatibilityTimeout = setTimeout(function() {
+                        $(".javascript-test-explanation").html(
+                            "{{ error_connecting_to_game_server_msg|linebreaksbr }}"
+                        );
+                    }, 10000);
+                    var socket = io.connect('{{ concentration_domain }}');
+                    socket.on('sb-registration-pingback', function (data) {
+                        console.log("Socket.io compatibity test passed.  Response payload:");
+                        console.log(data);
+                        clearTimeout(socketioCompatibilityTimeout);
+                        $(".javascript-test-explanation").hide();
+                        $("form.sessionbuilder-more-info").show();
+                    });
+                    socket.emit('sb-registration-ping', {
+                        siid: {{ subject_identity_id }},
+                        sbid: {{ sbid }}
+                    });
+                });
+            </script>
+        {% endif %}
+    </div>
+{%  endblock %}

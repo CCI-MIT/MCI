@@ -1,0 +1,12 @@
+              <div id="avatar-{{ a.sid }}" class="{{ a.classes }}">
+                  <div id="video-container-{{ a.sid }}" class="video-container">
+                      <div id="video-{{ a.sid }}" class="video"></div>
+                  </div>
+                  <img class="flag" src="{{ a.flag_url }}" />
+                  <div class="name-and-clicks">
+                      <div class="name">{{ a.display_name }}</div>
+                      {% if completed_task.task.task_type == 'C' or completed_task.task.task_type == 'I' %}
+                          <div class="clicks">Clicks: ...</div>
+                      {% endif %}
+                  </div>
+              </div>

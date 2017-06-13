@@ -1,0 +1,12 @@
+{% extends "mci/base_global.html" %}
+
+{% block content %}
+    <div class="centered-content">
+        <form action="/mci/consent/" method="post">
+            {% csrf_token %}
+            <label for="uid">{% if message %}{{ message|safe }}{% endif %}</label>
+            <input name="uid" id="uid" type="text" class="text"/>
+            <input type="submit" value="Confirm" class="button"/>
+        </form>
+    </div>
+{%  endblock %}

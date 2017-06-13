@@ -1,0 +1,13 @@
+{% extends "mci/base_global.html" %}
+
+{%  block content %}
+
+    {% if message_left_sidebar %}
+        <div id="message-left-sidebar"> {{ message_left_sidebar|safe }} </div> 
+    {% endif %}
+
+    <div class="centered-content message {% if timer and task_type == 'C' %}conc{% endif%}">
+        {% if message %}{{ message|safe }}{% endif %}
+    </div>
+
+{%  endblock %}

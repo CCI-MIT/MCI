@@ -1,0 +1,1 @@
+name,time_before_play,time_between_rounds,time_unmatched_pairs_remain_faceup,pairs_in_generated_round,instructions_time,primer_time,interaction_time,mousemove_intervalmmi 10000,0,3,1.5,5,10,10,90,10000mmi 3000,0,3,1.5,5,10,10,90,3000mmi 1000,0,3,1.5,5,10,10,90,1000mmi 500,0,3,1.5,5,10,10,90,500mmi 250,0,3,1.5,5,10,10,90,250mmi 100,0,3,1.5,5,10,10,90,100

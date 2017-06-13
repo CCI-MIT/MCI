@@ -1,0 +1,54 @@
+#!/bin/sh
+# chkconfig: 345 95 20
+# description: Node.js app that serves real-time games Concentration and Tiles.
+# processname: realtimegames
+
+export PATH=$PATH:/usr/local/bin
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
+case "$1" in
+
+  start)
+
+  node \
+      /app/cci/etherpad-lite/node_modules/forever/bin/forever \
+          start \
+              -p /app/cci/nps/foreverfiles \
+              -w \
+              --watchDirectory=/app/cci/nps \
+              -l /app/cci/logs/nps.log \
+              --append \
+              /app/cci/nps/server.js
+
+  node \
+      /app/cci/etherpad-lite/node_modules/forever/bin/forever \
+          start \
+              -p /app/cci/nps/foreverfiles \
+              -w --watchDirectory=/app/cci/etherpad-lite \
+              -l /app/cci/logs/etherpad-lite.log \
+              --append \
+              /app/cci/etherpad-lite/node/server.js \
+                  -s settings.prod.json
+
+  ;;
+
+  stop)
+
+  node \
+      /app/cci/etherpad-lite/node_modules/forever/bin/forever \
+          stop \
+              /app/cci/nps/server.js
+
+  node \
+      /app/cci/etherpad-lite/node_modules/forever/bin/forever \
+          stop \
+              /app/cci/etherpad-lite/node/server.js
+
+  ;;
+*)
+  echo "Usage: /etc/init.d/realtimegames {start|stop}"
+  exit 1
+  ;;
+esac
+
+exit 0

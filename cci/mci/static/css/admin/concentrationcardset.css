@@ -1,0 +1,12 @@
+#id_cards_chzn
+{
+    width: 900px !important;
+}
+
+#id_cards_chzn .chzn-choices .search-field,
+#id_cards_chzn .chzn-choices .search-field input
+{
+    height: 20px !important;
+    width: 200px !important;
+}
+

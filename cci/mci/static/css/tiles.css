@@ -1,0 +1,77 @@
+﻿#cards-container
+{
+    float: left;
+}
+
+#gameboard .card
+{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin: 4px;
+    float: left;
+    clear: none;
+    text-index: 90px;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#gameboard .card.clear
+{
+    clear: left;
+}
+
+#gameboard .card.unselected
+{
+    background-color: #aCaCaC;
+}
+
+#gameboard .card.selected
+{
+    background-color: red;
+}
+
+#submit-button-container
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+#submit-button
+{
+    display: inline-block;
+    width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#submit-button .button
+{
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+    display: none;
+    background-color: red;
+}
+
+/* Messages */
+#tiles-message
+{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    height: 30px;
+    margin-bottom: -30px;
+}
+

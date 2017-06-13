@@ -1,0 +1,156 @@
+{% extends "admin/base_site.html" %}
+
+{% load url from future %}
+
+{% block title %}Session Log | Django site admin{% endblock %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="/static/css/tables.css">
+    <style>
+        {% for key, user in users.items %}
+            .{{ user.name|slugify }} { background-color: {{ user.colorId }}; }
+        {%  endfor %}
+        #content {  padding:10px}
+        .username { color: black; padding: 2px;}
+        .log-header { padding: 20px 0;}
+        .log-header td { padding: 2px 10px;}
+        .log-header td.label { font-weight: bold;}
+        table.log {border: 1px solid #BDBDBD;}
+        table.log {border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+    </style>
+{%  endblock %}
+
+{% block breadcrumbs %}
+    <div id="breadcrumbs">
+            <a href="/admin">Home</a> &rsaquo; <a href="/admin/mci">Mci</a> &rsaquo; <a href="/admin/mci/session/">Sessions</a> &rsaquo; Activity Log
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="log">
+    <h3>Session Activity Log</h3>
+    <table class="log-header">
+        <tr>
+            <td class="label">Session Name</td>
+            <td><a href="{% url 'admin:mci_session_change' session.id %}">{{ session.name }}</a>
+                (Group #{{ session_group }})</td>
+        </tr>
+        <tr>
+            <td class="label">Session Builder</td>
+            <td>
+                {% if session.session_template_frequency %}
+                    {{ session.session_template_frequency.session_builder }}
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Session Started</td>
+            <td>{{ session.start_datetime|date:"r" }}</td>
+        </tr>
+        <tr>
+            <td class="label">Subject Disguises</td>
+            <td>
+                {% if session.subjects_disguised %}
+                    {{ session.nym_reqs_for_session__for_reporting|safe }}
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Confirmed subjects</td>
+            <td>
+                {% for s in confirmed_users %}
+                    {{ s }}<br/>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Unconfirmed subjects</td>
+            <td>
+                {% if unconfirmed_users %}                    
+                    {% for s in unconfirmed_users %}
+                        {{ s }}<br/>
+                    {% endfor %}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Missing subjects</td>
+            <td>
+                {% for s in missing_users %}
+                    {{ s }}<br/>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Solo Task Group at Start</td>
+            <td>
+                {% if session.solo_task_group_start %}
+                    <a href="{% url 'admin:mci_taskgroup_change' session.solo_task_group_start.id %}">{{ session.solo_task_group_start }}</a><br>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Initial Common Task Group</td>
+            <td>
+                {% if session.initial_task_group %}
+                    <a href="{% url 'admin:mci_taskgroup_change' session.initial_task_group.id %}">{{ session.initial_task_group }}</a><br>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Common Task Groups</td>
+            <td>
+                {% for tg in task_groups %}
+                    <a href="{% url 'admin:mci_taskgroup_change' tg.id %}">{{ tg }}</a><br>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Solo Task Group at End</td>
+            <td>
+                {% if session.solo_task_group_end %}
+                    <a href="{% url 'admin:mci_taskgroup_change' session.solo_task_group_end.id %}">{{ session.solo_task_group_end }}</a><br>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Done Redirect URL</td>
+            <td>{{ session.done_redirect_url }}</td>
+        </tr>
+    {% if team_tiles_score != None %} 
+        <tr>
+            <td class="label">Team Tiles Score (As Shown to Subjects)</td>
+            <td>{{ team_tiles_score }}</td>
+        </tr>
+    {% endif %}
+    </table>
+
+    {% include 'mci/reporting/rollups.html' %}
+
+    <table class="log" cellspacing="0">
+        <thead>
+            <th>Date / Time</th>
+            <th>Task</th>
+            <th>User</th>
+            <th>Chat Name</th>
+            <th>Type</th>
+            <th>Data</th>
+        </thead>
+        {% for item in log %}
+            <tr class="{% cycle 'row1' 'row2' %}">
+                <td>{{ item.timestamp|date:"D, j M o H:i:s.u O" }}</td>
+                <td>{{ item.completed_task.task.name }}</td>
+                <td><span class="username {{ item.subject.external_id|slugify }}">{{ item.subject.external_id}}</span></td>
+                <td>{{ item.chat_name}}</td>
+                <td>{{ item.event }}</td>
+                <td>{{ item.data }}</td>
+            </tr>
+        {%  endfor %}
+    </table>
+    </div>
+{%  endblock %}

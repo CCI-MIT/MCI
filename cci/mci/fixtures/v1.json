@@ -1,0 +1,4309 @@
+[
+     {
+        "pk": "2defe588c4f73f97352e92c7da13c0b7",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-04-21 22:42:08",
+            "session_data": "ODJjYmYyMzc5OGJkZGFjYzk2NGVjMDUzMzMyMDhlYjMxNDYyYWJiZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+        }
+    },
+    {
+        "pk": "8303197559bb84fc9fc97be67309d31c",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-04-28 12:26:38",
+            "session_data": "ODJjYmYyMzc5OGJkZGFjYzk2NGVjMDUzMzMyMDhlYjMxNDYyYWJiZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+        }
+    },
+    {
+        "pk": "217203ae9cd98d5cbb52d18f11c3fd92",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-05-02 17:38:42",
+            "session_data": "ODJjYmYyMzc5OGJkZGFjYzk2NGVjMDUzMzMyMDhlYjMxNDYyYWJiZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "sites.site",
+        "fields": {
+            "domain": "example.com",
+            "name": "example.com"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-25 14:35:59",
+            "object_repr": "Testing Demo",
+            "object_id": "6",
+            "change_message": "Changed consent_and_individual_tests_completed for subject \"ishani\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 219,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-25 14:28:04",
+            "object_repr": "Testing Demo",
+            "object_id": "6",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 218,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-25 14:22:07",
+            "object_repr": "Welcome task",
+            "object_id": "5",
+            "change_message": "Changed instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 217,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-25 14:16:51",
+            "object_repr": "Testing Demo",
+            "object_id": "6",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 210,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "95",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 211,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "96",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 212,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "97",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 213,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "98",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 214,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "99",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 215,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "100",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 216,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:47:16",
+            "object_repr": "CompletedTask object",
+            "object_id": "101",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 209,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:25:38",
+            "object_repr": "Testing Prep 1",
+            "object_id": "5",
+            "change_message": "Changed start_datetime, status and task_groups. Changed experiment_group for subject \"jeff\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 208,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 21:24:51",
+            "object_repr": "CompletedTask object",
+            "object_id": "94",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 207,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:23:49",
+            "object_repr": "Detection Samples - I",
+            "object_id": "11",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 206,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:23:37",
+            "object_repr": "Detection Samples - I",
+            "object_id": "11",
+            "change_message": "Changed instructions and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 205,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 21:22:25",
+            "object_repr": "Detection",
+            "object_id": "6",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 204,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:18:40",
+            "object_repr": "Memory Introduction",
+            "object_id": "10",
+            "change_message": "Changed primer.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 203,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:14:56",
+            "object_repr": "Memory Introduction",
+            "object_id": "10",
+            "change_message": "Changed interaction_instructions and interaction_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 202,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:13:28",
+            "object_repr": "Memory Introduction",
+            "object_id": "10",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 201,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:13:13",
+            "object_repr": "Memory Introduction",
+            "object_id": "10",
+            "change_message": "Changed instructions and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 200,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 21:11:23",
+            "object_repr": "Memory",
+            "object_id": "5",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 199,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:00:42",
+            "object_repr": "Choose Verbal - Unscramble",
+            "object_id": "9",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 198,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:00:33",
+            "object_repr": "Brainstorm Object - Brick",
+            "object_id": "8",
+            "change_message": "Changed instructions, interaction_instructions and interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 197,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:00:20",
+            "object_repr": "Brainstorm Verbal - Animal for each letter",
+            "object_id": "7",
+            "change_message": "Changed instructions, interaction_instructions and interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 196,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 21:00:08",
+            "object_repr": "Brainstorm Verbal - Words beginning with the letter S",
+            "object_id": "6",
+            "change_message": "Changed instructions, interaction_instructions and interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 195,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 20:11:16",
+            "object_repr": "Choose Verbal - Unscramble",
+            "object_id": "9",
+            "change_message": "Changed instructions and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 194,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 20:09:57",
+            "object_repr": "Brainstorm",
+            "object_id": "4",
+            "change_message": "Added task \"Choose Verbal - Unscramble\".",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 193,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 20:03:31",
+            "object_repr": "Brainstorm",
+            "object_id": "4",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 192,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 18:17:54",
+            "object_repr": "Orientation Tasks",
+            "object_id": "3",
+            "change_message": "Changed task_order for task \"Welcome task\".",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 191,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 18:05:28",
+            "object_repr": "Testing Prep 1",
+            "object_id": "5",
+            "change_message": "Changed start_datetime and status. Changed in_waiting_room for subject \"jeff\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 190,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 18:04:58",
+            "object_repr": "Welcome task",
+            "object_id": "5",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 189,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 17:58:47",
+            "object_repr": "Testing Prep 1",
+            "object_id": "5",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 188,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-24 17:58:31",
+            "object_repr": "CompletedTask object",
+            "object_id": "93",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 187,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 17:57:31",
+            "object_repr": "ERROR_TOO_LATE",
+            "object_id": "3",
+            "change_message": "Changed text.",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 186,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:55:27",
+            "object_repr": "EXPERIMENT_DONE",
+            "object_id": "9",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 185,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:55:13",
+            "object_repr": "EXPERIMENT_INTRODUCTION",
+            "object_id": "8",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 184,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:54:11",
+            "object_repr": "ERROR_EXPERIMENT_ALREADY_STARTED",
+            "object_id": "7",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 183,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:52:33",
+            "object_repr": "ERROR_CANNOT_FORM_GROUP",
+            "object_id": "6",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 182,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:51:04",
+            "object_repr": "ERROR_NOT_RECOGNIZED",
+            "object_id": "5",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 181,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:50:39",
+            "object_repr": "ERROR_TOO_EARLY",
+            "object_id": "4",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 180,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:49:55",
+            "object_repr": "ERROR_TOO_LATE",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 179,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:49:02",
+            "object_repr": "ERROR_COMPLETE_PREREQS",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 178,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:37:43",
+            "object_repr": "Text object",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 177,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:19:47",
+            "object_repr": "Testing Prep 1",
+            "object_id": "5",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 176,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-24 17:18:48",
+            "object_repr": "Welcome task",
+            "object_id": "5",
+            "change_message": "Changed instructions and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 175,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-24 17:10:14",
+            "object_repr": "Orientation Tasks",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 174,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:27:08",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime and status. Changed in_waiting_room and experiment_group for subject \"luke\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 170,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 23:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "85",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 171,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 23:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "86",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 172,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 23:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "87",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 173,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 23:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "88",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 169,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:20:30",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime and status. Changed in_waiting_room for subject \"luke\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 168,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:20:04",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 167,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:19:41",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime and min_group_size.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 166,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:18:16",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime, initial_task_group and task_groups. Changed in_waiting_room and experiment_group for subject \"luke\". Changed in_waiting_room and experiment_group for subject \"darth\". Changed in_waiting_room and experiment_group for subject \"han\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 165,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 23:13:11",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed task_groups.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 164,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 21:40:58",
+            "object_repr": "Memorization Task #2",
+            "object_id": "2",
+            "change_message": "Changed instructions, primer and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 163,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 21:26:44",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 162,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-23 21:21:18",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 158,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 21:21:02",
+            "object_repr": "CompletedTask object",
+            "object_id": "81",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 159,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 21:21:02",
+            "object_repr": "CompletedTask object",
+            "object_id": "82",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 160,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 21:21:02",
+            "object_repr": "CompletedTask object",
+            "object_id": "83",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 161,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-23 21:21:02",
+            "object_repr": "CompletedTask object",
+            "object_id": "84",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 157,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-23 20:56:01",
+            "object_repr": "Weekend Experiment",
+            "object_id": "4",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 156,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 19:50:00",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "Changed instructions, primer and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 155,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 17:02:13",
+            "object_repr": "Counting Task Alpha",
+            "object_id": "4",
+            "change_message": "Changed instructions and interaction_instructions.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 154,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 11:36:15",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "Changed interaction_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 153,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 01:03:42",
+            "object_repr": "Memorization Task #2",
+            "object_id": "2",
+            "change_message": "Changed primer_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 152,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:46:28",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 151,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:46:14",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime. Changed in_waiting_room for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 150,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:45:59",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 149,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:43:03",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed status.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 148,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:42:58",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 140,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "69",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 141,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "65",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 142,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "70",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 143,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "66",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 144,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "71",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 145,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "67",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 146,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "72",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 147,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:42:37",
+            "object_repr": "CompletedTask object",
+            "object_id": "68",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 139,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:32:48",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime and status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 131,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "61",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 132,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "57",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 133,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "62",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 134,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "58",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 135,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "63",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 136,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "59",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 137,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "64",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 138,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:32:20",
+            "object_repr": "CompletedTask object",
+            "object_id": "60",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 130,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-18 00:27:17",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime and status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 122,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "53",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 123,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "49",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 124,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "54",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 125,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "50",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 126,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "55",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 127,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "51",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 128,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "52",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 129,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-18 00:26:46",
+            "object_repr": "CompletedTask object",
+            "object_id": "56",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 121,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 23:26:39",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime and status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 113,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "45",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 114,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "41",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 115,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "46",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 116,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "42",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 117,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "47",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 118,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "43",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 119,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "48",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 120,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:26:15",
+            "object_repr": "CompletedTask object",
+            "object_id": "44",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 112,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 23:17:55",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime and status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 104,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "37",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 105,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "33",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 106,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "38",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 107,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "34",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 108,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "39",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 109,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "35",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 110,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "40",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 111,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 23:00:17",
+            "object_repr": "CompletedTask object",
+            "object_id": "36",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 103,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 22:06:15",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime and status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 87,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "25",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 88,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "29",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 89,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "17",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 90,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "21",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 91,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "26",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 92,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "30",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 93,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "18",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 94,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "22",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 95,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "19",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 96,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "23",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 97,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "27",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 98,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "31",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 99,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "20",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 100,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "24",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 101,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "28",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 102,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-17 22:05:47",
+            "object_repr": "CompletedTask object",
+            "object_id": "32",
+            "change_message": "",
+            "user": 1,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 86,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:57:41",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 85,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:57:32",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed status. Changed experiment_group for subject \"odin\". Changed experiment_group for subject \"thor\". Changed experiment_group for subject \"freya\". Changed in_waiting_room and experiment_group for subject \"loki\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 84,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:40:58",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 83,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-17 21:39:54",
+            "object_repr": "Red Experiment",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 82,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:30:51",
+            "object_repr": "Purple Experiment",
+            "object_id": "2",
+            "change_message": "Changed status. Changed experiment_group for subject \"nina\". Changed experiment_group for subject \"pinta\". Changed experiment_group for subject \"santa\". Changed experiment_group for subject \"maria\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 81,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:28:35",
+            "object_repr": "Counting Task Beta",
+            "object_id": "3",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 80,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:28:27",
+            "object_repr": "Counting Task Alpha",
+            "object_id": "4",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 79,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:28:16",
+            "object_repr": "Memorization Task #2",
+            "object_id": "2",
+            "change_message": "Changed task_type and interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 78,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:27:05",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 77,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-17 21:26:08",
+            "object_repr": "Counting Task Beta",
+            "object_id": "3",
+            "change_message": "Changed interaction_workspace_source.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 76,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-17 21:25:08",
+            "object_repr": "Purple Experiment",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 75,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 23:00:30",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "Changed task_type, instructions_time and primer_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 74,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 23:00:14",
+            "object_repr": "Counting Task Beta",
+            "object_id": "3",
+            "change_message": "Changed task_type, instructions_time and interaction_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 73,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 23:00:03",
+            "object_repr": "Counting Task Alpha",
+            "object_id": "4",
+            "change_message": "Changed task_type, instructions_time and interaction_time.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 72,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 22:55:09",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 71,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 22:36:09",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 70,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:53:57",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 69,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:53:16",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 68,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:48:53",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 67,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:47:27",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed min_group_size, max_group_size and status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 66,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:46:32",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed consent_and_individual_tests_completed and in_waiting_room for subject \"rabbit\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"donkey\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"fish\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"bird\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 65,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:42:07",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed status. Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"donkey\". Changed experiment_group for subject \"fish\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 64,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 21:33:48",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed min_group_size and max_group_size. Changed consent_and_individual_tests_completed and in_waiting_room for subject \"rabbit\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"donkey\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"fish\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"bird\". Changed consent_and_individual_tests_completed and in_waiting_room for subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 63,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 17:20:20",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed consent_and_individual_tests_completed for subject \"rabbit\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 62,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 17:19:50",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 61,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 16:59:53",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed task_groups.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 60,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 16:38:02",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed task_groups.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 59,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-16 15:36:59",
+            "object_repr": "rabbit",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 58,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 15:33:13",
+            "object_repr": "Counting",
+            "object_id": "1",
+            "change_message": "Changed instructions for task \"Counting Task Alpha\".",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 57,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 15:22:07",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Changed initial_task_group.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 56,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 15:22:00",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "Added subject \"rabbit\". Added subject \"donkey\". Added subject \"fish\". Added subject \"bird\". Added subject \"hamster\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 55,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 15:20:35",
+            "object_repr": "Green Experiment",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 54,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:22:36",
+            "object_repr": "Counting Task Alpha",
+            "object_id": "4",
+            "change_message": "",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 53,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:21:55",
+            "object_repr": "Counting Task Beta",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 52,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-16 13:14:58",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 51,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:04:54",
+            "object_repr": "Memorization Task #2",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 50,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:04:13",
+            "object_repr": "Memorization Task #1",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 49,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:02:48",
+            "object_repr": "TaskGroup object",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 48,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-16 13:02:43",
+            "object_repr": "TaskGroup object",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 47,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 14:32:12",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 46,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:58:19",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed status.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 45,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:58:14",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Added subject \"donkey\". Changed experiment_group for subject \"dog\". Changed experiment_group for subject \"cat\". Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\". Changed experiment_group for subject \"fairy\". Changed experiment_group for subject \"ferret\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 44,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:57:30",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed status.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 43,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:57:09",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed experiment_group for subject \"dog\". Changed experiment_group for subject \"rabbit\". Changed experiment_group for subject \"bird\". Changed experiment_group for subject \"hamster\". Changed experiment_group for subject \"fairy\". Changed experiment_group for subject \"ferret\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 42,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:56:53",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed min_group_size and max_group_size. Changed consent_and_individual_tests_completed and in_waiting_room for subject \"cat\". Changed consent_and_individual_tests_completed for subject \"bird\". Changed consent_and_individual_tests_completed for subject \"hamster\". Changed consent_and_individual_tests_completed for subject \"fairy\". Changed consent_and_individual_tests_completed for subject \"ferret\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 41,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:56:09",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed max_group_size.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 40,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:26:47",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed in_waiting_room for subject \"bird\". Changed in_waiting_room for subject \"hamster\". Changed in_waiting_room for subject \"fairy\". Changed in_waiting_room for subject \"ferret\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 39,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 13:26:40",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Added subject \"hamster\". Added subject \"fairy\". Added subject \"ferret\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 38,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 12:16:33",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 37,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 12:16:23",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 36,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 12:14:05",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 35,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 12:12:09",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 34,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-15 12:10:32",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 33,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 21:30:22",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime. Changed group for subject \"dog\". Changed group for subject \"cat\". Changed group for subject \"rabbit\". Changed group for subject \"bird\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 32,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 17:06:01",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 31,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 17:05:42",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 30,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:50:56",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 29,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:50:44",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 28,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:50:27",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:42:33",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 26,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:42:12",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 25,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 16:41:58",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 24,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 14:05:10",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed consent_and_individual_tests_completed for subject \"dog\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 23,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:20:09",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 22,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:10:24",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 21,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:10:13",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 20,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:08:38",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 19,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:08:20",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 18,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 13:08:01",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 17,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 12:59:28",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 16,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 12:28:31",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 15,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-14 12:27:16",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 14,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-11 14:04:22",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 13,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-08 22:46:02",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 12,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-08 22:29:41",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Changed start_datetime.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 11,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-08 22:09:31",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "Added subject \"dog\". Added subject \"cat\". Added subject \"rabbit\". Added subject \"bird\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 10,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-08 22:08:51",
+            "object_repr": "My first experiment",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 9,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-08 21:04:56",
+            "object_repr": "dog",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 8,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-07 23:09:28",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "Changed max_group_size.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 7,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2011-04-07 22:54:37",
+            "object_repr": "dude",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 6,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-07 22:54:14",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 5,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-07 22:54:10",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 4,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-07 22:53:59",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "Added subject \"dude\".",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 3,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-07 22:49:30",
+            "object_repr": "happytown",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 2,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-04-07 22:48:48",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 1,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-04-07 22:48:47",
+            "object_repr": "The first experiment",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.text",
+        "fields": {
+            "text": "Thanks for completing the initial test.",
+            "key": "CONFIRM_REGISTRATION"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.text",
+        "fields": {
+            "text": "You need to complete consent form and individual tests",
+            "key": "ERROR_COMPLETE_PREREQS"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.text",
+        "fields": {
+            "text": "You are too late to participate in the experiment",
+            "key": "ERROR_TOO_LATE"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.text",
+        "fields": {
+            "text": "The waiting room is not open yet. The experiment starts at {0} GMT",
+            "key": "ERROR_TOO_EARLY"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.text",
+        "fields": {
+            "text": "This id was not recognized. For further help, go to http://www.mit.edu",
+            "key": "ERROR_NOT_RECOGNIZED"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.text",
+        "fields": {
+            "text": "You cannot participate due to group size issues",
+            "key": "ERROR_CANNOT_FORM_GROUP"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "mci.text",
+        "fields": {
+            "text": "You cannot participate because the experiment has already started",
+            "key": "ERROR_EXPERIMENT_ALREADY_STARTED"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "mci.text",
+        "fields": {
+            "text": "This is the introduction to the experiment",
+            "key": "EXPERIMENT_INTRODUCTION"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "mci.text",
+        "fields": {
+            "text": "You're done!",
+            "key": "EXPERIMENT_DONE"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-16 18:00:00",
+            "name": "Green Experiment",
+            "task_groups": [1, 2],
+            "initial_task_group": 1,
+            "min_group_size": 2,
+            "max_group_size": 3
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-17 21:24:45",
+            "name": "Purple Experiment",
+            "task_groups": [1, 2],
+            "initial_task_group": null,
+            "min_group_size": 2,
+            "max_group_size": 3
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-18 04:47:00",
+            "name": "Red Experiment",
+            "task_groups": [1, 2],
+            "initial_task_group": null,
+            "min_group_size": 2,
+            "max_group_size": 3
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-24 03:27:30",
+            "name": "Weekend Experiment",
+            "task_groups": [1, 2],
+            "initial_task_group": 2,
+            "min_group_size": 1,
+            "max_group_size": 3
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-25 01:26:10",
+            "name": "Testing Prep 1",
+            "task_groups": [3, 4, 5, 6],
+            "initial_task_group": 3,
+            "min_group_size": 1,
+            "max_group_size": 1
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.experiment",
+        "fields": {
+            "status": "S",
+            "start_datetime": "2011-04-25 18:40:00",
+            "name": "Testing Demo",
+            "task_groups": [3, 4, 5, 6],
+            "initial_task_group": 3,
+            "min_group_size": 2,
+            "max_group_size": 3
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Counting"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Memorizing"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Orientation Tasks"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Brainstorm"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Memory"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.taskgroup",
+        "fields": {
+            "name": "Detection"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 15,
+            "task_type": "T",
+            "name": "Counting Task Alpha",
+            "task_order": 1,
+            "interaction_time": 20,
+            "primer_time": null,
+            "task_group": 1,
+            "interaction_instructions": "<p>1-100 backwards, by sixes</p>",
+            "interaction_workspace_source": "counting1",
+            "primer": "",
+            "instructions": "<p>Type the numbers from 100 to 1 backwards, by sixes</p>"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 15,
+            "task_type": "T",
+            "name": "Counting Task Beta",
+            "task_order": 2,
+            "interaction_time": 15,
+            "primer_time": null,
+            "task_group": 1,
+            "interaction_instructions": "Do you remember the instructions? That was a trick question!",
+            "interaction_workspace_source": "ballet",
+            "primer": "",
+            "instructions": "This is some task related to counting. Type the number from 1-100 as fast as you can"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 20,
+            "task_type": "T",
+            "name": "Memorization Task #1",
+            "task_order": 1,
+            "interaction_time": 300,
+            "primer_time": 20,
+            "task_group": 2,
+            "interaction_instructions": "<p>Type what you saw</p>",
+            "interaction_workspace_source": "memorization1",
+            "primer": "<p>This is the information to memorize</p>",
+            "instructions": "<p>You must memorize this information<img src=\"/media/uploads/2.jpg\" alt=\"\" width=\"658\" height=\"434\" /></p>"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Memorization Task #2",
+            "task_order": 2,
+            "interaction_time": 30,
+            "primer_time": 80,
+            "task_group": 2,
+            "interaction_instructions": "<p>Type what you saw earlier</p>",
+            "interaction_workspace_source": "memorization2",
+            "primer": "<p>Are you ready? Memorize this buster!</p>\r\n<p><img src=\"/media/uploads/icon-facebook-blue.jpg\" alt=\"\" width=\"16\" height=\"16\" /></p>",
+            "instructions": "<p>Here is some more information to memorize</p>"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 60,
+            "task_type": "T",
+            "name": "Welcome task",
+            "task_order": 1,
+            "interaction_time": 120,
+            "primer_time": null,
+            "task_group": 3,
+            "interaction_instructions": "<p>Identify yourself by entering a name above the chat window, and send a chat message.  Type your name in the main text area</p>",
+            "interaction_workspace_source": "8H4nbWt303",
+            "primer": "",
+            "instructions": "<p>Welcome to our experiment. You will be working together to solve problems and complete tasks.</p>\r\n<p>Your first task is to <strong>orient</strong> yourself with the interaction window. You  will be taken to the next page when the timer at the top right of the  page reaches zero. At that page, enter your name about the \"Chat\"  window, and type your name in the \"Answer\" section of he large text  area. Also send a message to other people participating in the  experiment</p>"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Brainstorm Verbal - Words beginning with the letter S",
+            "task_order": 1,
+            "interaction_time": 120,
+            "primer_time": null,
+            "task_group": 4,
+            "interaction_instructions": "<p>As a group, write down as many words as possible beginning with the letter \"s\". Write one word per line. Points will be subtracted for repeating words. You will get 2 points for unusual words and 1 point for common words</p>",
+            "interaction_workspace_source": "task6",
+            "primer": "",
+            "instructions": "<p>As a group, write down as many words as possible beginning with the letter \"s\". Write one word per line. Points will be subtracted for repeating words. You will get 2 points for unusual words and 1 point for common words.</p>"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Brainstorm Verbal - Animal for each letter",
+            "task_order": 2,
+            "interaction_time": 120,
+            "primer_time": null,
+            "task_group": 4,
+            "interaction_instructions": "<p>As a group, write down the name of an animal for each letter of the alphabet. Write one word per line.</p>",
+            "interaction_workspace_source": "task7",
+            "primer": "",
+            "instructions": "<p>As a group, write down the name of an animal for each letter of the alphabet. Write one word per line.</p>"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Brainstorm Object - Brick",
+            "task_order": 3,
+            "interaction_time": 120,
+            "primer_time": null,
+            "task_group": 4,
+            "interaction_instructions": "<p>As a group, come up with as many uses as possible for a brick. Write one possible use per line. Points will be subtracted for repeating uses. You will get 2 points for unusual uses and 1 point for common uses.</p>",
+            "interaction_workspace_source": "task8",
+            "primer": "",
+            "instructions": "<p>As a group, come up with as many uses as possible for a brick. Write one possible use per line. Points will be subtracted for repeating uses. You will get 2 points for unusual uses and 1 point for common uses.</p>"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Choose Verbal - Unscramble",
+            "task_order": 4,
+            "interaction_time": 120,
+            "primer_time": null,
+            "task_group": 4,
+            "interaction_instructions": "<p>As a group, unscramble as many of the following words as possible. Write the unscrambled word in the answer space next to the correct number. Longer words will receive more points than shorter words.</p>\r\n<ol>\r\n<li>rpepa </li>\r\n<li>labce </li>\r\n<li>mkeso</li>\r\n<li>eyljl </li>\r\n<li>utbotn</li>\r\n<li>leywol </li>\r\n<li>ipecln </li>\r\n<li>weridn </li>\r\n<li>etlret </li>\r\n<li>reculyt </li>\r\n<li>arfehtr </li>\r\n<li>eviepwr </li>\r\n<li>lepsile </li>\r\n<li>wtiknel </li>\r\n<li>ycaivtit </li>\r\n<li>oemhatln</li>\r\n<li>silgxaae </li>\r\n<li>adlrirao </li>\r\n<li>mgacinet</li>\r\n<li>gnatoslci </li>\r\n<li>aigdryrnl </li>\r\n<li>dsedusepne </li>\r\n<li>wlreignst </li>\r\n<li>bdviilvsie </li>\r\n</ol>",
+            "interaction_workspace_source": "task9",
+            "primer": "",
+            "instructions": "<p>As a group, unscramble as many of the following words as possible. Write the unscrambled word in the answer space next to the correct number. Longer words will receive more points than shorter words.</p>"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 30,
+            "task_type": "T",
+            "name": "Memory Introduction",
+            "task_order": 1,
+            "interaction_time": 180,
+            "primer_time": 120,
+            "task_group": 5,
+            "interaction_instructions": "<p>Using the knowledge you have gained from viewing Picture 1 in your teams, answer the following questions. Please write answers next to the approprate number.. You will have 3 minutes to complete this task.</p>\r\n<ol>\r\n<li>What color is the flag in the picture?</li>\r\n<li>Is a person playing a violin in the picture?</li>\r\n<li>How many tables are being used to eat on in the picture?</li>\r\n</ol>\r\n<p>For future memory tasks, you may use the chat to discuss strategies with your teammates in order to remember as much as possible.</p>",
+            "interaction_workspace_source": "task10",
+            "primer": "<p><img src=\"/media/uploads/16340_319959200087_844615087_9852187_4273152_n1.jpg\" alt=\"\" width=\"604\" height=\"403\" /></p>",
+            "instructions": "<p>You will have 2 minutes to memorize as much about the picture that I have handed out as  possible. Since this task tests your memory, you may not take notes about the picture.</p>"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "mci.task",
+        "fields": {
+            "instructions_time": 15,
+            "task_type": "T",
+            "name": "Detection Samples - I",
+            "task_order": 1,
+            "interaction_time": 60,
+            "primer_time": null,
+            "task_group": 6,
+            "interaction_instructions": "<p>Count the number of times a rectangle appears exactly 3 spaces in any one direction from a heart</p>\r\n<p><img src=\"/media/uploads/detection.jpg\" alt=\"\" width=\"285\" height=\"602\" /></p>",
+            "interaction_workspace_source": "task11",
+            "primer": "",
+            "instructions": "<p>You will have one minute to answer the question on the next page</p>"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 1,
+            "external_id": "rabbit",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 1,
+            "external_id": "donkey",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 1,
+            "external_id": "fish",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 1,
+            "external_id": "bird",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 1,
+            "external_id": "hamster",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 2,
+            "external_id": "nina",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 7,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 2,
+            "external_id": "pinta",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 8,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 2,
+            "external_id": "santa",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 9,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 2,
+            "external_id": "maria",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 10,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 3,
+            "external_id": "odin",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 11,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 3,
+            "external_id": "thor",
+            "experiment_group": 2,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 12,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 3,
+            "external_id": "freya",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 13,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 3,
+            "external_id": "loki",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 14,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 4,
+            "external_id": "luke",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 15,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 4,
+            "external_id": "darth",
+            "experiment_group": null,
+            "in_waiting_room": false
+        }
+    },
+    {
+        "pk": 16,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 4,
+            "external_id": "han",
+            "experiment_group": null,
+            "in_waiting_room": false
+        }
+    },
+    {
+        "pk": 17,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 5,
+            "external_id": "jeff",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 18,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 6,
+            "external_id": "jeff2",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 19,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 6,
+            "external_id": "anita",
+            "experiment_group": null,
+            "in_waiting_room": false
+        }
+    },
+    {
+        "pk": 20,
+        "model": "mci.subject",
+        "fields": {
+            "consent_and_individual_tests_completed": true,
+            "experiment": 6,
+            "external_id": "ishani",
+            "experiment_group": 1,
+            "in_waiting_room": true
+        }
+    },
+    {
+        "pk": 1,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": "2011-04-17 02:57:06",
+            "task_instance_order": 0,
+            "experiment": 1,
+            "experiment_group": 1,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 73,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": "2011-04-18 04:47:19",
+            "task_instance_order": 0,
+            "experiment": 3,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/NiALpU47rU"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": null,
+            "task_instance_order": 0,
+            "experiment": 3,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/xiHZhapBWy"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": null,
+            "task_instance_order": 0,
+            "experiment": 4,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/WRN5ewNqha"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 5,
+            "start_time": "2011-04-25 18:40:19",
+            "task_instance_order": 0,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/B6VUtjEvp7"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": null,
+            "task_instance_order": 0,
+            "experiment": 2,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/LwAAjCYREE"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": null,
+            "task_instance_order": 0,
+            "experiment": 2,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/ZLgVKuTDvy"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 4,
+            "start_time": null,
+            "task_instance_order": 0,
+            "experiment": 1,
+            "experiment_group": 2,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 90,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": null,
+            "task_instance_order": 1,
+            "experiment": 4,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/yW2vQmnKfn"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": "2011-04-17 03:30:48",
+            "task_instance_order": 1,
+            "experiment": 1,
+            "experiment_group": 1,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 14,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": null,
+            "task_instance_order": 1,
+            "experiment": 2,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/TTXdK1PtHJ"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": null,
+            "task_instance_order": 1,
+            "experiment": 1,
+            "experiment_group": 2,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 103,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 10,
+            "start_time": "2011-04-25 18:43:19",
+            "task_instance_order": 1,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/N7wNvkezgi"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": "2011-04-18 04:48:00",
+            "task_instance_order": 1,
+            "experiment": 3,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/0XbI3P7uhg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": null,
+            "task_instance_order": 1,
+            "experiment": 2,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/yjEbxo6Hi0"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 3,
+            "start_time": null,
+            "task_instance_order": 1,
+            "experiment": 3,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/NoBTADVoYe"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": null,
+            "task_instance_order": 2,
+            "experiment": 3,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/mFEENCiU1k"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": null,
+            "task_instance_order": 2,
+            "experiment": 4,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/S3MNIAXW2t"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": "2011-04-17 03:31:21",
+            "task_instance_order": 2,
+            "experiment": 1,
+            "experiment_group": 1,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 104,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 6,
+            "start_time": "2011-04-25 18:48:50",
+            "task_instance_order": 2,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/VLtRZHe97Y"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": null,
+            "task_instance_order": 2,
+            "experiment": 2,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/xNNpiMzttU"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": null,
+            "task_instance_order": 2,
+            "experiment": 2,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/chuXdpykyI"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": null,
+            "task_instance_order": 2,
+            "experiment": 1,
+            "experiment_group": 2,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 75,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 1,
+            "start_time": "2011-04-18 04:51:32",
+            "task_instance_order": 2,
+            "experiment": 3,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/oPte9WClmX"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 7,
+            "start_time": "2011-04-25 18:51:20",
+            "task_instance_order": 3,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/jDYSgQ9uqd"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": null,
+            "task_instance_order": 3,
+            "experiment": 1,
+            "experiment_group": 2,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 76,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": "2011-04-18 16:25:07",
+            "task_instance_order": 3,
+            "experiment": 3,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/baVxF0u7t6"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": null,
+            "task_instance_order": 3,
+            "experiment": 3,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/KuhjnQhFr9"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": "2011-04-17 03:32:37",
+            "task_instance_order": 3,
+            "experiment": 1,
+            "experiment_group": 1,
+            "workspace": ""
+        }
+    },
+    {
+        "pk": 16,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": null,
+            "task_instance_order": 3,
+            "experiment": 2,
+            "experiment_group": 2,
+            "workspace": "http://localhost:9000/VnSl6kpMTM"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": null,
+            "task_instance_order": 3,
+            "experiment": 2,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/YVzuZDuRQp"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 2,
+            "start_time": null,
+            "task_instance_order": 3,
+            "experiment": 4,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/gITgHabqru"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 8,
+            "start_time": "2011-04-25 18:53:50",
+            "task_instance_order": 4,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/9LUevkYosq"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 9,
+            "start_time": "2011-04-25 18:56:20",
+            "task_instance_order": 5,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/vG2SVt3FiI"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "mci.taskinstance",
+        "fields": {
+            "task": 11,
+            "start_time": "2011-04-25 18:58:50",
+            "task_instance_order": 6,
+            "experiment": 6,
+            "experiment_group": 1,
+            "workspace": "http://localhost:9000/IFjkvBfshQ"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_logentry",
+            "name": "Can add log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_logentry",
+            "name": "Can change log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_logentry",
+            "name": "Can delete log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_group",
+            "name": "Can add group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_group",
+            "name": "Can change group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_group",
+            "name": "Can delete group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 10,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_message",
+            "name": "Can add message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 11,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_message",
+            "name": "Can change message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 12,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_message",
+            "name": "Can delete message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_permission",
+            "name": "Can add permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_permission",
+            "name": "Can change permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_permission",
+            "name": "Can delete permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 7,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_user",
+            "name": "Can add user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 8,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_user",
+            "name": "Can change user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 9,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_user",
+            "name": "Can delete user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 13,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contenttype",
+            "name": "Can add content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 14,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contenttype",
+            "name": "Can change content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contenttype",
+            "name": "Can delete content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 25,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_experiment",
+            "name": "Can add experiment",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 26,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_experiment",
+            "name": "Can change experiment",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_experiment",
+            "name": "Can delete experiment",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 28,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_subject",
+            "name": "Can add subject",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 29,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_subject",
+            "name": "Can change subject",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 30,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_subject",
+            "name": "Can delete subject",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 34,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_task",
+            "name": "Can add task",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 35,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_task",
+            "name": "Can change task",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 36,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_task",
+            "name": "Can delete task",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 31,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskgroup",
+            "name": "Can add task group",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 32,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskgroup",
+            "name": "Can change task group",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 33,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskgroup",
+            "name": "Can delete task group",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 37,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskinstance",
+            "name": "Can add task instance",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 38,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskinstance",
+            "name": "Can change task instance",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 39,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskinstance",
+            "name": "Can delete task instance",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 40,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_text",
+            "name": "Can add text",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 41,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_text",
+            "name": "Can change text",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 42,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_text",
+            "name": "Can delete text",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 16,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 17,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 18,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 19,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_site",
+            "name": "Can add site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 20,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_site",
+            "name": "Can change site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 21,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_site",
+            "name": "Can delete site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "jlicht",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2011-04-18 17:38:42",
+            "groups": [],
+            "user_permissions": [],
+            "password": "sha1$3876c$ecca343736285ecc8ce89b4a98e4c8358d6391b7",
+            "email": "jeff@podconsulting.com",
+            "date_joined": "2011-04-07 22:41:17"
+        }
+    }
+]

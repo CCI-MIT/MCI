@@ -1,0 +1,14 @@
+{% extends "mci/base_global.html" %}
+
+{% block content %}
+
+    <div class="centered-content message {% if timer and task_type == 'C' %}conc{% endif%}">
+        {% if message %}{{ message|safe }}{% endif %}
+        <div id="roster-avatars">
+            {% for a in avatars_list %}
+                {% include 'mci/roster_avatar.html' %}
+            {% endfor %}
+        </div><!-- end #avatars -->    
+    </div>
+
+{% endblock %}

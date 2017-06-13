@@ -1,0 +1,31 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+{% load static %}
+
+{% block content %}
+    <div class="centered-content display-name-page">
+        {% if display_name %}
+            We have your name as <span class="current-display-name">{{ display_name }}</span>.  You can change it below.
+        {% else %}
+            What name do you want the other participants to know you by?
+        {% endif %}
+        <form
+            action="{% url 'mci.views.session_display_name_page' seid=seid %}"
+            method="post"
+            class="display-name-form"
+        >
+            {% csrf_token %}
+            {% for field in form %}
+                <span class="fieldWrapper">
+                    {{ field.errors }}
+                    {{ field.label_tag }} {{ field }}
+                </span>
+            {% endfor %}
+            <input type="submit" value="Submit" class="button"/>
+        </form>
+        <div class="warning">
+            We will proceed to the next screen shortly, whether you have chosen a name or not.
+        </div>
+    </div>
+{%  endblock %}

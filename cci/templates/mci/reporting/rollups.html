@@ -1,0 +1,88 @@
+{% if conc_summary %}
+    <span class='summary-table-label'>Concentration Summary</span>
+    <table class="log rollups" cellspacing="0">
+        <thead>
+            <th>Subject</th>
+            <th>Card Clicks</th>
+            <th>Score</th>
+        </thead>
+        {% for external_id, data in conc_summary %}
+            <tr class="{% cycle 'row1' 'row2' %}{% if forloop.last %} last{% endif %}">
+                <td><span class="username {{ external_id|slugify }}">{{ external_id }}</span></td>
+                <td>{{ data.clicks|floatformat }}</td>
+                <td>{{ data.score|floatformat }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+{% if tiles_summary %}
+    <span class='summary-table-label'>Tiles Summary</span>
+    <table class="log rollups" cellspacing="0">
+        <thead>
+            <th>Subject</th>
+            <th>Tile Clicks</th>
+            <th>Unique Tiles Correctly Clicked</th>
+            <th>Unique Tiles Incorrectly Clicked</th>
+            <th>Net Score</th>
+            <th>Correct Corrections of Others</th>
+            <th>Incorrect Corrections of Others</th>
+            <th>Correct Corrections by Others</th>
+            <th>Incorrect Corrections by Others</th>
+            <th>Correct Submit Clicks</th>
+            <th>Incorrect Submit Clicks</th>
+        </thead>
+        {% for external_id, data in tiles_summary %}
+            <tr class="{% cycle 'row1' 'row2' %}{% if forloop.last %} last{% endif %}">
+                <td><span class="username {{ external_id|slugify }}">{{ external_id }}</span></td>
+                <td>{{ data.clicks|floatformat }}</td>
+                <td>{{ data.uniqueTilesCorrectlyClicked|floatformat }}</td>
+                <td>{{ data.uniqueTilesIncorrectlyClicked|floatformat }}</td>
+                <td>{{ data.netScore|floatformat }}</td>
+                <td>{{ data.correctCorrections|floatformat }}</td>
+                <td>{{ data.incorrectCorrections|floatformat }}</td>
+                <td>{{ data.timesCorrectlyCorrected|floatformat }}</td>
+                <td>{{ data.timesIncorrectlyCorrected|floatformat }}</td>
+                <td>{{ data.correctSubmitClicks|floatformat }}</td>
+                <td>{{ data.incorrectSubmitClicks|floatformat }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+{% if squares_summary %}
+    <span class='summary-table-label'>Squares Summary</span>
+    <table class="log rollups" cellspacing="0">
+        <thead>
+            <th colspan="2"></th>
+            <th colspan="3">Matches</th>
+            <th colspan="{{ squares_summary|length|add:"-1" }}">Interactions</th>
+        </thead>
+        <thead>
+            <th>Subject</th>
+            <th>Moves</th>
+            <th>Partial</th>
+            <th>Complete</th>
+            <th>Total</th>
+            {% for external_id, data in squares_summary %}
+                {% if not external_id == "Totals" %}
+                    <th>{{ external_id }}</th>
+                {% endif %}
+            {% endfor %}
+        </thead>
+        {% for external_id, data in squares_summary %}
+            <tr class="{% cycle 'row1' 'row2' %}{% if forloop.last %} last{% endif %}">
+                <td><span class="username {{ external_id|slugify }}">{{ external_id }}</span></td>
+                <td>{{ data.moves|floatformat }}</td>
+                <td>{{ data.partialMatches|floatformat }}</td>
+                <td>{{ data.completeMatches|floatformat }}</td>
+                <td>{{ data.partialMatches|add:data.completeMatches|floatformat }}</td>
+                {% if data.interactions %}
+                    {% for figure in data.interactions %}
+                        <td>{{ figure|floatformat }}</td>
+                    {% endfor %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}

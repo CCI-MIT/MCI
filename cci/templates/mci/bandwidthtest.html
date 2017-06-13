@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Bandwidth Test</title>
+</head>
+
+<script src="/static/js/boomerang/boomerang.js"></script>
+<script src="/static/js/boomerang/plugins/rt.js"></script>
+<script src="/static/js/boomerang/plugins/bw.js"></script>
+<script>
+   BOOMR.init({
+        beacon_url: "/boomerang_handler",
+       	BW: {
+			base_url: "/static/js/boomerang/images/",
+			block_beacon: true,
+			cookie_exp: 0,
+		}
+   });
+
+   BOOMR.subscribe('before_beacon', function(o) {
+   	clearInterval(interval);
+	var html = "";
+	// if(o.t_done) { html += "This page took " + o.t_done + "ms to load<br>"; }
+	if(o.bw) { html += "Your bandwidth to this server is " + parseInt(o.bw/1024) + "kbps (&#x00b1;" + parseInt(o.bw_err*100/o.bw) + "%)<br>"; }
+	if(o.lat) { html += "Your latency to this server is " + parseInt(o.lat) + "&#x00b1;" + o.lat_err + "ms<br>"; }
+
+	document.getElementById('results').innerHTML = html;
+});
+
+   var interval = setInterval(function() { 
+   		document.getElementById('dot').innerHTML = document.getElementById('dot').innerHTML + "."; 
+   	}, 1000);
+</script>
+
+<body>
+	<h1>Connection Speed Tester</h1>
+	<p id="results">We are testing your connection speed to our server.<br/>Please wait - this may take up to 15 seconds<span id="dot">.</span></p>
+</body>
+</html>

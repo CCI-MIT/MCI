@@ -1,0 +1,87 @@
+{% extends "admin/base_site.html" %}
+
+{% load url from future %}
+
+{% block title %}Task Log | Django site admin{% endblock %}
+
+{% block stylesheets %}
+    {{ block.super }}
+    <link rel="stylesheet" href="/static/css/tables.css">
+    <style>
+        {% for key, user in users.items %}
+            .{{ user.name|slugify }} { background-color: {{ user.colorId }}; }
+        {%  endfor %}
+        #content {  padding:10px}
+        .username { color: black; padding: 2px;}
+        .log-header { padding: 20px 0;}
+        .log-header td { padding: 2px 10px;}
+        .log-header td.label { font-weight: bold;}
+        table.log {border: 1px solid #BDBDBD;}
+        table.log {border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+    </style>
+{%  endblock %}
+
+{% block breadcrumbs %}
+    <div id="breadcrumbs">
+            <a href="/admin">Home</a> &rsaquo; <a href="/admin/mci">Mci</a> &rsaquo; <a href="/admin/mci/completedtask/">Completed Tasks</a> &rsaquo; Activity Log
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="log">
+    <h3>Task Activity Log</h3>
+    <table class="log-header">
+        <tr>
+            <td class="label">Session Name</td>
+            <td><a href="{% url 'admin:mci_session_change' completed_task.session_id %}">{{ completed_task.session.name }}</a> (Group #{{ completed_task.session_group }})</td>
+        </tr>
+        <tr>
+            <td class="label">Session Started</td>
+            <td>{{ completed_task.session.start_datetime|date:"r"}}</td>
+        </tr>
+        <tr>
+            <td class="label">Task Name</td>
+            <td><a href="{% url 'admin:mci_task_change' completed_task.task_id%}">{{ completed_task.task.name }}</a></td>
+        </tr>
+        <tr>
+            <td class="label">Completed task</td>
+            <td><a href="{% url 'task_results' completed_task.task_id%}">Results</a></td>
+        </tr>
+        <tr>
+            <td class="label">Scribe</td>
+            <td>{{ scribe }}</td>
+        </tr>
+    {% if completed_task.task.task_type == 'I' %} 
+        <tr>
+            <td class="label">Time to First Cross-Player Correction</td>
+            <td>{{ seconds_before_correction }}</td>
+        </tr>
+        <tr>
+            <td class="label">Team Score (As Shown to Subjects)</td>
+            <td>{{ team_score }}</td>
+        </tr>
+    {% endif %}
+    </table>
+
+    {% include 'mci/reporting/rollups.html' %}
+
+    <table class="log" cellspacing="0">
+        <thead>
+            <th>Date / Time</th>
+            <th>User</th>
+            <th>Chat Name</th>
+            <th>Type</th>
+            <th>Data</th>
+        </thead>
+        {% for item in log %}
+            <tr class="{% cycle 'row1' 'row2' %}">
+                <td>{{ item.timestamp|date:"D, j M o H:i:s.u O" }}</td>
+                <td><span class="username {{ item.subject.external_id|slugify }}">{{ item.subject.external_id}}</span></td>
+                <td>{{ item.chat_name}}</td>
+                <td>{{ item.event }}</td>
+                <td>{{ item.data }}</td>
+            </tr>
+        {%  endfor %}
+    </table>
+    </div>
+{%  endblock %}

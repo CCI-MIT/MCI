@@ -1,0 +1,64 @@
+{% load url from future %}
+
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <title>{% block title %}MCI{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/jquery-ui-1.8.13.custom.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/jquery-ui-1.8.13.custom.min.js"></script>
+    <script src="/static/js/jquery-ui-1.8.14.custom-effects.min.js"></script>
+    <!-- BEGIN TRACKJS -->
+    <script type="text/javascript">var trackJs;</script>
+    <script type="text/javascript">window._trackJs = { token: '16763bf1f62049449345d76ad2b3ce28' };</script>
+    <script type="text/javascript" src="//d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js" crossorigin="anonymous"></script>
+    <!-- END TRACKJS -->
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+
+  <div id="container" {% if task_type %}class="container-{{ task_type }}"{% endif %}>
+
+    <div id="header">
+        {% if not no_header_timer %}
+            {% include 'mci/timer.html' with countdown_elem_id="countdown" label="minutes remaining" %}
+        {% endif %}
+    </div>
+
+    <div id="main">
+        <div id="content">
+
+            {% block errors %}
+                {% if error_message %}
+                    <div id="errors">
+                        {{ error_message|urlize }}
+                    </div>
+                {% endif %}
+            {% endblock %}
+
+            {% block content %}{% endblock %}
+        </div>
+        <div id="footer">
+            Licensing info goes here.
+        </div>
+    </div>
+    
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+{#  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>#}
+
+  <!-- scripts concatenated and minified via ant build script-->
+{#  <script src="js/plugins.js"></script>#}
+{#  <script src="js/script.js"></script>#}
+  <!-- end scripts-->
+
+</body>
+</html>

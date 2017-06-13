@@ -1,0 +1,145 @@
+<script type="text/javascript">
+
+    {% if completed_task.id %}
+        var completed_task_id = {{ completed_task.id }};
+    {%  endif %}
+    var view_results_only = {% if view_results_only  %} true {% else %} false {%  endif %};
+    var subject_external_id = '{{ subject_external_id }}';
+    var previous_update  = {};
+    var editing_grid_item = 0;
+
+    function update_grid_from_server() {
+        if (typeof completed_task_id == "undefined")
+            return;
+        data = {'focus' : editing_grid_item, 'subject_external_id' : subject_external_id};
+        $.post("/mci/grid/list/" + completed_task_id, data,
+                  function(json) {
+                      if (json.result) {
+                          $.each(json.data, function(key, val) {
+                            if (previous_update[key] != val) {
+                                $("#grid-input-" + key).val(val);
+                                if (view_results_only) {
+                                    $("#grid-input-" + key).addClass(json.correct[key] ? "right" : "wrong");
+                                } else {
+                                    $("#grid-input-" + key).effect("highlight", {}, 1500);
+                                }
+                            }
+                          });
+                          $(".grid-element").removeClass("editing");
+                          $.each(json.focus, function(key, val) {
+                            if (key != subject_external_id)
+                                $("#grid-input-" + val).addClass("editing");
+                          });
+                          previous_update = json.data;
+                          if (view_results_only) {
+                              $(".grid-element").not(".right, .wrong").addClass("blank");
+                          }
+                      }
+                  }, 'json');
+    }
+
+    function send_update(target) {
+        var new_val = $(target).val();
+        var tgi_id = $(target).attr("id").replace("grid-input-","");
+        previous_update[tgi_id] = new_val;
+        data = {
+            'subject_external_id' : subject_external_id,
+            'answer' : new_val,
+            'completed_task_id' : completed_task_id,
+            'task_grid_item_id' : tgi_id
+        };
+        $.post("/mci/grid/save",data);
+        editing_grid_item = 0;
+    }
+
+    $(function() {
+        {# Don't run any of the javascript synchronization logic if we're only viewing the results.  #}
+        {# This also prevents the viewer from inadvertently changing the results                     #}
+        if (view_results_only) {
+            update_grid_from_server();
+        } else {
+            if (!(typeof completed_task_id == undefined)) {
+                $('.grid-element').bind('keydown', function(e) {
+                    if (e.which == 13)
+                        send_update(this);
+                    else
+                        editing_grid_item = $(this).attr("id").replace("grid-input-","");
+                });
+                $('.grid-element').blur(function(e) {
+                    send_update(this);
+                });
+
+                update_grid_from_server();
+                setInterval('update_grid_from_server()',1000);
+            }
+        }
+    });
+</script>
+
+<div id="task-workspace-grid">
+{% if completed_task.task.grid_css %}
+    <style media="all" type="text/css">
+        {{ completed_task.task.grid_css|removetags:"p"|safe }}
+    </style>
+{% endif %}
+{% if view_results_only %}
+    <div id="task-workspace-grid-results">
+        <table>
+            <tr>
+                <td>Correct:</td>
+                <td>{{ completed_task.grid_correct_count }}</td>
+            </tr>
+            <tr>
+                <td>Incorrect:</td>
+                <td>{{ completed_task.grid_incorrect_count }}</td>
+            </tr>
+            <tr>
+                <td>Blank:</td>
+                <td>{{ completed_task.grid_blank_count }}</td>
+            </tr>
+            <tr>
+                <td>Score:</td>
+                <td>{{ completed_task.grid_percent_correct }}</td>
+            </tr>
+        </table>
+    </div>
+{% endif %}
+{% if completed_task.task.grid_header_instructions %}
+    <div id="task-workspace-grid-instructions">
+        {{ completed_task.task.grid_header_instructions|safe }}
+    </div>
+{% endif %}
+<table cellpadding="0" cellspacing="0">
+{%  for y in completed_task.task.grid_items %}
+    <tr>
+    {% for x in y %}
+        {%  if not x or x.readonly %}
+            <td colspan="2" class="row-{{ x.row }} col-{{ x.column }} label-cell readonly-cell">
+            {%  if x.image_label_url %}
+                <img src='/{{ x.image_label_url }}'/>
+            {% else %}
+                {% firstof x.text_label "&nbsp;" %}
+            {% endif %}
+            </td>
+        {% else %}
+            <td class="row-{{ x.row }} col-{{ x.column }} label-cell">
+            {% if x.image_label_url %}
+                <img src="/{{ x.image_label_url }}"/>
+            {% else %}
+                {{ x.text_label }}
+            {% endif %}
+            </td>
+            <td class="row-{{ x.row }} col-{{ x.column }} value-cell">
+                <input type="text" 
+                       class="grid-element" 
+                       id="grid-input-{{ x.id }}" 
+                       size="{% firstof x.field_width "10" %}" 
+                       {% if not subject_can_edit %}disabled{% endif %}
+                >
+            </td>
+        {% endif %}
+    {% endfor %}
+    </tr>
+{%  endfor %}
+</table>
+</div>

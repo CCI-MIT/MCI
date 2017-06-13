@@ -1,0 +1,57 @@
+#gameboard
+{
+    position: relative;
+    padding: 0;
+//    overflow: hidden;
+}
+
+#catch-layer
+{
+    position: relative;
+    min-height: 40px;
+    padding: 0;
+    width: 576px;
+    height: 296px;
+    top: 112px;
+    left: 0px;
+    z-index: 10000;
+
+    background-color: transparent;    
+}
+
+#gameboard .piece
+{
+    position: absolute;
+}
+
+#gameboard .piece .avg-vertex
+{
+    width: 2px;
+    margin-left: -1px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: blue;
+    position: relative;
+}
+
+#gameboard .piece canvas.fill
+{
+}
+
+#gameboard .piece canvas.stroke
+{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#preplay-timer
+{
+    top: 60px;
+    z-index: 15000;
+}
+
+#next-round
+{
+    top: 100px;
+}

@@ -1,0 +1,217 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block content %}
+
+    <script type="text/javascript">
+        var spacing = 45;
+
+        $(function() {
+
+            var $etherpadMain = $("iframe#etherpad-main");
+
+            window.addEventListener('message', function(e) {
+                var obj = JSON.parse(e.data);
+                if (obj.messageType == 'scribeInfoRequest') {
+                    {% if scribe_author_id == None %}
+                        var scribeDefined = false;
+                    {% else %}
+                        var scribeDefined = true;
+                    {% endif %}
+                    var msgObj = { 'messageType'    : 'scribeInfo' 
+                                 , 'scribeDefined'  : scribeDefined
+                                 , 'scribeAuthorId' : '{{ scribe_author_id }}'
+                                 , 'userAuthorId'   : '{{ user_author_id }}'
+                                 };
+                    var msg = JSON.stringify(msgObj, 4, null);
+                    console.log("Sending 'scribeInfo' to the iframe.");
+                    $etherpadMain.get(0).contentWindow.postMessage(msg, "*");
+                }
+            });
+
+            $etherpadMain.load(function() {
+                {% if not completed_task.task.chat_enabled %}
+                    var hideChatMsgObj = { 'messageType': 'hideChat' };
+                    var hideChatMsg = JSON.stringify(hideChatMsgObj, 4, null);
+                    console.log("Sending 'hideChat' to the iframe.");
+                    this.contentWindow.postMessage(hideChatMsg, "*");
+                {% endif %}
+                {% if completed_task.task.task_type == 'G' %}
+                    var isGridTaskMsgObj = { 'messageType': 'isGridTask' };
+                    var isGridTaskMsg = JSON.stringify(isGridTaskMsgObj, 4, null);
+                    console.log("Sending 'isGridTask' to the iframe.");
+                    this.contentWindow.postMessage(isGridTaskMsg, "*");
+                {% endif %}
+                {% if view_results_only %}
+                    var msgObj = { 'messageType': 'isResultsPage' };
+                    var msg = JSON.stringify(msgObj, 4, null);
+                    console.log("Sending 'isResultsPage' to the iframe.");
+                    this.contentWindow.postMessage(msg, "*");
+                {% endif %}
+            });
+
+            var $workspaceContent = $("#task-workspace-content");
+            var information = $("#task-information");
+            var $workspaceGrid = $("#task-workspace-grid");
+            {% if completed_task.task.task_type == 'C' or completed_task.task.task_type == 'I' or completed_task.task.task_type == 'S' %}
+                var cards_workspace = $("#task-workspace-cards");
+            {% endif %}
+
+            var $instructions = $(".instructions");
+
+            function setCorrectHeights() {
+                var wh = $(window).height();
+                var ih = $instructions.css('display') == 'none' ? 0 : $instructions.height() + 9;
+                $etherpadMain.css("height",       wh - ih - 178);
+                $("#content").css("height",       wh - ih - 145 + (ih ? 54 : 0));
+                $workspaceContent.css("height",   wh - ih - 176);
+                if ($workspaceGrid.height() > wh - ih - 176) {
+                    $workspaceGrid.css("height",   wh - ih - 176);
+                    $workspaceGrid.css("overflow", "scroll");                                        
+                }
+                information.css("height",         wh - ih - 186);
+                {% if completed_task.task.task_type == 'C' or completed_task.task.task_type == 'I' or completed_task.task.task_type == 'S' %}
+                    cards_workspace.css("height", wh - ih - 177);
+                {% endif %}
+            }
+
+            var instructions_width = {% if completed_task.task.instructions_width  %} {{ completed_task.task.instructions_width }} {% else %} 0 {%  endif %};
+            if (instructions_width > 0) {
+                information.width({{ completed_task.task.instructions_width }});
+            } else {
+                information.width(250);
+            }
+
+            {% if completed_task.task.task_type == 'C' or completed_task.task.task_type == 'I' or completed_task.task.task_type == 'S' %}
+                information.addClass('cards');
+            {% endif %}
+
+            $(window).resize(function() { setCorrectHeights(); });
+            setCorrectHeights();
+
+            var setCorrectWidths;
+            var alsoResize;
+            function workspaceWidthNew() {
+                console.log("wcWidth: ", $workspaceContent.width());
+                console.log("infOutWidth: ", information.outerWidth());
+                return Math.max(0, $workspaceContent.width() - information.outerWidth() - 10);
+            }
+            switch ('{{ completed_task.task.task_type }}') {
+                case 'T':
+                    setCorrectWidths = function() {
+                        $etherpadMain.width(workspaceWidthNew());
+                        try {
+                            var $etherpadMainEditorContainer = $("#etherpad-main").contents().find("#editorcontainer");
+                            var workspaceWidthAfter = workspaceWidthNew();
+                            $etherpadMainEditorContainer.width(workspaceWidthAfter - 10);
+                        } catch(e) {}
+                    }
+                    alsoResize = "iframe#etherpad-main";
+                    break;
+
+                case 'G':
+                    setCorrectWidths = function() {
+                        var workspaceWidthAfter = workspaceWidthNew() - $etherpadMain.outerWidth();
+                        $workspaceGrid.width(workspaceWidthAfter);
+                    }
+                    alsoResize = "#task-workspace-grid";
+                    break;
+
+                case 'C':
+                case 'I':
+                case 'S':
+                    setCorrectWidths = function() {
+                        cards_workspace.width(workspaceWidthNew() - $etherpadMain.outerWidth() - 35);
+                    }
+                    alsoResize = "#task-workspace-cards";
+                    break;
+            }
+
+            if (setCorrectWidths) {
+                setCorrectWidths();
+                setTimeout(setCorrectWidths, 500);
+            }
+
+            information.resizable({
+                alsoResize: alsoResize,
+                handles: {
+                    e: document.getElementById("information-drag")
+                },
+                minWidth: 250,
+                minHeight: information.height(),
+                maxHeight: information.height(),
+                resize: function(event, ui) {
+                    setCorrectWidths();
+                    setCorrectHeights();
+                }
+            });
+
+            $(window).resize(setCorrectWidths);
+
+            $(".instructions-toggle").click(function() {
+                $(".instructions-toggle").toggle();
+            });
+            $(".instructions-toggle.show").click(function() {
+                $instructions.show();
+                setCorrectWidths();
+                setCorrectHeights();
+            });
+            $(".instructions-toggle.hide").click(function() {
+                $instructions.hide();
+                setCorrectWidths();
+                setCorrectHeights();
+            });
+        });
+        
+    </script>
+    <div id="task-header">
+        <span class="task-group-name">{{ completed_task.task.task_group.name }}</span>
+        ::
+        <span class="task-name">{{ completed_task.task.name }} ({{ completed_task.task.task_order }} of {{ completed_task.task.task_group.task_set.count }})</span>
+        ::
+         <span class="task-duration">{{ completed_task.task.pretty_interaction_time }}</span>
+        <a href='#' class="show instructions-toggle">show instructions</a>
+        <a href='#' class="hide instructions-toggle">hide instructions</a>
+        <div class="instructions">
+            <em>Instructions:</em>
+            {{ completed_task.task.instructions|safe }}
+        </div>
+        {% if scribe_author_id %}
+            <span class="scribe-notification">
+                Only {% if subject_can_edit %} you {% else %} {{ scribe_display_name }} {% endif %} can type in the workspace below
+            </span>
+        {% endif %}
+    </div>
+    <div id="task-workspace-content">
+        <div id="task-information">
+            <a
+              class="popup-link"
+              href="#"
+              onclick='window.open(
+                "{% url 'mci.views.workspace_popup' task_id=completed_task.task.id %}",
+                "instructions_popup",
+                "height=600, width=800, scrollbars=1")'
+              >new window</a>
+            {{ completed_task.task.interaction_instructions|safe }}
+            {% if private_information %}
+                {{ private_information|safeseq|join:'' }}
+            {%  endif %}
+            <div id="information-drag" class="ui-resizable-handle"> </div>
+        </div>
+
+        {% if completed_task.task.task_type != 'C' and completed_task.task.task_type != 'I' and completed_task.task.task_type != 'S' %}
+            <iframe id="etherpad-main" src="{{ iframe_src }}"></iframe>
+        {% endif %}
+
+        {% if completed_task.task.task_type == 'G' %}
+            {% include "mci/task_workspace_grid.html" %}
+        {% endif %}
+
+        {% if completed_task.task.task_type == "C" or completed_task.task.task_type == "I" or completed_task.task.task_type == "S" %}
+            {% include "mci/task_workspace_cards.html" %}
+        {% endif %}
+
+    </div>
+{%  endblock %}
+

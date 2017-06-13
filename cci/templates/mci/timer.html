@@ -1,0 +1,132 @@
+<div id="timer">
+
+    <div id="{{ countdown_elem_id }}">
+        {% if countdown_default_text %}
+            {{ countdown_default_text }}
+        {% endif %}
+    </div>
+    
+    <script src="/static/js/countdown.js?v={{ version }}"></script>
+    <script type="text/javascript">
+
+        $(function() {
+            
+            function debugLog(msg) {
+                if ({{ timerDebug }}) {
+                    console.log(msg);
+                }
+            }
+
+            // Template var 'countdown_elem_id' is the id we have given
+            // (above) to the countdown clock we're rendering.  It should be
+            // defined in the include tag that includes this template, using
+            // the 'with' syntax.
+            var countdown_elem_id = '{{ countdown_elem_id }}';
+            // Template var 'label is .....
+            var label = '{{ label }}';
+            // These values may or may not be custom-assigned using 'with'
+            // syntax.
+            var begin_after = '{{ begin_after }}';
+            var count_from = '{{ count_from }}';
+            // Template var 'timeout_function_name' is the name of a Javascript
+            // function defined in the global scope.  This JS function  should
+            // be defined in the template that includes this one, and the 
+            // template var should be defined in the actual include tag, using
+            // the 'with' syntax.)
+            //
+            // The JS function should accept one parameter, a callback function
+            // that takes no parameters.  I'm doing it this way so that the
+            // callback can be a redirect -- so that we can do stuff on the page
+            // when the countdown finishes, then still redirect to some 'next_url'
+            // that we have received from the server while counting down.
+            var timeoutFunction;
+            {% if timeout_function_name %}
+                timeoutFunction = {{ timeout_function_name }};
+            {% endif %}
+            // Template var 'next_url' is a URL to which we should be redirected
+            // after the countdown finishes.  We create a function which
+            // redirects to it and we pass this function as a continuation to
+            // timeoutFunction.
+            var next_url = '{{ next_url }}';
+            // Template var 'checkin_url' is the URL we will call out to
+            // periodically to check whether our other variables should be
+            // overwritten. 
+            var checkin_url = '{{ checkin_url }}';
+
+            var countdown;
+
+            function countDown(begin_after, count_from, next_url, redirect_immediately) {
+                if (!begin_after) {
+                    begin_after = 0;
+                }
+
+                debugLog("'countDown' called for " + countdown_elem_id + 
+                            ".  counting from: " + count_from + ".");
+
+                if (!countdown) {
+                    countdown = javascript_countdown();
+                    countdown.init(begin_after, count_from, countdown_elem_id, label);
+                } else {
+                    countdown.stop();
+                    countdown.start(begin_after, count_from);
+                }
+
+                // TODO: document, here and elsewhere, that if next_url
+                // is an empty string we just don't redirect.  Which is
+                // the behavior we want for when the preplay countdown
+                // finishes.
+                function redirectIfRedirectUrl() {
+                    if (next_url) {
+                        window.location = next_url;
+                    }
+                }
+                var onTimeout;
+                if (redirect_immediately || !timeoutFunction) {
+                    debugLog("Going to redirectIfRedirectUrl");
+                    onTimeout = redirectIfRedirectUrl;
+                } else {
+                    debugLog("Going to call redirectIfRedirectUrl as callback from timeoutFunction");
+                    onTimeout = function() {
+                        timeoutFunction(redirectIfRedirectUrl);
+                    }
+                }
+                setTimeout(onTimeout, (begin_after + count_from) * 1000);
+            }
+
+            // If we have everything we need to render a timer without
+            // calling the validation URL, do it!
+            if (count_from && (timeoutFunction || next_url)) {
+
+                debugLog("Page itself (for " + countdown_elem_id + ") is going to count from " +
+                            count_from + " starting in " + begin_after + " seconds; url: " + next_url);
+
+                countDown(begin_after, count_from, next_url);
+            }
+
+            debugLog("Validation URL for " + countdown_elem_id + ": " + checkin_url);
+
+            if (checkin_url) {
+                function validate() {
+
+                    debugLog("Calling validation URL.");
+
+                    $.getJSON(checkin_url, {}, function(data) {
+
+                        debugLog("Validation callback's 'data' parameter (for " + countdown_elem_id + "):");
+                        debugLog(data);
+
+                        if (data && data['count_from']) {
+                            countDown(
+                                data['begin_after'],
+                                data['count_from'],
+                                data['next_url'],
+                                data['redirect_immediately']);                             
+                        }
+                        setTimeout(validate, 10 * 1000);
+                    });
+                }
+                validate();
+            }
+        });
+    </script>
+</div>

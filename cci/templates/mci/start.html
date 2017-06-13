@@ -1,0 +1,28 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block content %}
+    <div class="centered-content">
+        <form action="{% url 'mci.views.register' %}" method="post">
+            {% csrf_token %}
+            <label for="seid">{% if message %}{{ message|safe }}{% endif %}</label>
+            <input name="seid" id="seid" type="text" class="text"/>
+            <input type="submit" value="Start" class="button"/>
+        </form>
+    </div>
+
+	<script src="/static/js/boomerang/boomerang.js"></script>
+	<script src="/static/js/boomerang/plugins/rt.js"></script>
+	<script src="/static/js/boomerang/plugins/bw.js"></script>
+	<script>
+	   BOOMR.init({
+	        beacon_url: "/boomerang/start",
+	       	BW: {
+				base_url: "/static/js/boomerang/images/",
+				block_beacon: true,
+			}
+	   });
+	</script>
+
+{%  endblock %}

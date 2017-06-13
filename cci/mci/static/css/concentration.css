@@ -1,0 +1,21 @@
+﻿#gameboard .card
+{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: 4px;
+    float: left;
+    clear: none;
+    background-color: #aCaCaC;
+    text-index: 90px;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#gameboard .card.clear
+{
+    clear: left;
+}

@@ -1,0 +1,132 @@
+{% extends "mci/base_global.html" %}
+
+{% load url from future %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+
+    {% if video %}
+        <div id="message-left-sidebar">
+            <h3>Allowing Flash</h3>
+            <p>If a dialog asks you to let Flash use your camera, click 'Allow'.  If you cannot click 'Allow', follow these steps:</p>
+            <ol>
+                <li>Go to...
+                    <ul>
+                        <li>Control Panel (Windows)</li>
+                        <li>System Preferences (Mac)</li>
+                    </ul>
+                <li>Go to 'Flash Player' >> 'Camera and Mic' >> 'Camera and Microphone Settings by Site'</li>
+                <li>Find or add 'static.opentok.com' and give it the 'Allow' setting.</li>
+            </ol>
+        </div> 
+    {% endif %}
+
+ 
+    <div class="centered-content waiting-room">
+        {% if has_cards_task %}
+            {% include 'mci/avatar.html' %}
+        {% endif %}
+        <div class="message">
+            Your session is scheduled to start in
+        </div>
+        <div id="countdown">{{ countdown }}</div>
+        <div id="caveat">(may start sooner if all participants are present)</div>
+        {% if has_cards_task %}
+            <script type="text/javascript">
+        
+                var avatars = {{ avatars_json|safe }};
+          
+                // TODO:  does this stuff need to be in a jQuery call?
+                $(function () {
+                });
+          
+            </script>
+        {% endif %}
+    </div>
+
+    <script src="/static/js/countdown.js?v={{ version }}"></script>
+    <script type="text/javascript">
+
+        var countdown = javascript_countdown();
+        trackJs && trackJs.track("Entering waiting room");
+
+        function startingShortly() {
+            clearTimeout(timer);
+            $(".waiting-room .message").html("Session configuring.  Entering session in...");
+            $("#caveat").html("");
+        }
+        function startingNow() {
+            clearTimeout(timer);
+            $(".waiting-room .message").html("Session ready!  Entering session in...");
+            $("#caveat").html("");
+        }
+        function clear() {
+            clearTimeout(timer);
+            countdown.stop();
+            $("#countdown").html("");
+            $("#caveat").html("");
+            $(".waiting-room .message").html("Session configuring.");
+        }
+        function timeup() {
+            clear();
+            $(".waiting-room .message").html("Session configuring.");
+	       checkStartTime();
+        }
+        function error() {
+            trackJs && trackJs.track("Error in waiting room");
+            clear();
+            $(".waiting-room .message").text("We encountered an error starting the session.");
+            $(".waiting-room .message").attr("id", "errors");
+            
+        }
+        countdown.init(0, {{ seconds_to_start }}, 'countdown', 'minutes');
+        var timer = setTimeout(
+            timeup,
+            {{ seconds_to_start }}000);
+        checkStartTime();
+
+        function checkStartTime()
+        {
+            var timeStamp = new Date().getTime();
+            $.getJSON(
+                '{% url 'mci.views.waiting_room_checkin' subject_external_id %}',
+                { time : timeStamp },
+                function(data) {
+                    console.log(JSON.stringify(data));
+                    if (data['error'] == true) {
+                        error();
+                    } else {
+                        if (data['timetostart'] > 0) {
+                            countdown.start(0, data['timetostart']);
+                        }
+                        if (data['status'] == 'C') {
+                            startingShortly();
+                        }
+                        if (data['status'] == 'S') {
+                            startingNow();
+                            setTimeout("window.location = '{{ start_url }}'", (data['timetostart'] + 2) * 1000);
+                        } else {
+                            setTimeout(checkStartTime, {{ checkin_interval }}000);
+                        }
+                    }
+                }
+            );
+        }
+    </script>
+
+    <script src="/static/js/boomerang/boomerang.js"></script>
+    <script src="/static/js/boomerang/plugins/rt.js"></script>
+    <script src="/static/js/boomerang/plugins/bw.js"></script>
+    <script>
+       BOOMR.init({
+            beacon_url: "/boomerang/waitingroom/{{ subject_external_id }}",
+            BW: {
+                base_url: "/static/js/boomerang/images/",
+                block_beacon: true,
+            }
+       });
+    </script>
+
+{% endblock %}

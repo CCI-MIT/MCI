@@ -1,0 +1,17 @@
+/* Fix bug in admin or grappelli layout. A style is automatically applied to the th tag in the inline editing
+   table based on the field name. For the field "Session Group", this adds "session group" to the class, which
+   picks up an unrelated style that forces a min-width of 946px. This stops that. */
+.th.session.group
+{
+    min-width: 0 !important
+}
+
+.grp-td.position
+{
+    display:none !important;
+}
+
+#id_group_creation_matrix {
+    height: 450px;
+    width: 150px;
+}

@@ -1,0 +1,2020 @@
+diff -crb --new-file original-ep/.gitignore updated-ep/.gitignore
+*** original-ep/.gitignore	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/.gitignore	1969-12-31 19:00:00.000000000 -0500
+***************
+*** 1,19 ****
+- node_modules
+- settings.json
+- !settings.json.template
+- APIKEY.txt
+- SESSIONKEY.txt
+- bin/abiword.exe
+- bin/node.exe
+- etherpad-lite-win.zip
+- var/dirty.db
+- bin/convertSettings.json
+- *~
+- *.patch
+- src/static/js/jquery.js
+- npm-debug.log
+- *.DS_Store
+- .ep_initialized
+- *.crt
+- *.key
+- bin/etherpad-1.deb
+--- 0 ----
+diff -crb --new-file original-ep/.idea/inspectionProfiles/profiles_settings.xml updated-ep/.idea/inspectionProfiles/profiles_settings.xml
+*** original-ep/.idea/inspectionProfiles/profiles_settings.xml	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/.idea/inspectionProfiles/profiles_settings.xml	2017-06-07 05:18:03.000000000 -0400
+***************
+*** 0 ****
+--- 1,7 ----
++ <component name="InspectionProjectProfileManager">
++   <settings>
++     <option name="useProjectProfile" value="false" />
++     <option name="USE_PROJECT_PROFILE" value="false" />
++     <version value="1.0" />
++   </settings>
++ </component>
+\ No newline at end of file
+diff -crb --new-file original-ep/.idea/misc.xml updated-ep/.idea/misc.xml
+*** original-ep/.idea/misc.xml	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/.idea/misc.xml	2017-06-07 05:18:03.000000000 -0400
+***************
+*** 0 ****
+--- 1,4 ----
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5.1 (/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/python3.5)" project-jdk-type="Python SDK" />
++ </project>
+\ No newline at end of file
+diff -crb --new-file original-ep/.idea/modules.xml updated-ep/.idea/modules.xml
+*** original-ep/.idea/modules.xml	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/.idea/modules.xml	2017-06-07 05:18:03.000000000 -0400
+***************
+*** 0 ****
+--- 1,8 ----
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="ProjectModuleManager">
++     <modules>
++       <module fileurl="file://$PROJECT_DIR$/.idea/updated-ep.iml" filepath="$PROJECT_DIR$/.idea/updated-ep.iml" />
++     </modules>
++   </component>
++ </project>
+\ No newline at end of file
+diff -crb --new-file original-ep/.idea/updated-ep.iml updated-ep/.idea/updated-ep.iml
+*** original-ep/.idea/updated-ep.iml	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/.idea/updated-ep.iml	2017-06-07 05:18:37.000000000 -0400
+***************
+*** 0 ****
+--- 1,19 ----
++ <?xml version="1.0" encoding="UTF-8"?>
++ <module type="PYTHON_MODULE" version="4">
++   <component name="NewModuleRootManager">
++     <content url="file://$MODULE_DIR$" />
++     <orderEntry type="inheritedJdk" />
++     <orderEntry type="sourceFolder" forTests="false" />
++   </component>
++   <component name="TemplatesService">
++     <option name="TEMPLATE_CONFIGURATION" value="Mako" />
++     <option name="TEMPLATE_FOLDERS">
++       <list>
++         <option value="$MODULE_DIR$/src/templates" />
++       </list>
++     </option>
++   </component>
++   <component name="TestRunnerService">
++     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
++   </component>
++ </module>
+\ No newline at end of file
+diff -crb --new-file original-ep/.idea/workspace.xml updated-ep/.idea/workspace.xml
+*** original-ep/.idea/workspace.xml	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/.idea/workspace.xml	2017-06-07 05:22:08.000000000 -0400
+***************
+*** 0 ****
+--- 1,235 ----
++ <?xml version="1.0" encoding="UTF-8"?>
++ <project version="4">
++   <component name="ChangeListManager">
++     <list default="true" id="5ce6d7fb-5643-4954-87ec-bb454c4128a7" name="Default" comment="" />
++     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++     <option name="TRACKING_ENABLED" value="true" />
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++     <option name="LAST_RESOLUTION" value="IGNORE" />
++   </component>
++   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
++   <component name="FileEditorManager">
++     <leaf>
++       <file leaf-file-name="Minify.js" pinned="false" current-in-tab="false">
++         <entry file="file://$PROJECT_DIR$/src/node/utils/Minify.js">
++           <provider selected="true" editor-type-id="text-editor">
++             <state relative-caret-position="8954">
++               <caret line="407" column="22" lean-forward="true" selection-start-line="407" selection-start-column="22" selection-end-line="407" selection-end-column="22" />
++               <folding>
++                 <element signature="n#!!doc" expanded="true" />
++               </folding>
++             </state>
++           </provider>
++         </entry>
++       </file>
++       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
++         <entry file="file://$PROJECT_DIR$/src/package.json">
++           <provider selected="true" editor-type-id="text-editor">
++             <state relative-caret-position="0">
++               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++               <folding />
++             </state>
++           </provider>
++         </entry>
++       </file>
++     </leaf>
++   </component>
++   <component name="IdeDocumentHistory">
++     <option name="CHANGED_PATHS">
++       <list>
++         <option value="$PROJECT_DIR$/src/node/utils/Minify.js" />
++       </list>
++     </option>
++   </component>
++   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
++   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
++   <component name="JsGulpfileManager">
++     <detection-done>true</detection-done>
++     <sorting>DEFINITION_ORDER</sorting>
++   </component>
++   <component name="ProjectFrameBounds">
++     <option name="x" value="76" />
++     <option name="y" value="23" />
++     <option name="width" value="2484" />
++     <option name="height" value="1417" />
++   </component>
++   <component name="ProjectView">
++     <navigator currentView="ProjectPane" proportions="" version="1">
++       <flattenPackages />
++       <showMembers />
++       <showModules />
++       <showLibraryContents />
++       <hideEmptyPackages />
++       <abbreviatePackageNames />
++       <autoscrollToSource />
++       <autoscrollFromSource />
++       <sortByType />
++       <manualOrder />
++       <foldersAlwaysOnTop value="true" />
++     </navigator>
++     <panes>
++       <pane id="ProjectPane">
++         <subPane>
++           <PATH>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++           </PATH>
++           <PATH>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="src" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++           </PATH>
++           <PATH>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="src" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="node" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++           </PATH>
++           <PATH>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="updated-ep" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="src" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="node" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++             <PATH_ELEMENT>
++               <option name="myItemId" value="utils" />
++               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++             </PATH_ELEMENT>
++           </PATH>
++         </subPane>
++       </pane>
++       <pane id="Scope" />
++       <pane id="Scratches" />
++     </panes>
++   </component>
++   <component name="PropertiesComponent">
++     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
++     <property name="settings.editor.splitter.proportion" value="0.2" />
++     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
++     <property name="WebServerToolWindowFactoryState" value="false" />
++   </component>
++   <component name="RunDashboard">
++     <option name="ruleStates">
++       <list>
++         <RuleState>
++           <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++         </RuleState>
++         <RuleState>
++           <option name="name" value="StatusDashboardGroupingRule" />
++         </RuleState>
++       </list>
++     </option>
++   </component>
++   <component name="RunManager">
++     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
++       <method />
++     </configuration>
++   </component>
++   <component name="ShelveChangesManager" show_recycled="false">
++     <option name="remove_strategy" value="false" />
++   </component>
++   <component name="TaskManager">
++     <task active="true" id="Default" summary="Default task">
++       <changelist id="5ce6d7fb-5643-4954-87ec-bb454c4128a7" name="Default" comment="" />
++       <created>1496827083576</created>
++       <option name="number" value="Default" />
++       <option name="presentableId" value="Default" />
++       <updated>1496827083576</updated>
++     </task>
++     <servers />
++   </component>
++   <component name="ToolWindowManager">
++     <frame x="76" y="23" width="2484" height="1417" extended-state="1" />
++     <layout>
++       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
++       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++     </layout>
++   </component>
++   <component name="TypeScriptGeneratedFilesManager">
++     <option name="processedProjectFiles" value="true" />
++   </component>
++   <component name="VcsContentAnnotationSettings">
++     <option name="myLimit" value="2678400000" />
++   </component>
++   <component name="XDebuggerManager">
++     <breakpoint-manager />
++     <watches-manager />
++   </component>
++   <component name="editorHistoryManager">
++     <entry file="file://$PROJECT_DIR$/src/node/utils/Minify.js">
++       <provider selected="true" editor-type-id="text-editor">
++         <state relative-caret-position="8954">
++           <caret line="407" column="22" lean-forward="true" selection-start-line="407" selection-start-column="22" selection-end-line="407" selection-end-column="22" />
++           <folding>
++             <element signature="n#!!doc" expanded="true" />
++           </folding>
++         </state>
++       </provider>
++     </entry>
++     <entry file="file://$PROJECT_DIR$/src/package.json">
++       <provider selected="true" editor-type-id="text-editor">
++         <state relative-caret-position="0">
++           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++           <folding />
++         </state>
++       </provider>
++     </entry>
++   </component>
++ </project>
+\ No newline at end of file
+diff -crb --new-file original-ep/bin/installDeps.sh updated-ep/bin/installDeps.sh
+*** original-ep/bin/installDeps.sh	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/bin/installDeps.sh	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 1,5 ****
+  #!/bin/sh
+! 
+  #Move to the folder where ep-lite is installed
+  cd `dirname $0`
+  
+--- 1,5 ----
+  #!/bin/sh
+! export PATH=$PATH:/usr/local/node/bin
+  #Move to the folder where ep-lite is installed
+  cd `dirname $0`
+  
+***************
+*** 24,39 ****
+  
+  #Is node installed?
+  #not checking io.js, default installation creates a symbolic link to node
+! hash node > /dev/null 2>&1 || {
+!   echo "Please install node.js ( http://nodejs.org )" >&2
+!   exit 1
+! }
+  
+  #Is npm installed?
+! hash npm > /dev/null 2>&1 || {
+!   echo "Please install npm ( http://npmjs.org )" >&2
+!   exit 1
+! }
+  
+  #check npm version
+  NPM_VERSION=$(npm --version)
+--- 24,39 ----
+  
+  #Is node installed?
+  #not checking io.js, default installation creates a symbolic link to node
+! #hash node > /dev/null 2>&1 || {
+! #  echo "Please install node.js ( http://nodejs.org )" >&2
+! #  exit 1
+! #}
+  
+  #Is npm installed?
+! #hash npm > /dev/null 2>&1 || {
+! #  echo "Please install npm ( http://npmjs.org )" >&2
+! #  exit 1
+! #}
+  
+  #check npm version
+  NPM_VERSION=$(npm --version)
+***************
+*** 50,58 ****
+  if hash iojs 2>/dev/null; then
+    IOJS_VERSION=$(iojs --version)
+  fi
+! if [ ! $NODE_V_MINOR = "v0.10" ] && [ ! $NODE_V_MINOR = "v0.11" ] && [ ! $NODE_V_MINOR = "v0.12" ]; then
+    if [ ! $IOJS_VERSION ]; then
+!     echo "You're running a wrong version of node, or io.js is not installed. You're using $NODE_VERSION, we need v0.10.x, v0.11.x or v0.12.x" >&2
+      exit 1
+    fi
+  fi
+--- 50,58 ----
+  if hash iojs 2>/dev/null; then
+    IOJS_VERSION=$(iojs --version)
+  fi
+! if [ ! $NODE_V_MINOR = "v0.10" ] && [ ! $NODE_V_MINOR = "v0.11" ] && [ ! $NODE_V_MINOR = "v0.12" ] && [ ! $NODE_V_MAIN = "v4" ] && [ ! $NODE_V_MAIN = "v5" ]; then
+    if [ ! $IOJS_VERSION ]; then
+!     echo "You're running a wrong version of node, or io.js is not installed. You're using $NODE_VERSION, we need node v0.10.x or higher" >&2
+      exit 1
+    fi
+  fi
+diff -crb --new-file original-ep/bin/rebuildPad.js updated-ep/bin/rebuildPad.js
+*** original-ep/bin/rebuildPad.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/bin/rebuildPad.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 79,84 ****
+--- 79,87 ----
+      newPad.pool.numToAttrib = oldPad.pool.numToAttrib;
+      for(var curRevNum = 0; curRevNum <= newRevHead; curRevNum++) {
+        db.db.get("pad:" + padId + ":revs:" + curRevNum, function(err, rev) {
++         if (rev.meta) {
++           throw "The specified revision number could not be found.";
++         }
+          var newRevNum = ++newPad.head;
+          var newRevId = "pad:" + newPad.id + ":revs:" + newRevNum;
+          db.db.set(newRevId, rev);
+diff -crb --new-file original-ep/bin/run.sh updated-ep/bin/run.sh
+*** original-ep/bin/run.sh	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/bin/run.sh	2017-05-15 06:48:31.000000000 -0400
+***************
+*** 1,6 ****
+  #!/bin/sh
+! 
+  #Move to the folder where ep-lite is installed
+  cd `dirname $0`
+  
+  #Was this script started in the bin folder? if yes move out
+--- 1,8 ----
+  #!/bin/sh
+! export PATH=$PATH:/usr/local/node/bin
+  #Move to the folder where ep-lite is installed
++ echo "Moving to directory: "
++ echo $0
+  cd `dirname $0`
+  
+  #Was this script started in the bin folder? if yes move out
+***************
+*** 27,33 ****
+       exit 1
+     fi
+  fi
+! 
+  #prepare the enviroment
+  bin/installDeps.sh $* || exit 1
+  
+--- 29,35 ----
+       exit 1
+     fi
+  fi
+! echo "Hitting the deps"
+  #prepare the enviroment
+  bin/installDeps.sh $* || exit 1
+  
+***************
+*** 35,39 ****
+  echo "Started Etherpad..."
+  
+  SCRIPTPATH=`pwd -P`
+- node $SCRIPTPATH/node_modules/ep_etherpad-lite/node/server.js $*
+  
+--- 37,41 ----
+  echo "Started Etherpad..."
+  
+  SCRIPTPATH=`pwd -P`
+  
++ node --max-old-space-size=4096 $SCRIPTPATH/node_modules/ep_etherpad-lite/node/server.js $*
+\ No newline at end of file
+diff -crb --new-file original-ep/src/node/db/API.js updated-ep/src/node/db/API.js
+*** original-ep/src/node/db/API.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/db/API.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 473,481 ****
+      end = pad.chatHead;
+      }
+      
+!     if(start >= chatHead && chatHead > 0)
+      {
+!       callback(new customError("start is higher or equal to the current chatHead","apierror"));
+        return;
+      }
+      if(end > chatHead)
+--- 473,481 ----
+      end = pad.chatHead;
+      }
+      
+!     if(start > chatHead)
+      {
+!       callback(new customError("start is higher than the current chatHead","apierror"));
+        return;
+      }
+      if(end > chatHead)
+***************
+*** 499,505 ****
+  
+  Example returns:
+  
+! {code: 0, message:"ok", data: null
+  {code: 1, message:"padID does not exist", data: null}
+  */
+  exports.appendChatMessage = function(padID, text, authorID, time, callback)
+--- 499,505 ----
+  
+  Example returns:
+  
+! {code: 0, message:"ok", data: null}
+  {code: 1, message:"padID does not exist", data: null}
+  */
+  exports.appendChatMessage = function(padID, text, authorID, time, callback)
+***************
+*** 511,524 ****
+      return;
+    }
+  
+!   //get the pad
+!   getPadSafe(padID, true, function(err, pad)
+    {
+!     if(ERR(err, callback)) return;
+      
+-     pad.appendChatMessage(text, authorID, parseInt(time));
+      callback();
+-   });
+  }
+  
+  /*****************/
+--- 511,528 ----
+      return;
+    }
+   
+!   // if time is not an integer value
+!   if(time === undefined || !is_int(time))
+    {
+!     // set time to current timestamp
+!     time = new Date().getTime();
+!   }
+! 
+!   var padMessage = require("ep_etherpad-lite/node/handler/PadMessageHandler.js");
+!   // save chat message to database and send message to all connected clients
+!   padMessage.sendChatMessageToPadClients(parseInt(time), authorID, text, padID);
+  
+    callback();
+  }
+  
+  /*****************/
+diff -crb --new-file original-ep/src/node/db/DB.js updated-ep/src/node/db/DB.js
+*** original-ep/src/node/db/DB.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/db/DB.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 19,25 ****
+   * limitations under the License.
+   */
+  
+! var ueberDB = require("ueberDB");
+  var settings = require("../utils/Settings");
+  var log4js = require('log4js');
+  
+--- 19,25 ----
+   * limitations under the License.
+   */
+  
+! var ueberDB = require("ueberdb2");
+  var settings = require("../utils/Settings");
+  var log4js = require('log4js');
+  
+diff -crb --new-file original-ep/src/node/db/Pad.js updated-ep/src/node/db/Pad.js
+*** original-ep/src/node/db/Pad.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/db/Pad.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 188,194 ****
+--- 188,198 ----
+            db.getSub("pad:"+_this.id+":revs:"+keyRev, ["meta", "atext"], function(err, _atext)
+            {
+              if(ERR(err, callback)) return;
++             try {
+                atext = Changeset.cloneAText(_atext);
++             } catch (e) {
++               return callback(e);
++             } 
+              callback();
+            });
+          },
+diff -crb --new-file original-ep/src/node/handler/PadMessageHandler.js updated-ep/src/node/handler/PadMessageHandler.js
+*** original-ep/src/node/handler/PadMessageHandler.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/handler/PadMessageHandler.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 375,380 ****
+--- 375,393 ----
+    var text = message.data.text;
+    var padId = sessioninfos[client.id].padId;
+  
++   exports.sendChatMessageToPadClients(time, userId, text, padId);
++ }
++ 
++ /**
++  * Sends a chat message to all clients of this pad
++  * @param time the timestamp of the chat message
++  * @param userId the author id of the chat message
++  * @param text the text of the chat message
++  * @param padId the padId to send the chat message to
++  */
++ exports.sendChatMessageToPadClients = function (time, userId, text, padId) {
++ 
++ 
+    var pad;
+    var userName;
+  
+***************
+*** 1354,1359 ****
+--- 1367,1377 ----
+      messageLogger.warn("Dropped message, changeset request has no granularity!");
+      return;
+    }
++   if(Math.floor(message.data.granularity) !== message.data.granularity)
++   {
++     messageLogger.warn("Dropped message, changeset request granularity is not an integer!");
++     return;
++   }
+    if(message.data.start == null)
+    {
+      messageLogger.warn("Dropped message, changeset request has no start!");
+diff -crb --new-file original-ep/src/node/hooks/express/padurlsanitize.js updated-ep/src/node/hooks/express/padurlsanitize.js
+*** original-ep/src/node/hooks/express/padurlsanitize.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/hooks/express/padurlsanitize.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 16,21 ****
+--- 16,22 ----
+          if(sanitizedPadId != padId)
+          {
+            var real_url = sanitizedPadId;
++           real_url = encodeURIComponent(real_url);
+            var query = url.parse(req.url).query;
+            if ( query ) real_url += '?' + query;
+            res.header('Location', real_url);
+diff -crb --new-file original-ep/src/node/hooks/express/specialpages.js updated-ep/src/node/hooks/express/specialpages.js
+*** original-ep/src/node/hooks/express/specialpages.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/hooks/express/specialpages.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 41,51 ****
+        isReadOnly: isReadOnly
+      });
+  
+!     res.send(eejs.require("ep_etherpad-lite/templates/pad.html", {
+!       req: req,
+!       toolbar: toolbar,
+!       isReadOnly: isReadOnly
+!     }));
+    });
+  
+    //serve timeslider.html under /p/$padname/timeslider
+--- 41,54 ----
+        isReadOnly: isReadOnly
+      });
+  
+!     var version = require('fs').readFileSync('../version.txt');
+!     res.send(eejs.require( "ep_etherpad-lite/templates/pad.html"
+!                          , { req     : req
+!                            , toolbar : toolbar
+!                            , version : version
+!                            }
+!                          )
+!     );
+    });
+  
+    //serve timeslider.html under /p/$padname/timeslider
+diff -crb --new-file original-ep/src/node/redisTestRem.js updated-ep/src/node/redisTestRem.js
+*** original-ep/src/node/redisTestRem.js	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/src/node/redisTestRem.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 0 ****
+--- 1,51 ----
++ #!/usr/bin/env node
++ 
++ var log4js = require('log4js')
++   , async = require('async')
++   , stats = require('./stats')
++   ;
++ 
++ var settings
++   , db
++   , plugins
++   , hooks;
++ var npm = require("npm/lib/npm.js");
++ 
++ async.waterfall([
++   // load npm
++   function(callback) {
++     npm.load({}, function(er) {
++       callback(er)
++     })
++   },
++   
++   // load everything
++   function(callback) {
++     settings = require('./utils/Settings');
++     db = require('./db/DB');
++     callback();
++   },
++   
++   //initalize the database
++   function (callback)
++   {
++     db.init(callback);
++   },
++   function() {
++     db = require('./db/DB').db;
++ 
++     var keySet = "pad:hellothere:revs";
++ 
++     var numKeys = Number(process.argv[2]);
++     console.log("numKeys: " + numKeys);
++     var i = 0;
++     
++     console.log("deleting keys!");
++     for (var i=0; i < numKeys; i++) {
++         var key = keySet + ":" + i;
++         db.remove(key);
++     }
++     console.log("done deleting keys.");
++     setTimeout(process.exit, 3000);
++   }
++ ]);
+diff -crb --new-file original-ep/src/node/redisTestSetGet.js updated-ep/src/node/redisTestSetGet.js
+*** original-ep/src/node/redisTestSetGet.js	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/src/node/redisTestSetGet.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 0 ****
+--- 1,62 ----
++ #!/usr/bin/env node
++ 
++ var log4js = require('log4js')
++   , async = require('async')
++   , stats = require('./stats')
++   ;
++ 
++ var settings
++   , db
++   , plugins
++   , hooks;
++ var npm = require("npm/lib/npm.js");
++ 
++ async.waterfall([
++   // load npm
++   function(callback) {
++     npm.load({}, function(er) {
++       callback(er)
++     })
++   },
++   
++   // load everything
++   function(callback) {
++     settings = require('./utils/Settings');
++     db = require('./db/DB');
++     callback();
++   },
++   
++   //initalize the database
++   function (callback)
++   {
++     db.init(callback);
++   },
++   function() {
++     db = require('./db/DB').db;
++ 
++     var keySet = "pad:hellothere:revs";
++ 
++     var numKeys = Number(process.argv[2]);
++     console.log("numKeys: " + numKeys);
++     var i = 0;
++     
++     console.time("INSERT");
++ 
++     function iter() {
++         if (i < numKeys) {
++             if (i % 100 == 0) {
++                 console.log("i: " + i);
++             }
++             var key = keySet + ":" + i;
++             db.set(key, "fasolatidofasolatidofasolatidofasolatidofasolatidofasolatido", function() {
++               db.get(key, function() { setImmediate(iter); });
++             });
++             i++;
++         } else {
++             console.timeEnd("INSERT");
++             setTimeout(process.exit, 3000);
++         }
++     }
++     iter();
++   }
++ ]);
+diff -crb --new-file original-ep/src/node/server.js updated-ep/src/node/server.js
+*** original-ep/src/node/server.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/server.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 59,64 ****
+--- 59,65 ----
+    //initalize the database
+    function (callback)
+    {
++     console.info("Installing database.");
+      db.init(callback);
+    },
+  
+***************
+*** 73,86 ****
+  
+      // Call loadSettings hook
+      hooks.aCallAll("loadSettings", { settings: settings });
+! 
+      callback();
+    },
+  
+    //initalize the http server
+    function (callback)
+    {
+      hooks.callAll("createServer", {});
+      callback(null);  
+    }
+  ]);
+--- 74,89 ----
+  
+      // Call loadSettings hook
+      hooks.aCallAll("loadSettings", { settings: settings });
+!     console.info("Done with settings.");
+      callback();
+    },
+  
+    //initalize the http server
+    function (callback)
+    {
++     console.info("initializing http server");
+      hooks.callAll("createServer", {});
++     console.info("done http server");
+      callback(null);  
+    }
+  ]);
+diff -crb --new-file original-ep/src/node/utils/ExportHtml.js updated-ep/src/node/utils/ExportHtml.js
+*** original-ep/src/node/utils/ExportHtml.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/utils/ExportHtml.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 416,422 ****
+          lineContent: lineContent,
+          apool: apool,
+          attribLine: attribLines[i],
+!         text: textLines[i]
+        }
+  
+        var lineContentFromHook = hooks.callAllStr("getLineHTMLForExport", context, " ", " ", "");
+--- 416,423 ----
+          lineContent: lineContent,
+          apool: apool,
+          attribLine: attribLines[i],
+!         text: textLines[i],
+!         padId: pad.id
+        }
+  
+        var lineContentFromHook = hooks.callAllStr("getLineHTMLForExport", context, " ", " ", "");
+diff -crb --new-file original-ep/src/node/utils/Minify.js updated-ep/src/node/utils/Minify.js
+*** original-ep/src/node/utils/Minify.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/utils/Minify.js	2017-06-07 05:20:39.000000000 -0400
+***************
+*** 23,31 ****
+  var settings = require('./Settings');
+  var async = require('async');
+  var fs = require('fs');
+  var CleanCSS = require('clean-css');
+! var jsp = require("uglify-js").parser;
+! var pro = require("uglify-js").uglify;
+  var path = require('path');
+  var plugins = require("ep_etherpad-lite/static/js/pluginfw/plugins");
+  var RequireKernel = require('etherpad-require-kernel');
+--- 23,31 ----
+  var settings = require('./Settings');
+  var async = require('async');
+  var fs = require('fs');
++ var StringDecoder = require('string_decoder').StringDecoder;
+  var CleanCSS = require('clean-css');
+! var uglifyJS = require("uglify-js");
+  var path = require('path');
+  var plugins = require("ep_etherpad-lite/static/js/pluginfw/plugins");
+  var RequireKernel = require('etherpad-require-kernel');
+***************
+*** 402,412 ****
+  
+  function compressJS(values)
+  {
+!   var complete = values.join("\n");
+!   var ast = jsp.parse(complete); // parse code and get the initial AST
+!   ast = pro.ast_mangle(ast); // get a new AST with mangled names
+!   ast = pro.ast_squeeze(ast); // get an AST with compression optimizations
+!   return pro.gen_code(ast); // compressed code here
+  }
+  
+  function compressCSS(values)
+--- 402,411 ----
+  
+  function compressJS(values)
+  {
+!   var decoder = new StringDecoder('utf8');
+!   var code = decoder.write(content); // convert from buffer to string
+!   var codeMinified = uglifyJS.minify(code, {fromString: true}).code;
+!   return codeMinified;
+  }
+  
+  function compressCSS(values)
+diff -crb --new-file original-ep/src/node/utils/Settings.js updated-ep/src/node/utils/Settings.js
+*** original-ep/src/node/utils/Settings.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/node/utils/Settings.js	2017-05-15 06:51:24.000000000 -0400
+***************
+*** 153,158 ****
+--- 153,163 ----
+  exports.abiword = null;
+  
+  /**
++  * The path of the libreoffice executable
++  */
++ exports.soffice = null;
++ 
++ /**
+   * The path of the tidy executable
+   */
+  exports.tidyHtml = null;
+***************
+*** 177,182 ****
+--- 182,192 ----
+   */
+  exports.loadTest = false;
+  
++ /**
++  * Enable indentation on new lines
++  */
++ exports.indentationOnNewLine = true;
++ 
+  /*
+  * log4js appender configuration
+  */
+***************
+*** 218,225 ****
+    try
+    {
+      var rootPath = path.resolve(npm.dir, '..');
+!     var ref = fs.readFileSync(rootPath + "/.git/HEAD", "utf-8");
+!     var refPath = rootPath + "/.git/" + ref.substring(5, ref.indexOf("\n"));
+      version = fs.readFileSync(refPath, "utf-8");
+      version = version.substring(0, 7);
+    }
+--- 228,241 ----
+    try
+    {
+      var rootPath = path.resolve(npm.dir, '..');
+!     if (fs.lstatSync(rootPath + '/.git').isFile()) {
+!       rootPath = fs.readFileSync(rootPath + '/.git', "utf8");
+!       rootPath = rootPath.split(' ').pop().trim();
+!     } else {
+!       rootPath += '/.git';
+!     }
+!     var ref = fs.readFileSync(rootPath + "/HEAD", "utf-8");
+!     var refPath = rootPath + "/" + ref.substring(5, ref.indexOf("\n"));
+      version = fs.readFileSync(refPath, "utf-8");
+      version = version.substring(0, 7);
+    }
+***************
+*** 239,251 ****
+    // Discover where the settings file lives
+    var settingsFilename = argv.settings || "settings.json";
+  
+    if (path.resolve(settingsFilename)===settingsFilename) {
+      settingsFilename = path.resolve(settingsFilename);
+    } else {
+      settingsFilename = path.resolve(path.join(exports.root, settingsFilename));
+    }
+  
+!   var settingsStr;
+    try{
+      //read the settings sync
+      settingsStr = fs.readFileSync(settingsFilename).toString();
+--- 255,275 ----
+    // Discover where the settings file lives
+    var settingsFilename = argv.settings || "settings.json";
+  
++ 
++   // Discover if a credential file exists
++   var credentialsFilename = argv.credentials || "credentials.json";
++ 
+    if (path.resolve(settingsFilename)===settingsFilename) {
+      settingsFilename = path.resolve(settingsFilename);
+    } else {
+      settingsFilename = path.resolve(path.join(exports.root, settingsFilename));
+    }
+  
+!   if (path.resolve(credentialsFilename)===credentialsFilename) {
+!     credentialsFilename = path.resolve(credentialsFilename);
+!   }
+! 
+!   var settingsStr, credentialsStr;
+    try{
+      //read the settings sync
+      settingsStr = fs.readFileSync(settingsFilename).toString();
+***************
+*** 253,260 ****
+--- 277,292 ----
+      console.warn('No settings file found. Continuing using defaults!');
+    }
+  
++   try{
++     //read the credentials sync
++     credentialsStr = fs.readFileSync(credentialsFilename).toString();
++   } catch(e){
++     // Doesn't matter if no credentials file found..
++   }
++ 
+    // try to parse the settings
+    var settings;
++   var credentials;
+    try {
+      if(settingsStr) {
+        settingsStr = jsonminify(settingsStr).replace(",]","]").replace(",}","}");
+***************
+*** 265,270 ****
+--- 297,307 ----
+      process.exit(1);
+    }
+  
++   if(credentialsStr) {
++     credentialsStr = jsonminify(credentialsStr).replace(",]","]").replace(",}","}");
++     credentials = JSON.parse(credentialsStr);
++   }
++ 
+    //loop trough the settings
+    for(var i in settings)
+    {
+***************
+*** 291,296 ****
+--- 328,359 ----
+      }
+    }
+  
++   //loop trough the settings
++   for(var i in credentials)
++   {
++     //test if the setting start with a low character
++     if(i.charAt(0).search("[a-z]") !== 0)
++     {
++       console.warn("Settings should start with a low character: '" + i + "'");
++     }
++ 
++     //we know this setting, so we overwrite it
++     //or it's a settings hash, specific to a plugin
++     if(exports[i] !== undefined || i.indexOf('ep_')==0)
++     {
++       if (_.isObject(credentials[i]) && !_.isArray(credentials[i])) {
++         exports[i] = _.defaults(credentials[i], exports[i]);
++       } else {
++         exports[i] = credentials[i];
++       }
++     }
++     //this setting is unkown, output a warning and throw it away
++     else
++     {
++       console.warn("Unknown Setting: '" + i + "'. This setting doesn't exist or it was removed");
++     }
++   }
++ 
+    log4js.configure(exports.logconfig);//Configure the logging appenders
+    log4js.setGlobalLogLevel(exports.loglevel);//set loglevel
+    process.env['DEBUG'] = 'socket.io:' + exports.loglevel; // Used by SocketIO for Debug
+***************
+*** 335,339 ****
+  
+  // initially load settings
+  exports.reloadSettings();
+- 
+- 
+--- 398,400 ----
+diff -crb --new-file original-ep/src/node_modules/ueberDB/redis_db.js updated-ep/src/node_modules/ueberDB/redis_db.js
+*** original-ep/src/node_modules/ueberDB/redis_db.js	1969-12-31 19:00:00.000000000 -0500
+--- updated-ep/src/node_modules/ueberDB/redis_db.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 0 ****
+--- 1,148 ----
++ /**
++  * 2011 Peter 'Pita' Martischka
++  *
++  * Licensed under the Apache License, Version 2.0 (the "License");
++  * you may not use this file except in compliance with the License.
++  * You may obtain a copy of the License at
++  *
++  *      http://www.apache.org/licenses/LICENSE-2.0
++  *
++  * Unless required by applicable law or agreed to in writing, software
++  * distributed under the License is distributed on an "AS-IS" BASIS,
++  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++  * See the License for the specific language governing permissions and
++  * limitations under the License.
++  */
++ 
++ var async = require("async");
++ var redis = require("redis");
++ 
++ /* settings:
++     {
++       host: 
++       port:
++       socket:
++       database:
++       password:
++       client_options
++     }
++ 
++ */
++ 
++ exports.database = function(settings) {
++     this.client = null;
++     this.settings = settings || {};
++ }
++ 
++ exports.database.prototype.auth = function(callback){
++   if (this.settings.password)
++     this.client.auth(this.settings.password,callback);
++   callback();
++ }
++ 
++ exports.database.prototype.select = function(callback){
++   if (this.settings.database)
++     return this.client.select(this.settings.database,callback);
++   callback();
++ }
++ 
++ exports.database.prototype.init = function(callback) {
++   if (this.settings.socket) {
++     this.client = redis.createClient(this.settings.socket, 
++     this.settings.client_options);
++   } else {
++     this.client = redis.createClient(this.settings.port,
++     this.settings.host, this.settings.client_options);
++   }
++   
++   this.client.database = this.settings.database;
++ 	async.waterfall([this.auth.bind(this), this.select.bind(this)],callback);
++ }
++ 
++ exports.database.prototype.get = function (key, callback) {
++     this.client.get(key, callback);
++ }
++ 
++ exports.database.prototype.findKeys = function (key, notKey, callback) {
++     // As redis provides only limited support for getting a list of all
++     // available keys we have to limit key and notKey here.
++     // See http://redis.io/commands/keys
++     if(notKey==null || notKey==undefined) {
++         this.client.KEYS(key, callback);
++     } else if(notKey=="*:*:*") {
++         // restrict key to format "text:*"
++         var matches = /^([^:]+):\*$/.exec(key);
++         if(matches) {
++             this.client.SMEMBERS("ueberDB:keys:" + matches[1], callback);
++         } else {
++             callback(new customError("redis db only supports key patterns like pad:* when notKey is set to *:*:*","apierror"), null);
++         }
++     } else {
++         callback(new customError("redis db currently only supports *:*:* as notKey","apierror"), null);
++     }
++ }
++ 
++ exports.database.prototype.set = function (key, value, callback) {
++     var matches = /^([^:]+):([^:]+)$/.exec(key);
++     if(matches) {
++         this.client.sadd(new Array("ueberDB:keys:" + matches[1], matches[0]));
++     }
++ 
++     var matchesEvent = /^pad:([^:]+):(revs|chat):([^:]+)$/.exec(key);
++     if (matchesEvent) {
++         var keySet = "pad:" + matchesEvent[1] + ":" + matchesEvent[2];
++         this.client.sadd(new Array(keySet, key));
++     }
++     
++     this.client.set(key,value,callback);
++ }
++ 
++ exports.database.prototype.remove = function (key, callback) {
++     var matches = /^([^:]+):([^:]+)$/.exec(key);
++     if(matches) {
++         this.client.srem(new Array("ueberDB:keys:" + matches[1], matches[0]));
++     }
++ 
++     var matchesEvent = /^pad:([^:]+):(revs|chat):([^:]+)$/.exec(key);
++     if (matchesEvent) {
++         var keySet = "pad:" + matchesEvent[1] + ":" + matchesEvent[2];
++         this.client.srem(new Array(keySet, key));
++     }
++ 
++     this.client.del(key,callback);
++ }
++ 
++ exports.database.prototype.doBulk = function (bulk, callback) {
++     var multi = this.client.multi();
++ 
++     for(var i in bulk) {
++         var matches = /^([^:]+):([^:]+)$/.exec(bulk[i].key);
++         var matchesEvent = /^pad:([^:]+):(revs|chat):([^:]+)$/.exec(bulk[i].key);
++         if(bulk[i].type == "set") {
++             if(matches) {
++                 multi.sadd(new Array("ueberDB:keys:" + matches[1], matches[0]));
++             }
++             if (matchesEvent) {
++                 var keySet = "pad:" + matchesEvent[1] + ":" + matchesEvent[2];
++                 multi.sadd(new Array(keySet, bulk[i].key));
++             }
++             multi.set(bulk[i].key, bulk[i].value);
++         } else if(bulk[i].type == "remove") {
++             if(matches) {
++                 multi.srem(new Array("ueberDB:keys:" + matches[1], matches[0]));
++             }
++             if (matchesEvent) {
++                 var keySet = "pad:" + matchesEvent[1] + ":" + matchesEvent[2];
++                 multi.srem(new Array(keySet, bulk[i].key));
++             }
++             multi.del(bulk[i].key);
++         }
++     }
++ 
++     multi.exec(callback);
++ }
++ 
++ exports.database.prototype.close = function(callback) {
++     this.client.end();
++     callback()
++ }
+diff -crb --new-file original-ep/src/package.json updated-ep/src/package.json
+*** original-ep/src/package.json	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/package.json	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 15,25 ****
+                        "etherpad-yajsml"         : "0.0.2",
+                        "request"                 : "2.55.0",
+                        "etherpad-require-kernel" : "1.0.9",
+!                       "resolve"                 : "1.1.6",
+!                       "socket.io"               : "1.3.5",
+!                       "ueberDB"                 : "0.2.15",
+!                       "express"                 : "4.12.3",
+!                       "express-session"         : "1.11.1",
+                        "cookie-parser"           : "1.3.4",
+                        "async"                   : "0.9.0",
+                        "clean-css"               : "3.1.9",
+--- 15,25 ----
+                        "etherpad-yajsml"         : "0.0.2",
+                        "request"                 : "2.55.0",
+                        "etherpad-require-kernel" : "1.0.9",
+!                       "resolve"                 : "1.1.7",
+!                       "socket.io"               : "1.3.7",
+!                       "ueberdb2"                : "0.3.0",
+!                       "express"                 : "4.13.4",
+!                       "express-session"         : "1.13.0",
+                        "cookie-parser"           : "1.3.4",
+                        "async"                   : "0.9.0",
+                        "clean-css"               : "3.1.9",
+***************
+*** 40,46 ****
+                        "languages4translatewiki" : "0.1.3",
+                        "swagger-node-express"    : "2.1.3",
+                        "channels"                : "0.0.4",
+!                       "jsonminify"              : "0.2.3",
+                        "measured"                : "1.0.0",
+                        "mocha"                   : "2.2.4",
+                        "supertest"               : "0.15.0"
+--- 40,46 ----
+                        "languages4translatewiki" : "0.1.3",
+                        "swagger-node-express"    : "2.1.3",
+                        "channels"                : "0.0.4",
+!                       "jsonminify"              : "0.4.1",
+                        "measured"                : "1.0.0",
+                        "mocha"                   : "2.2.4",
+                        "supertest"               : "0.15.0"
+diff -crb --new-file original-ep/src/static/css/pad.css updated-ep/src/static/css/pad.css
+*** original-ep/src/static/css/pad.css	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/css/pad.css	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 35,40 ****
+--- 35,50 ----
+    padding: 5px;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid #ccc;
++   
++   display: block !important;
++   right: 0px !important;
++   width: 180px;
++   height: 150px;
++   overflow-y: scroll;
++   background: rgba(0,0,0,0.7);
++   border-radius: 6px;
++ 
++   pointer-events: none;
+  }
+  #otherusers {
+    max-height: 400px;
+***************
+*** 54,62 ****
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding-top: 4px;
+-   width: 100%;
+    white-space: nowrap;
+    height: 32px;
+  }
+  .toolbar ul {
+    position: absolute;
+--- 64,76 ----
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding-top: 4px;
+    white-space: nowrap;
+    height: 32px;
++   width: 191px;
++   float: right;
++   border-left-width: 1px;
++   border-left-style: solid;
++   border-left-color: rgb(204, 204, 204);
+  }
+  .toolbar ul {
+    position: absolute;
+***************
+*** 186,198 ****
+    outline: none;
+  }
+  .toolbar ul.menu_left {
+!   left:0px;
+!   right:250px;
+  }
+  
+  .toolbar ul.menu_right {
+    right:0px;
+  }
+  
+  li[data-key=showusers] > a {
+    min-width: 30px;
+--- 200,222 ----
+    outline: none;
+  }
+  .toolbar ul.menu_left {
+!   display :none;
+!   // left:0px;
+!   // right:250px;
+  }
+  
+  .toolbar ul.menu_right {
+    right:0px;
+  }
++ .toolbar ul.menu_right li
++ {
++   display: none;
++ }
++ 
++ .toolbar ul.menu_right li[data-key="showusers"]
++ {
++     display: block;
++ }
+  
+  li[data-key=showusers] > a {
+    min-width: 30px;
+***************
+*** 216,221 ****
+--- 240,246 ----
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
++   display: none;
+  
+    /* Required to fix toolbar on top/bottom of the screen on iOS: */
+    overflow: scroll;
+***************
+*** 404,409 ****
+--- 429,437 ----
+  #myusernameform input.editable {
+    border: 1px solid #444
+  }
++ #myuser .myusernameedithoverable {
++   color: #fff;
++ }
+  #myuser .myusernameedithoverable:hover {
+    background: white;
+    color: black;
+***************
+*** 456,462 ****
+    height: 26px;
+    vertical-align: middle;
+    padding: 0 2px;
+!   color: #333;
+  }
+  #otheruserstable .swatch {
+    border: 1px solid #000;
+--- 484,490 ----
+    height: 26px;
+    vertical-align: middle;
+    padding: 0 2px;
+!   color: #fff;
+  }
+  #otheruserstable .swatch {
+    border: 1px solid #000;
+***************
+*** 557,563 ****
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+!   display: none;
+  }
+  #chattext {
+    background-color: white;
+--- 585,602 ----
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+!   display: block;
+! 
+!   background-color: #f1f1f1 !important;
+!   right: 0px !important;
+!   top: 201px !important;
+!   -webkit-border-radius: 0px !important;
+!   -moz-border-radius: 0px !important;
+!   border-radius: 0px !important;
+!   height: auto !important;
+!   border: none !important;
+!   border-left: 1px solid #ccc !important;
+!   width: 185px !important;
+  }
+  #chattext {
+    background-color: white;
+***************
+*** 568,574 ****
+    position: absolute;
+    right: 0px;
+    left: 0px;
+!   top: 25px;
+    bottom: 25px;
+    z-index: 1002;
+  }
+--- 607,613 ----
+    position: absolute;
+    right: 0px;
+    left: 0px;
+!   top: 0px;
+    bottom: 25px;
+    z-index: 1002;
+  }
+***************
+*** 926,932 ****
+  #connectivity,
+  #users {
+    position: absolute;
+!   top: 38px;
+    right: 20px;
+    display: none;
+    z-index: 500;
+--- 965,971 ----
+  #connectivity,
+  #users {
+    position: absolute;
+!   top: 40px;
+    right: 20px;
+    display: none;
+    z-index: 500;
+***************
+*** 934,940 ****
+  .stickyChat {
+    background-color: #f1f1f1 !important;
+    right: 0px !important;
+!   top: 37px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+--- 973,979 ----
+  .stickyChat {
+    background-color: #f1f1f1 !important;
+    right: 0px !important;
+!   top: 201px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+***************
+*** 972,977 ****
+--- 1011,1017 ----
+    padding:5px !important;
+    border-left: 1px solid #ccc !important;
+  }
++ /* We aren't using these settings
+  
+  @media screen and (max-width: 600px) {
+    .toolbar ul li.separator {
+***************
+*** 1044,1050 ****
+    }
+  }
+  
+- /* Mobile devices */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+      #users {
+        top: auto;
+--- 1084,1089 ----
+***************
+*** 1058,1069 ****
+        left: -73px;
+        top:auto !important;
+        bottom:33px !important;
+-       /* #mycolorpicker: width -#users: width */;
+      }
+      #editorcontainer {
+        margin-bottom: 33px
+      }
+-     /* cancel non-mobile border (will be defined on ".toolbar ul.menu_left" bellow) */
+      .toolbar {
+        border-bottom: 0;
+      }
+--- 1097,1106 ----
+***************
+*** 1151,1157 ****
+        right:10px !important;
+      }
+  }
+! 
+  #passwordRequired{
+    display:none;
+  }
+--- 1188,1194 ----
+        right:10px !important;
+      }
+  }
+! */
+  #passwordRequired{
+    display:none;
+  }
+diff -crb --new-file original-ep/src/static/css/timeslider.css updated-ep/src/static/css/timeslider.css
+*** original-ep/src/static/css/timeslider.css	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/css/timeslider.css	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 232,238 ****
+  .timeslider-bar #editbar {
+    border-bottom: none;
+    float: right;
+!   width: 180px;
+  }
+  .timeslider-bar h1 {
+    margin: 5px
+--- 232,238 ----
+  .timeslider-bar #editbar {
+    border-bottom: none;
+    float: right;
+!   width: auto;
+  }
+  .timeslider-bar h1 {
+    margin: 5px
+Binary files original-ep/src/static/img/backgrad.gif and updated-ep/src/static/img/backgrad.gif differ
+Binary files original-ep/src/static/img/connectingbar.gif and updated-ep/src/static/img/connectingbar.gif differ
+Binary files original-ep/src/static/img/crushed_button_depressed.png and updated-ep/src/static/img/crushed_button_depressed.png differ
+Binary files original-ep/src/static/img/crushed_button_undepressed.png and updated-ep/src/static/img/crushed_button_undepressed.png differ
+Binary files original-ep/src/static/img/crushed_current_location.png and updated-ep/src/static/img/crushed_current_location.png differ
+Binary files original-ep/src/static/img/etherpad_lite_icons.png and updated-ep/src/static/img/etherpad_lite_icons.png differ
+Binary files original-ep/src/static/img/fileicons.gif and updated-ep/src/static/img/fileicons.gif differ
+Binary files original-ep/src/static/img/gritter.png and updated-ep/src/static/img/gritter.png differ
+Binary files original-ep/src/static/img/leftarrow.png and updated-ep/src/static/img/leftarrow.png differ
+Binary files original-ep/src/static/img/loading.gif and updated-ep/src/static/img/loading.gif differ
+Binary files original-ep/src/static/img/pause.png and updated-ep/src/static/img/pause.png differ
+Binary files original-ep/src/static/img/pencil.png and updated-ep/src/static/img/pencil.png differ
+Binary files original-ep/src/static/img/pencil@2x.png and updated-ep/src/static/img/pencil@2x.png differ
+Binary files original-ep/src/static/img/play.png and updated-ep/src/static/img/play.png differ
+Binary files original-ep/src/static/img/roundcorner_left.gif and updated-ep/src/static/img/roundcorner_left.gif differ
+Binary files original-ep/src/static/img/roundcorner_right.gif and updated-ep/src/static/img/roundcorner_right.gif differ
+Binary files original-ep/src/static/img/star.png and updated-ep/src/static/img/star.png differ
+Binary files original-ep/src/static/img/stepper_buttons.png and updated-ep/src/static/img/stepper_buttons.png differ
+Binary files original-ep/src/static/img/timeslider_background.png and updated-ep/src/static/img/timeslider_background.png differ
+Binary files original-ep/src/static/img/timeslider_left.png and updated-ep/src/static/img/timeslider_left.png differ
+Binary files original-ep/src/static/img/timeslider_right.png and updated-ep/src/static/img/timeslider_right.png differ
+diff -crb --new-file original-ep/src/static/js/Changeset.js updated-ep/src/static/js/Changeset.js
+*** original-ep/src/static/js/Changeset.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/js/Changeset.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 1628,1637 ****
+   * @param atext {AText} 
+   */
+  exports.cloneAText = function (atext) {
+    return {
+      text: atext.text,
+      attribs: atext.attribs
+!   };
+  };
+  
+  /**
+--- 1628,1639 ----
+   * @param atext {AText} 
+   */
+  exports.cloneAText = function (atext) {
++ if (atext) {
+      return {
+        text: atext.text,
+        attribs: atext.attribs
+!     }
+!   } else exports.error("atext is null");
+  };
+  
+  /**
+diff -crb --new-file original-ep/src/static/js/collab_client.js updated-ep/src/static/js/collab_client.js
+*** original-ep/src/static/js/collab_client.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/js/collab_client.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 414,419 ****
+--- 414,424 ----
+      {
+        callbacks.onServerMessage(msg.payload);
+      }
++     //HACKISH: User messages do not have "payload" but "userInfo", so that all "handleClientMessage_USER_" hooks would work, populate payload
++     //FIXME: USER_* messages to have "payload" property instead of "userInfo", seems like a quite a big work
++     if(msg.type.indexOf("USER_") > -1) {
++       msg.payload = msg.userInfo;
++     }
+      hooks.callAll('handleClientMessage_' + msg.type, {payload: msg.payload});
+    }
+  
+diff -crb --new-file original-ep/src/static/js/pad.js updated-ep/src/static/js/pad.js
+*** original-ep/src/static/js/pad.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/js/pad.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 126,135 ****
+--- 126,145 ----
+  
+  function getParams()
+  {
++ 
+    // Tries server enforced options first..
+    for(var i = 0; i < getParameters.length; i++)
+    {
+     var setting = getParameters[i];
++    if (typeof setting === "undefined") {
++      continue;
++    }
++    if (typeof setting.name === "undefined") {
++      continue;
++    }
++    if (typeof clientVars.padOptions === "undefined") {
++      continue;
++    }
+     var value = clientVars.padOptions[setting.name];
+     if(value.toString() === setting.checkVal)
+     {
+***************
+*** 334,340 ****
+        $("body").addClass(clientVars.readonly ? "readonly" : "readwrite")
+  
+        padeditor.ace.callWithAce(function (ace) {
+!         ace.ace_setEditable(!clientVars.readonly);
+        });
+  
+        // If the LineNumbersDisabled value is set to true then we need to hide the Line Numbers
+--- 344,351 ----
+        $("body").addClass(clientVars.readonly ? "readonly" : "readwrite")
+  
+        padeditor.ace.callWithAce(function (ace) {
+!         var userIsNotScribe = scribeDefined ? scribeAuthorId != userAuthorId : false;
+!           ace.ace_setEditable(!clientVars.readonly && !userIsNotScribe);
+        });
+  
+        // If the LineNumbersDisabled value is set to true then we need to hide the Line Numbers
+***************
+*** 407,412 ****
+--- 418,425 ----
+    time: 6000 // hang on the screen for...
+  });
+  
++ var scribeDefined, scribeAuthorId, userAuthorId;
++ 
+  var pad = {
+    // don't access these directly from outside this file, except
+    // for debugging
+***************
+*** 491,513 ****
+  
+    init: function()
+    {
+      padutils.setupGlobalExceptionHandler();
+  
+      $(document).ready(function()
+      {
+        // start the custom js
+        if (typeof customStart == "function") customStart();
+        handshake();
+! 
+!       // To use etherpad you have to allow cookies.
+!       // This will check if the creation of a test-cookie has success.
+!       // Otherwise it shows up a message to the user.
+!       createCookie("test", "test");
+!       if (!readCookie("test"))
+!       {
+!         $('#loading').hide();
+!         $('#noCookie').show();
+!       }
+      });
+    },
+    _afterHandshake: function()
+--- 504,523 ----
+  
+    init: function()
+    {
++     getScribeInfo(function(_scribeDefined, _scribeAuthorId, _userAuthorId) {
++         scribeDefined  = _scribeDefined;
++         scribeAuthorId = _scribeAuthorId;
++         userAuthorId   = _userAuthorId;
++ 
+          padutils.setupGlobalExceptionHandler();
+  
+          $(document).ready(function()
+          {
+            // start the custom js
+            if (typeof customStart == "function") customStart();
++           getParams();
+            handshake();
+!         });
+      });
+    },
+    _afterHandshake: function()
+***************
+*** 552,558 ****
+  
+      padeditor.init(postAceInit, pad.padOptions.view || {}, this);
+  
+!     paduserlist.init(pad.myUserInfo, this);
+      padconnectionstatus.init();
+      padmodals.init(this);
+  
+--- 562,571 ----
+  
+      padeditor.init(postAceInit, pad.padOptions.view || {}, this);
+  
+! 
+!     var _pad = this;
+!     paduserlist.init(pad.myUserInfo, _pad, scribeDefined, scribeAuthorId, userAuthorId);
+! 
+      padconnectionstatus.init();
+      padmodals.init(this);
+  
+diff -crb --new-file original-ep/src/static/js/pad_userlist.js updated-ep/src/static/js/pad_userlist.js
+*** original-ep/src/static/js/pad_userlist.js	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/static/js/pad_userlist.js	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 116,122 ****
+          nameHtml = '<input data-l10n-id="pad.userlist.unnamed" type="text" class="editempty newinput" value="'+_('pad.userlist.unnamed')+'" ' + (isNameEditable(data) ? '' : 'disabled="disabled" ') + '/>';
+        }
+  
+!       return ['<td style="height:', height, 'px" class="usertdswatch"><div class="swatch" style="background:' + padutils.escapeHtml(data.color) + '">&nbsp;</div></td>', '<td style="height:', height, 'px" class="usertdname">', nameHtml, '</td>', '<td style="height:', height, 'px" class="activity">', padutils.escapeHtml(data.activity), '</td>'].join('');
+      }
+  
+      function getRowHtml(id, innerHtml, authorId)
+--- 116,128 ----
+          nameHtml = '<input data-l10n-id="pad.userlist.unnamed" type="text" class="editempty newinput" value="'+_('pad.userlist.unnamed')+'" ' + (isNameEditable(data) ? '' : 'disabled="disabled" ') + '/>';
+        }
+  
+!       var scribePencil = '';
+!       if (scribeDefined && data.id == scribeAuthorId) {
+! 
+!           scribePencil = 'background-image: url(/static/img/pencil.png); background-size: 86%; background-position: 1px; background-repeat: no-repeat;';
+!       }
+! 
+!       return ['<td style="height:', height, 'px" class="usertdswatch"><div class="swatch" style="background-color:' + padutils.escapeHtml(data.color) + ';' + scribePencil + '">&nbsp;</div></td>', '<td style="height:', height, 'px" class="usertdname">', nameHtml, '</td>', '<td style="height:', height, 'px" class="activity">', padutils.escapeHtml(data.activity), '</td>'].join('');
+      }
+  
+      function getRowHtml(id, innerHtml, authorId)
+***************
+*** 461,470 ****
+    }, 1000);
+  
+    var pad = undefined;
+    var self = {
+!     init: function(myInitialUserInfo, _pad)
+      {
+        pad = _pad;
+  
+        self.setMyUserInfo(myInitialUserInfo);
+  
+--- 467,480 ----
+    }, 1000);
+  
+    var pad = undefined;
++   var scribeDefined, scribeAuthorId, userAuthorId;
+    var self = {
+!     init: function(myInitialUserInfo, _pad, _scribeDefined, _scribeAuthorId, _userAuthorId)
+      {
+        pad            = _pad;
++       scribeDefined  = _scribeDefined;
++       scribeAuthorId = _scribeAuthorId;
++       userAuthorId   = _userAuthorId;
+  
+        self.setMyUserInfo(myInitialUserInfo);
+  
+***************
+*** 575,580 ****
+--- 585,595 ----
+        }
+        var newIndex = padutils.binarySearch(numUsersBesides, function(n)
+        {
++ 
++         if (scribeDefined && info.userId == scribeAuthorId) {
++             return true;
++         }
++ 
+          if (existingIndex >= 0 && n >= existingIndex)
+          {
+            // pretend existingIndex isn't there
+***************
+*** 582,587 ****
+--- 597,607 ----
+          }
+          var infoN = otherUsersInfo[n];
+          var nameN = (infoN.name || '').toLowerCase();
++ 
++         if (scribeDefined && infoN.userId == scribeAuthorId) {
++             return false;
++         }
++ 
+          var nameThis = (info.name || '').toLowerCase();
+          var idN = infoN.userId;
+          var idThis = info.userId;
+***************
+*** 628,636 ****
+            online++;
+          }
+        }
+! 
+!       $('#online_count').text(online);
+! 
+        return online;
+      },
+      userLeave: function(info)
+--- 648,660 ----
+            online++;
+          }
+        }
+!       var $btn = $("#editbar [data-key=showusers] > a")
+!         , $counter = $('#online_count', $btn)
+!       if(!$counter.length) {
+!         $counter = $('<span id="online_count">')
+!         $btn.append($counter)
+!       }
+!       $counter.text(online);
+        return online;
+      },
+      userLeave: function(info)
+***************
+*** 754,759 ****
+--- 778,793 ----
+  
+        $("#myswatch").css({'background-color': myUserInfo.colorId});
+  
++       if (scribeDefined && myUserInfo.userId == scribeAuthorId) {
++           $("#myswatch").css({ 'background-color'    : myUserInfo.colorId
++                              , 'background-image'    : 'url(/static/img/pencil@2x.png)'
++                              , 'background-size'     : '86%'
++                              , 'background-position' : '2px'
++                              , 'background-repeat'   : 'no-repeat'
++                              });
++ 
++       }
++ 
+        if (browser.msie && parseInt(browser.version) <= 8) {
+          $("li[data-key=showusers] > a").css({'box-shadow': 'inset 0 0 30px ' + myUserInfo.colorId,'background-color': myUserInfo.colorId});
+        }
+diff -crb --new-file original-ep/src/templates/pad.html updated-ep/src/templates/pad.html
+*** original-ep/src/templates/pad.html	2015-08-05 10:30:10.000000000 -0400
+--- updated-ep/src/templates/pad.html	2017-05-10 11:35:48.000000000 -0400
+***************
+*** 53,58 ****
+--- 53,80 ----
+          <script type="text/javascript" src="../static/js/html10n.js"></script>
+          <script type="text/javascript" src="../static/js/l10n.js"></script>
+  
++         <script type="text/javascript">
++             var _scribeDefined, _scribeAuthorId, _userAuthorId;
++             getScribeInfo = function(callback) {
++                 if (typeof _scribeDefined == 'undefined') {
++                     window.addEventListener('message', function(e) {
++                         var obj = JSON.parse(e.data);
++                         if (obj.messageType == 'scribeInfo') {
++                             _scribeDefined  = obj.scribeDefined;
++                             _scribeAuthorId = obj.scribeAuthorId;
++                             _userAuthorId   = obj.userAuthorId;
++                             callback(_scribeDefined, _scribeAuthorId, _userAuthorId);
++                         }
++                     });
++                     var msgObj = { 'messageType': 'scribeInfoRequest' };
++                     var msg = JSON.stringify(msgObj);
++                     parent.postMessage(msg, "*");
++                 } else {
++                     callback(_scribeDefined, _scribeAuthorId, _userAuthorId);
++                 }
++             };
++         </script>
++ 
+          <!-- head and body had been removed intentionally -->
+  
+          <% e.begin_block("body"); %>
+***************
+*** 63,74 ****
+  
+              <ul class="menu_left" role="toolbar">
+                  <% e.begin_block("editbarMenuLeft"); %>
+!                 <%- toolbar.menu(settings.toolbar.left, isReadOnly) %>
+                  <% e.end_block(); %>
+              </ul>
+              <ul class="menu_right" role="toolbar">
+                  <% e.begin_block("editbarMenuRight"); %>
+!                 <%- toolbar.menu(settings.toolbar.right, isReadOnly) %>
+                  <% e.end_block(); %>
+              </ul>
+          </div>
+--- 85,96 ----
+  
+              <ul class="menu_left" role="toolbar">
+                  <% e.begin_block("editbarMenuLeft"); %>
+!                 <%- toolbar.menu(settings.toolbar.left) %>
+                  <% e.end_block(); %>
+              </ul>
+              <ul class="menu_right" role="toolbar">
+                  <% e.begin_block("editbarMenuRight"); %>
+!                 <%- toolbar.menu(settings.toolbar.right) %>
+                  <% e.end_block(); %>
+              </ul>
+          </div>
+***************
+*** 364,375 ****
+                };
+              })();
+          </script>
+- 
+          <script type="text/javascript" src="../static/js/require-kernel.js"></script>
+          <script type="text/javascript" src="../socket.io/socket.io.js"></script>
+  
+          <!-- Include base packages manually (this help with debugging) -->
+!         <script type="text/javascript" src="../javascripts/lib/ep_etherpad-lite/static/js/pad.js?callback=require.define"></script>
+          <script type="text/javascript" src="../javascripts/lib/ep_etherpad-lite/static/js/ace2_common.js?callback=require.define"></script>
+  
+          <% e.begin_block("customScripts"); %>
+--- 386,396 ----
+                };
+              })();
+          </script>
+          <script type="text/javascript" src="../static/js/require-kernel.js"></script>
+          <script type="text/javascript" src="../socket.io/socket.io.js"></script>
+  
+          <!-- Include base packages manually (this help with debugging) -->
+!         <script type="text/javascript" src="../javascripts/lib/ep_etherpad-lite/static/js/pad.js?callback=require.define&version=<%=version%>"></script>
+          <script type="text/javascript" src="../javascripts/lib/ep_etherpad-lite/static/js/ace2_common.js?callback=require.define"></script>
+  
+          <% e.begin_block("customScripts"); %>
+***************
+*** 378,383 ****
+--- 399,405 ----
+  
+          <!-- Bootstrap page -->
+          <script type="text/javascript">
++ 
+              var clientVars = {};
+              (function () {
+                var pathComponents = location.pathname.split('/');
+***************
+*** 389,400 ****
+--- 411,467 ----
+                require.setLibraryURI(baseURL + "javascripts/lib");
+                require.setGlobalKeyPath("require");
+  
++               var padcookie = require('./pad_cookie').padcookie;
++ 
+                $ = jQuery = require('ep_etherpad-lite/static/js/rjquery').jQuery; // Expose jQuery #HACK
+                browser = require('ep_etherpad-lite/static/js/browser').browser;
+                if ((!browser.msie) && (!(browser.mozilla && browser.version.indexOf("1.8.") == 0))) {
+                  document.domain = document.domain; // for comet
+                }
+  
++               var $editorContainer = $("#editorcontainer");
++               $editorContainer.show().css("margin-right", "200px");
++ 
++               window.addEventListener('message', function(e) {
++                   var obj = JSON.parse(e.data);
++                   switch (obj.messageType) {
++                       case 'hideChat':
++                           padcookie.setPref("chatAlwaysVisible", false);
++                           $("#chatbox").hide();
++                           $("#chatbox").attr('style', $("#chatbox").attr('style') + "display:none !important;");
++                           $("#editbar").hide();
++                           $("#editbar").attr('style', $("#editbar").attr('style') + "display:none !important;");
++                           $("#users").hide();
++                           $("#users").attr('style', $("#users").attr('style') + "display:none !important;");
++                           break;
++                       case 'isResultsPage':
++                           $("#editbar .menu_right li[data-key='import_export']").show();
++                           $("#editbar .menu_right li[data-key='showTimeSlider']").show();
++                           break;
++                       case 'isGridTask':
++                           $editorContainer.hide();
++                           $("#editbar .menu_right li[data-key='import_export']").hide();
++                           $("#editbar .menu_right li[data-key='showTimeSlider']").hide();
++                           break;
++                       case 'setCorrectWidths':
++                           $editorContainer.width(obj.ecWidth);
++                           $editorContainer.css('right', obj.ecMarginRight + "px");
++                           break;
++                       case 'isSubchat':
++                           var $editbarMenuRight = $('#editbar .menu_right');
++                           $editbarMenuRight.css("margin-right", "27px");
++                           break;
++                       case 'showCreatePollForm':
++                           var $chatbox = $('#chatbox');
++                           $chatbox.css('bottom', '60px');
++                           break;
++                       case 'hideCreatePollForm':
++                           var $chatbox = $('#chatbox');
++                           $chatbox.css('bottom', '0px');
++                           break;
++                   }
++               });
++ 
+                var plugins = require('ep_etherpad-lite/static/js/pluginfw/client_plugins');
+                var hooks = require('ep_etherpad-lite/static/js/pluginfw/hooks');
+  
