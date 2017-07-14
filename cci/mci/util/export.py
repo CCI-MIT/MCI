@@ -81,12 +81,13 @@ def write_metadata_csv(filelike, session, session_group):
   def summary_table_row_header(task_type, summary, metrics):
       row = ['']
       row.extend([m[1] for m in metrics if type(m) is not dict])
-      if task_type == 'S':
+      if task_type == 'S' and summary is not None:
           row.extend([ext_id for (ext_id, data) in summary if ext_id is not "Totals"])
       return map(smart_str, row)
 
   def summary_table_row_body(task_type, ext_id, data, metrics):
-      row = [ext_id]
+      # We have some unicode, foreign characters in the subject ID
+      row = [smart_str(ext_id)]
       row.extend([data[m[0]] for m in metrics if type(m) is not dict])
       if task_type == 'S' and ext_id is not "Totals":
           row.extend(data['interactions'])

@@ -256,7 +256,7 @@ class EtherpadLiteRecordManager(models.Manager):
                 #_log.info("mci.models.EtherPadLiteManager.chats >> about to call authorData for item %s (etherpadAuthorId %s)"
                 #            % (item.pk, etherpadAuthorId))
                 (item.etherpadAuthorValue, item.subject_id) = self.authorData(etherpadAuthorId)
-                item.chat_name = item.etherpadAuthorValue['name']
+                item.chat_name = item.etherpadAuthorValue.get('name')
             item.completed_task = completed_task
 
         elapsed = datetime.now() - d
